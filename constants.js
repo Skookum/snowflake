@@ -2,9 +2,9 @@
 import * as d3 from 'd3'
 
 export type TrackId = 'MOBILE' | 'WEB_CLIENT' | 'FOUNDATIONS' | 'SERVERS' |
-  'PROJECT_MANAGEMENT' | 'COMMUNICATION' | 'CRAFT' | 'INITIATIVE' |
-  'CAREER_DEVELOPMENT' | 'ORG_DESIGN' | 'WELLBEING' | 'ACCOMPLISHMENT' |
-  'MENTORSHIP' | 'EVANGELISM' | 'RECRUITING' | 'COMMUNITY'
+  'PROJECT_MANAGEMENT' | 'COMMUNICATION' | 'CRAFT' | 'INSTITUTIONAL_KNOWLEDGE' |
+  'CAREER_DEVELOPMENT' | 'RECRUITING' | 'MENTORSHIP' | 'SALES_MARKETING' |
+  'CUSTOMER_VALUE' | 'COMMUNITY'
 export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
 
 export type MilestoneMap = {
@@ -15,14 +15,12 @@ export type MilestoneMap = {
   'PROJECT_MANAGEMENT': Milestone,
   'COMMUNICATION': Milestone,
   'CRAFT': Milestone,
-  'INITIATIVE': Milestone,
+  'INSTITUTIONAL KNOWLEDGE': Milestone,
   'CAREER_DEVELOPMENT': Milestone,
-  'ORG_DESIGN': Milestone,
-  'WELLBEING': Milestone,
-  'ACCOMPLISHMENT': Milestone,
-  'MENTORSHIP': Milestone,
-  'EVANGELISM': Milestone,
   'RECRUITING': Milestone,
+  'MENTORSHIP': Milestone,
+  'SALES AND MARKETING': Milestone,
+  'CUSTOMER VALUE': Milestone,
   'COMMUNITY': Milestone
 }
 export const milestones = [0, 1, 2, 3, 4, 5]
@@ -78,14 +76,12 @@ type Tracks = {|
   'PROJECT_MANAGEMENT': Track,
   'COMMUNICATION': Track,
   'CRAFT': Track,
-  'INITIATIVE': Track,
+  'INSTITUTIONAL_KNOWLEDGE': Track,
   'CAREER_DEVELOPMENT': Track,
-  'ORG_DESIGN': Track,
-  'WELLBEING': Track,
-  'ACCOMPLISHMENT': Track,
-  'MENTORSHIP': Track,
-  'EVANGELISM': Track,
   'RECRUITING': Track,
+  'MENTORSHIP': Track,
+  'SALES_MARKETING': Track,
+  'CUSTOMER_VALUE': Track,
   'COMMUNITY': Track
 |}
 
@@ -97,60 +93,60 @@ export const tracks: Tracks = {
     "milestones": [{
       "summary": "Works effectively within established iOS or Android architectures, following current best practices",
       "signals": [
-        "Delivers features requiring simple local modifications",
-        "Adds simple actions that call server endpoints",
-        "Reuses existing components appropriately",
+        "Joins project team as secondary mobile engineer",
+        "Build new UI with default platfrom components",
+        "Reuses existing custom UI components appropriately",
       ],
       "examples": [
-        "Added existing button to a different iOS surface",
-        "Add follow button for publications on Android",
-        "Fetched and displayed a new stream, using existing stream item styles",
+        "Fix the positioning of a button based on feedback from design",
+        "Add new features to an existing view in an app",
+        "Create a new subclass of UICollectionViewCell to be used in an existing Collection View",
       ],
     }, {
       "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
       "signals": [
-        "Defines new useful and appropriate proto-generated objects",
-        "Creates simple new activities on Android",
+        "Primary developer on POC type app with minimal custom UI",
+        "Builds new UI with minimally custom UI",
         "Migrates code from old patterns to new patterns",
       ],
       "examples": [
-        "Upgraded SDWebImage to a new major version",
-        "Added support for rendering a new type of stream item",
-        "Prototyped a simple new feature quickly",
+        "Parse data from a RESTful API and display the data in app",
+        "Customize UI to match client branding",
+        "Update a VIPER app to add a new button that passes data through the architecture",
       ],
     }, {
       "summary": "Designs major new features and demonstrates a nuanced understanding of mobile platform constraints",
       "signals": [
-        "Implements complex features with a large product surface area",
+        "Primary developer on new product app with custom UI",
         "Works effectively with  Android reactive programming framework",
         "Adds support for new iOS features after a major iOS version upgrade",
       ],
       "examples": [
-        "Designed iOS caching strategy for offline reading",
-        "Built series reader on Android",
+        "Create a new VIPER app that has several routers",
+        "Built an app that stores data in local device database",
         "Informed the team about recent best practice changes and deprecations",
       ],
     }, {
       "summary": "Builds complex, reusable architectures that pioneer best practices and enable engineers to work more effectively",
       "signals": [
-        "Pioneers architecture migration strategies that reduce programmer burden",
+        "Primary mobile developer on project that introduces new major technologies to Skookum's capabilities",
         "Fixes subtle memory management issues",
-        "Implements interactive dismissals that bring delight",
+        "Establish new architectural feature to use on multiple client apps",
       ],
       "examples": [
-        "Upgraded CocoaPods to a new major version",
-        "Designed architecture for fetching and rendering stream items",
-        "Migrated Android persistance layer to reactive programming",
+        "Architect and build app to introduce indoor wayfinding as a capability to Skookum",
+        "Wrote first Kotlin app at Skookum and document best practices for others",
+        "Create internal Cocoapods repo to share code between projects",
       ],
     }, {
       "summary": "Is an industry-leading expert in mobile engineering or sets strategic mobile direction for an eng team",
       "signals": [
-        "Defines long-term goals and ensures active projects are in service of them",
+        "Primary mobile developer on project that creates new business opportunities from gained expertise.",
         "Designs and builds innovative, industry-leading UI interactions",
         "Invents new techniques to responsibly stretch limits of the Android platform",
       ],
       "examples": [
-        "Defined and drove complete migration plan to Swift or Kotlin",
+        "Architect and build Augmented Reality app before ARKit",
         "Implemented Android recycler views before platform support existed",
         "Pioneered application-level abstractions for multi-app environment",
       ],
@@ -367,34 +363,34 @@ export const tracks: Tracks = {
       "signals": [
         "Estimates small tasks accurately",
         "Delivers tightly-scoped projects efficiently",
-        "Writes effective technical specs outlining approach",
+        "Actively participates in standups",
       ],
       "examples": [
-        "Wrote the technical spec for featured post images",
-        "Delivered stream item support for email digests",
-        "Delivered payment history dashboard",
+        "Split a user story into small tasks that can be completed to meet the requirements",
+        "Comlpeted sprint work that they committed to finish",
+        "Recorded actuals on stories to help calibrate estimates",
       ],
     }, {
-      "summary": "Effectively delivers small personal projects",
+      "summary": "Effectively delivers small projects",
       "signals": [
         "Performs research and considers alternative approaches",
-        "Balances pragmatism and polish appropriately",
+        "Does not sacrifice the important for the sake of the urgent",
         "Defines and hits interim milestones",
       ],
       "examples": [
-        "Delivered promo editor",
-        "Delivered audio uploading for web client",
-        "Executed the recommends to claps backfill",
+        "Re-estimated the backlog to update team on remaining work",
+        "Timeboxed research into alternative approach to make sure important tasks were still completed",
+        "Updated team on progress of large story and completed when estimated",
       ],
     }, {
-      "summary": "Effectively delivers projects through a small team",
+      "summary": "Leads the delivery of small projects",
       "signals": [
         "Delegates tasks to others appropriately",
         "Integrates business needs into project planning",
         "Chooses appropriate project management strategy based on context",
       ],
       "examples": [
-        "Ran project retro to assess improvement opportunities",
+        "Ran sprint retro to assess improvement opportunities",
         "Completed launch checklist unprompted for well controlled rollout",
         "Facilitated project kickoff meeting to get buy-in",
       ],
@@ -406,9 +402,9 @@ export const tracks: Tracks = {
         "Leverages recognition of repeated project patterns",
       ],
       "examples": [
-        "Oversaw technical delivery of Hightower",
-        "Managed infrastructure migration to VPC",
-        "Involved marketing, legal, and appropriate functions at project start",
+        "Improves project visibility by publishing metrics in a central location.",
+        "Identified dependency on client team for work coming up in the next sprint",
+        "Analyzed the velocity of the team to identify trends",
       ],
     }, {
       "summary": "Manages major company pushes delivered by multiple teams",
@@ -418,9 +414,9 @@ export const tracks: Tracks = {
         "Owns a key company metric",
       ],
       "examples": [
-        "Managed technical migration to SOA",
-        "Lead technical delivery of 10/7",
-        "Delivered multi-month engineering project on time",
+        "Created Sprint checklists for new project managers and train them on how to use the checklist",
+        "Oversaw multiple project teams and negotiated the resourcing needed to staff all of them",
+        "Held project teams accountable to delivering on time",
       ],
     }],
   },
@@ -437,9 +433,9 @@ export const tracks: Tracks = {
         "Asks for help at the appropriate juncture",
       ],
       "examples": [
-        "Updated The Watch before running a backfill",
-        "Updated project status changes in Asana promptly",
-        "Gave thoughtful check-in and check-out comments",
+        "Updated release notes for app deployment to denote what changed",
+        "Updated project status changes in JIRA promptly",
+        "Gave thoughtful project updates during standup",
       ],
     }, {
       "summary": "Communicates with the wider team appropriately, focusing on timeliness and good quality conversations",
@@ -450,8 +446,8 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Received and integrated critical feedback positively",
-        "Created cross-team Slack channel for payments work",
-        "Spoke to domain experts before writing spec",
+        "Gave a talk about project learnings at Eng Team Meeting",
+        "Spoke to domain experts at Skookum during Engineering phase",
       ],
     }, {
       "summary": "Proactively shares information, actively solicits feedback, and facilitates communication for multiple stakeholders",
@@ -461,9 +457,9 @@ export const tracks: Tracks = {
         "Manages project stakeholder expectations effectively",
       ],
       "examples": [
-        "Directed team response effectively during outages",
-        "Gave a substantial Eng All Hands presentation on React",
-        "Gave notice of upcoming related work in Eng Briefing",
+        "Handled client communication during launch to make sure client had proper expectations",
+        "Coordinated communication with 3rd party vendor to align on goals",
+        "Notified team of upcoming project obstacle and suggested how to handle it",
       ],
     }, {
       "summary": "Communicates complex ideas skillfully and with nuance, and establishes alignment within the wider organization",
@@ -473,16 +469,16 @@ export const tracks: Tracks = {
         "Negotiates resourcing compromises with other teams",
       ],
       "examples": [
-        "Lead off-site workshop on interviewing",
-        "Wrote Medium's growth framework and rationale",
-        "Aligned the entire organization around claps",
+        "Lead training for other Skookum employees on giving presentations",
+        "Wrote new hiring process documentation for Engineering Team",
+        "Aligned the entire organization around new process",
       ],
     }, {
       "summary": "Influences outcomes at the highest level, moves beyond mere broadcasting, and sets best practices for others",
       "signals": [
         "Defines processes for clear communication for the entire team",
         "Shares the right amount of information with the right people, at the right time",
-        "Develops and delivers plans to execs, the board, and outside investors",
+        "Develops and delivers plans to leadership team",
       ],
       "examples": [
         "Organized half year check-in company offsite",
@@ -504,9 +500,9 @@ export const tracks: Tracks = {
         "Writes clear comments and documentation",
       ],
       "examples": [
-        "Caught a bug on Hatch before it went live",
-        "Landed non-trivial PR with no caretaker comments",
-        "Wrote hermetic tests for the happy and sad cases",
+        "Caught a bug on a project before it went live",
+        "Submitted a PR with no caretaker comments",
+        "Wrote unit tests for new feature",
       ],
     }, {
       "summary": "Increases the robustness and reliability of codebases, and devotes time to polishing products and systems",
@@ -517,7 +513,7 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Requested tests for a PR when acting as reviewer",
-        "Reduced the number of zelda fitzgerald exceptions",
+        "Reduced the number of linter exceptions on legacy application",
         "Fixed a TODO for someone else in the codebase",
       ],
     }, {
@@ -528,100 +524,100 @@ export const tracks: Tracks = {
         "Adds tooling to improve code quality",
       ],
       "examples": [
-        "Improved PRB to run the same volume of tests faster",
-        "Simplified hermetic test data modification",
-        "Created fixture system for visual quality",
+        "Setup new plugin on Jenkins to run snapshot UI tests",
+        "Wrote project setup script to simplify running unit tests with Jenkins",
+        "Organized teams to get more people involved in code reviews",
       ],
     }, {
       "summary": "Advocates for and models great quality with proactive actions, and tackles difficult and subtle system issues",
       "signals": [
         "Builds systems so as to eliminate entire classes of programmer error",
         "Focuses the team on quality with regular reminders",
-        "Coordinates Watch priorities and projects",
+        "Pragmatically identifies areas where more effort should be put to ensure quality",
       ],
       "examples": [
         "Added code coverage reporting to iOS CI pipeline",
-        "Iterated repeatedly to develop Medium's underlines solution",
-        "Defined and oversaw plan for closing Heartbleed vulnerability",
+        "Worked with Sales team to improve messaging around the value of quality to clients",
+        "Defined and oversaw plan for closing Heartbleed vulnerability on all client projects",
       ],
     }, {
       "summary": "Enables and encourages the entire organization to make quality a central part of the development process",
       "signals": [
         "Defines policies for the engineering org that encourage quality work",
         "Identifies and eliminates single points of failure throughout the organization",
-        "Secures time and resources from execs to support great quality",
+        "Secures time and resources from clients to support great quality",
       ],
       "examples": [
-        "Negotiated resources for Fix-It week with exec team",
+        "Negotiated resources for Fix-It week with client",
         "Instituted and ensured success of a 20% time policy",
-        "Started The Watch",
+        "Created cross project quality reporting tool to expose entire org to engineering quality",
       ],
     }],
   },
 
-  "INITIATIVE": {
-    "displayName": "Initiative",
+  "INSTITUTIONAL_KNOWLEDGE": {
+    "displayName": "Institutional Knowledge",
     "category": "B",
-    "description": "Challenges the status quo and effects positive organizational change outside of mandated work",
+    "description": "Seeks to improve Skookum through the by understanding other's knowledge and sharing new knowledge with others",
     "milestones": [{
-      "summary": "Identifies opportunities for organizational change or product improvements",
+      "summary": "Understands processes to gain efficiency and learn from others' knowledge",
       "signals": [
-        "Writes Hatch posts about improvement opportunities",
-        "Raises meaningful tensions in tactical meetings",
-        "Asks leadership team probing questions at FAM",
+        "Checks to see if there are already processes to learn from",
+        "Seeks help and critique",
+        "Embraces change as a necessity for growth",
       ],
       "examples": [
-        "Wrote about problems with TTR on Hatch",
-        "Wrote about content policy problems on Hatch",
-        "Reported a site issue in Github",
+        "Asked a question about a documented process in Confluence",
+        "Asked a question at company lunch",
+        "Followed project kick-off checklist",
       ],
     }, {
-      "summary": "Causes change to positively impact a few individuals or minor improvement to an existing product or service",
+      "summary": "Informally shares new knowledge with others	",
       "signals": [
-        "Picks bugs off the backlog proactively when blocked elsewhere",
-        "Makes design quality improvements unprompted",
-        "Takes on trust and safety tasks proactively when blocked elsewhere",
-      ],
-      "examples": [
-        "Advocated on own behalf for a change in role",
-        "Implemented flow typing for promises",
-        "Audited web client performance in Chrome and proposed fixes",
-      ],
-    }, {
-      "summary": "Causes change to positively impact an entire team or instigates a minor feature or service",
-      "signals": [
-        "Demonstrates concepts proactively with prototypes",
-        "Fixes complicated bugs outside of regular domain",
-        "Takes ownership of systems that nobody owns or wants",
-      ],
-      "examples": [
-        "Defined style guide to resolve style arguments",
-        "Proposed and implemented at-mentions prototype",
-        "Implemented video for Android independently, unprompted",
-      ],
-    }, {
-      "summary": "Effects change that has a substantial positive impact on the engineering organization or a major product impact",
-      "signals": [
-        "Champions and pioneers new technologies to solve new classes of problem",
-        "Exemplifies grit and determination in the face of persistent obstacles",
+        "Makes connections between projects and experience to identify trends",
+        "Experiments early and often",
         "Instigates major new features, services, or architectures",
       ],
       "examples": [
-        "Created the interviewing rubric and booklet",
-        "Implemented and secured support for native login",
-        "Migrated medium2 to mono repo and bazel",
+        "Presented the results of a project retrospective at a company lunch",
+        "Wrote article in Confluence about a new tool to use on projects",
+        "Provided feedback on how to improve review process",
       ],
     }, {
-      "summary": "Effects change that has a substantial positive impact on the whole company",
+      "summary": "Creates processes to formalize knowledge, documenting why the process was created or changed",
       "signals": [
-        "Creates a new function to solve systemic issues",
+        "Demonstrates concepts proactively with prototypes",
+        "Runs experiments on process improvements",
+        "Knows how to connect changes to creating value for Skookum",
+      ],
+      "examples": [
+        "Built project allocation tool to make allocation process more consistent and maintainable",
+        "Created Reviewum to simplify review process",
+        "Organized lunch video series to engage team in learning",
+      ],
+    }, {
+      "summary": "Creates new ways to share knowledge across the organization	",
+      "signals": [
+        "Champions and pioneers new technologies to solve new classes of problem",
+        "Follows through with ensuring buy-in on new processes",
+        "Identifies holes in institutional knowledge and seeks to remedy",
+      ],
+      "examples": [
+        "Setup and drive the migration to Confluence as the knowledgebase for Skookum",
+        "Defined process for experimentation on projects and report findings to the entire company",
+        "Created the interviewing rubric and onboarding booklet",
+      ],
+    }, {
+      "summary": "Defines processes that change the way that Skookum does business	",
+      "signals": [
+        "Drives cross-departmental knowledge sharing",
         "Galvanizes the entire company and garners buy in for a new strategy",
         "Changes complex organizational processes",
       ],
       "examples": [
-        "Migrated the organization from Holacracy",
-        "Built Medium Android prototype and convinced execs to fund it",
-        "Convinced leadership and engineering org to move to Medium Lite architecture",
+        "Created a new model to follow instead of agile/scrum that produces better measurable results",
+        "Defined a new process to re-organize the company around specialtizations",
+        "Drove process to map all department processes on to company values to clarify processes",
       ],
     }],
   },
@@ -640,31 +636,31 @@ export const tracks: Tracks = {
       "examples": [
         "Collected and delivered feedback",
         "Discussed career options and areas of interest informally",
-        "Hosted a Floodgate Academy intern",
+        "Reviewed Growth Framework to help identify areas to focus on",
       ],
     }, {
       "summary": "Formally supports and advocates for one person and provides tools to help them solve career problems",
       "signals": [
-        "Ensure a group member has an appropriate role on their team",
+        "Listens with the intent to understand, not the intent to respond",
         "Offers effective career advice to group members, without being prescriptive",
         "Creates space for people to talk through challenges",
       ],
       "examples": [
         "Set up and attended regular, constructive 1:1s",
         "Provided coaching on how to have difficult conversations",
-        "Taught group members the GROW model",
+        "Advocated for team member to get on project that gives them new opportunities",
       ],
     }, {
       "summary": "Inspires and retains a small group of people and actively pushes them to stretch themselves",
       "signals": [
         "Discusses paths, and creates plans for personal and professional growth",
-        "Advocates to align people with appropriate roles within organization",
+        "Sees value in seeing others succeed",
         "Works with team leads to elevate emerging leaders",
       ],
       "examples": [
         "Reviewed individual group member progression every 6 weeks",
-        "Suggested appropriate group member for Tech Lead position",
-        "Arranged a requested switch of discipline for a group member",
+        "Suggested appropriate group member for Senior position",
+        "Helped team member set actionable quarterly goals",
       ],
     }, {
       "summary": "Manages interactions and processes between groups, promoting best practices and setting a positive example",
@@ -675,7 +671,7 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Completed training on situational leadership",
-        "Built a resourcing plan based on company, team, and individual goals",
+        "Coached engineer through tough situation with client",
         "Prevented regretted attrition with intentional, targeted intervention",
       ],
     }, {
@@ -687,353 +683,18 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Provided coaching to group leads",
-        "Devised Pathwise curriculum for group leads",
+        "Developed senior team member into a people manager",
         "Advocated to execs for engineer development resources and programs",
-      ],
-    }],
-  },
-
-  "ORG_DESIGN": {
-    "displayName": "Org design",
-    "category": "C",
-    "description": "Defines processes and structures that enables the strong growth and execution of a diverse eng organization",
-    "milestones": [{
-      "summary": "Respects and participates in processes, giving meaningful feedback to help the organization improve",
-      "signals": [
-        "Reflects on meetings that leave them inspired or frustrated",
-        "Teaches others about existing processes",
-        "Actively participates and makes contributions within organizational processes",
-      ],
-      "examples": [
-        "Facilitated effective tactical meeting with empathy",
-        "Explained tactical meeting format to a new hire",
-        "Provided feedback on sprint planning meeting",
-      ],
-    }, {
-      "summary": "Identifies opportunities to improve existing processes and makes changes that positively affect the local team",
-      "signals": [
-        "Defines meeting structure and cadence that meets team needs",
-        "Engages in organizational systems thinking",
-        "Advocates for improved diversity and inclusion, and proposes ideas to help",
-      ],
-      "examples": [
-        "Defined Frankenmeeting structure for small team",
-        "Improved Watch on-call rotation scheduling",
-        "Defined standard channels for inter-team communication",
-      ],
-    }, {
-      "summary": "Develops processes to solve ongoing organizational problems",
-      "signals": [
-        "Creates programs that meaningfully improve organizational diversity",
-        "Solves long-standing organizational problems",
-        "Reallocates resources to meet organizational needs",
-      ],
-      "examples": [
-        "Developed baseline team templates for consistency",
-        "Created bug-rotation program to address ongoing quality issues",
-        "Defined Guilds manifesto and charter",
-      ],
-    }, {
-      "summary": "Thinks deeply about organizational issues and identifies hidden dynamics that contribute to them",
-      "signals": [
-        "Evaluates incentive structures and their effect on execution",
-        "Analyzes existing processes for bias and shortfall",
-        "Ties abstract concerns to concrete organizational actions or norms",
-      ],
-      "examples": [
-        "Connected mobile recruiting difficulties to focus on excellence",
-        "Raised leadership level change discrepancies",
-        "Analyzed the hiring rubric for false negative potential",
-      ],
-    }, {
-      "summary": "Leads initiatives to address issues stemming from hidden dynamics and company norms",
-      "signals": [
-        "Builds programs to train leadership in desired skills",
-        "Creates new structures that provide unique growth opportunities",
-        "Leads planning and communication for reorgs",
-      ],
-      "examples": [
-        "Lead efforts to increase number of mobile engineers",
-        "Directed resources to meaningfully improve diversity at all levels",
-        "Built the growth framework rubric",
-      ],
-    }],
-  },
-
-  "WELLBEING": {
-    "displayName": "Wellbeing",
-    "category": "C",
-    "description": "Supports the emotional well-being of group members in difficult times, and celebrates their successes",
-    "milestones": [{
-      "summary": "Uses tools and processes to help ensure colleagues are healthy and happy",
-      "signals": [
-        "Keeps confidences unless legally or morally obliged to do otherwise",
-        "Applies the reasonable person principle to others",
-        "Avoids blame and focuses on positive change",
-      ],
-      "examples": [
-        "Ensured group members were taking enough vacation",
-        "Put themself in another's shoes to understand their perspective",
-        "Checked in with colleague showing signs of burnout",
-      ],
-    }, {
-      "summary": "Creates a positive, supportive, engaging team environment for group members",
-      "signals": [
-        "Sheds light on other experiences to build empathy and compassion",
-        "Validates ongoing work and sustains motivation",
-        "Proposes solutions when teams get bogged down or lose momentum",
-      ],
-      "examples": [
-        "Coordinated a small celebration for a project launch",
-        "Connected tedious A|B testing project with overall company goals",
-        "Noted a team without a recent win and suggested some easy quick wins",
-      ],
-    }, {
-      "summary": "Manages expectations across peers, leads in the org, promotes calm, and prevents consensus building",
-      "signals": [
-        "Trains group members to separate stimulus from response",
-        "Maintains a pulse on individual and team morale",
-        "Helps group members approach problems with curiosity",
-      ],
-      "examples": [
-        "Completed training on transference and counter transference",
-        "Completed training on compromise and negotiation techniques",
-        "Reframed a problem as a challenge, instead of a barrier, when appropriate",
-      ],
-    }, {
-      "summary": "Advocates for the needs of teams and group members, and proactively works to calm the organization",
-      "signals": [
-        "Ensures team environments are safe and inclusive, proactively",
-        "Grounds group member anxieties in reality",
-        "Tracks team retention actively and proposes solutions to strengthen it",
-      ],
-      "examples": [
-        "Relieved org tension around product direction by providing extra context",
-        "Encouraged group members to focus on what they can control",
-        "Guided people through complex organizational change",
-      ],
-    }, {
-      "summary": "Manages narratives, channels negativity into inspiration and motivation, and protects the entire team",
-      "signals": [
-        "Recognizes and points out narratives when appropriate",
-        "Works to reshape narratives from victimization to ownership",
-        "Increases the psychological safety of the entire team",
-      ],
-      "examples": [
-        "Converted group member from a problem haver to a problem solver",
-        "Challenged false narrative and redirected to compassion and empathy",
-        "Cultivated and championed a culture of empathy within the entire team",
-      ],
-    }],
-  },
-
-  "ACCOMPLISHMENT": {
-    "displayName": "Accomplishment",
-    "category": "C",
-    "description": "Inspires day to day excellence, maximises potential and effectively resolves performance issues with compassion",
-    "milestones": [{
-      "summary": "Helps individuals identify blockers and helps them identify next steps for resolution",
-      "signals": [
-        "Notices when someone is stuck and reaches out",
-        "Helps others break down problems into feasible, tangible next steps",
-        "Talks through problems non-judgmentally",
-      ],
-      "examples": [
-        "Completed training on diagnosing problems",
-        "Unblocked a group member",
-        "Reinforces and affirms positive feedback for good work",
-      ],
-    }, {
-      "summary": "Helps individuals resolve difficult performance issues, with insight, compassion, and skill",
-      "signals": [
-        "Gathers context outside the immediate problem",
-        "Recognizes issues within local environment and suggests change",
-        "Works to encourage ownership of actions and responsibilities",
-      ],
-      "examples": [
-        "Completed training on decision making",
-        "Convinced a group member to solve a problem directly, rather than doing it for them",
-        "Gave honest feedback about poor performance, with compassion",
-      ],
-    }, {
-      "summary": "Intervenes in long-standing performance issues with targeted behavior change or performance plans",
-      "signals": [
-        "Aggregates signals of poor performance and creates process for improvement",
-        "Investigates motivation and externalities for consistent poor performance",
-        "Puts together comprehensive, achievable performance plans",
-      ],
-      "examples": [
-        "Worked with group member to address persistent communication failures",
-        "Arranged a transfer to another team, resulting in improved performance",
-        "Managed group member closely to maximise chances of PIP success",
-      ],
-    }, {
-      "summary": "Mediates escalated situations, empowers underperforming teams, and resolves conflict",
-      "signals": [
-        "Recognizes heightened situations and toxic or aggressive interactions",
-        "Inserts themself into conflict where appropriate to calm and mediate",
-        "Encourages open dialog and builds trust between parties in conflict",
-      ],
-      "examples": [
-        "Empowered a team to drive forward amidst uncertainty",
-        "Protected team from externalities so they could focus on goals",
-        "Mediated sit-down between team members to address tension",
-      ],
-    }, {
-      "summary": "Resolves complex organizational dysfunction, or persistent conflict at senior levels",
-      "signals": [
-        "Takes control of dysfunctional teams to organise chaos",
-        "Repairs broken team dynamics and builds harmony",
-        "Presides over a well-oiled team of teams",
-      ],
-      "examples": [
-        "Turned around the performance of a problematic team",
-        "De-escalated serious tensions between teams",
-        "Rebuilt trust between senior team leads",
-      ],
-    }],
-  },
-
-  "MENTORSHIP": {
-    "displayName": "Mentorship",
-    "category": "D",
-    "description": "Provides support to colleagues, spreads knowledge, and develops the team outside formal reporting structures",
-    "milestones": [{
-      "summary": "Informally mentors individuals in an ad-hoc way, supports new hires, and conveys institutional knowledge",
-      "signals": [
-        "Makes themself available for informal support and advice",
-        "Acts as sounding board for peers and more junior members",
-        "Provides sound advice when asked",
-      ],
-      "examples": [
-        "Acted as an onboarding buddy",
-        "Paired with an engineer to help them with an unfamiliar area",
-        "Helped a colleague understand their feelings",
-      ],
-    }, {
-      "summary": "Mentors people proactively, and guides people to realizations rather than providing the answer",
-      "signals": [
-        "Takes time to explain concepts and best practices",
-        "Asks questions to illuminate concepts, rather than stating them",
-        "Allows others to lead efforts when it will help their development",
-      ],
-      "examples": [
-        "Shared interesting article with a team member to help with their growth",
-        "Offered unprompted feedback to help growth, with empathy",
-        "Lead from behind to support someone new to a leadership role",
-      ],
-    }, {
-      "summary": "Teaches small groups of engineers and contributes to Medium's shared knowledge base",
-      "signals": [
-        "Avoids siloing information when it can be usefully shared with others",
-        "Works to increase the bus factor of systems",
-        "Finds tools that work best for a team member's personality",
-      ],
-      "examples": [
-        "Gave a brown bag presentation on payments",
-        "Wrote Hatch post on avoiding RDS backfill issues",
-        "Wrote Medium-U content module",
-      ],
-    }, {
-      "summary": "Encourages people to mentor each other, and creates ways for them to do so",
-      "signals": [
-        "Defines an entire curriculum for a discipline",
-        "Draws positive attention to well-modeled mentor and teaching behaviours",
-        "Creates brown bag series and lines up speakers",
-      ],
-      "examples": [
-        "Created and lead Medium's Women in Eng group",
-        "Organized an Eng All Hands with an outside speaker",
-        "Designed and taught web client guild curriculum",
-      ],
-    }, {
-      "summary": "Instills and promotes a culture of learning and development within the team",
-      "signals": [
-        "Sets incentive structures to recognise and reward mentorship",
-        "Empowers team members to develop themselves",
-        "Role models productive and healthy mentor relationships",
-      ],
-      "examples": [
-        "Instituted the professional education budget for engineers",
-        "Mentored mentors",
-        "Started the eng advisor program and lined up external mentors",
-      ],
-    }],
-  },
-
-  "EVANGELISM": {
-    "displayName": "Evangelism",
-    "category": "D",
-    "description": "Promotes Medium to the outside world and establishes it as an attractive and thoughtful place to work",
-    "milestones": [{
-      "summary": "Represents Medium well externally, and influences individuals positively",
-      "signals": [
-        "Shares personal and organizational successes with their network",
-        "Attends Medium-hosted events and talks with guests",
-        "Communicates genuine and honest excitement about their work externally",
-      ],
-      "examples": [
-        "Shared a Medium product launch post on Facebook",
-        "Acted as a guide for a non-friend visitor to the office",
-        "Supported PR efforts by giving a quote or having a photo taken",
-      ],
-    }, {
-      "summary": "Participates more centrally in small events, and takes simple actions that positively influence groups of people",
-      "signals": [
-        "Takes meaningful action to introduce people to Medium",
-        "Joined public Slack group and represented Medium appropriately, and well",
-        "Organizes positive small- or medium-sized events that bring people to Medium",
-      ],
-      "examples": [
-        "Volunteered as a helper for CODE2040 writing workshop",
-        "Organized a short tour of the office by college students",
-        "Talked at a Women Who Code event hosted at Medium",
-      ],
-    }, {
-      "summary": "Works hard to positively influence large groups of people on their views of Medium",
-      "signals": [
-        "Mentors or participates in a high visibility way in an external organization",
-        "Builds fruitful partnerships with external organizations",
-        "Writes blog posts about Medium that receive moderate traffic",
-      ],
-      "examples": [
-        "Represented Medium on a panel at a conference of industry experts",
-        "Established close ties with Creative Commons",
-        "Built a durable, long-standing relationship with Code2040",
-      ],
-    }, {
-      "summary": "Establishes Medium as an great, innovative company and workplace to the whole industry",
-      "signals": [
-        "Establishes themself as an industry thought leader who attracts talent",
-        "Publishes material about Medium's organizational or technical innovations",
-        "Leverages significant following to evangelise Medium",
-      ],
-      "examples": [
-        "Published a paper on Medium technology in a peer-reviewed journal",
-        "Authored joint-press release with EFF on DNT",
-        "Published “Why Content Editable Is Terrible” on the Medium engineering blog",
-      ],
-    }, {
-      "summary": "Introduces Medium in a positive light to a wider audience outside the industry",
-      "signals": [
-        "Delivers key messages to broad, mainstream audiences",
-        "Influences people with large audiences to talk about Medium positively",
-        "Drives recognition and adoption of Medium in significant numbers",
-      ],
-      "examples": [
-        "Published or interviewed in a mainstream newspaper or website outside tech",
-        "Keynoted a conference with international attention",
-        "Represented Medium in national televised media",
       ],
     }],
   },
 
   "RECRUITING": {
     "displayName": "Recruiting",
-    "category": "D",
-    "description": "Strengthens Medium's team by bringing in excellent staff members",
+    "category": "C",
+    "description": "Strengthens Skookum's team by bringing in excellent staff members	",
     "milestones": [{
-      "summary": "Brings new candidates into the pipeline and understands how to evaluate candidates at Medium",
+      "summary": "Brings new candidates into the pipeline and understands how to evaluate candidates at Skookum",
       "signals": [
         "Reviews existing network for hiring leads regularly",
         "Shadows interviews to gain familiarity with process",
@@ -1053,11 +714,11 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Added observable evidence for every rating",
-        "Started a monthly brunch for candidates to meet Medium employees",
+        "Started an event for candidates to meet Skookum employees",
         "Tested a new service for quality and diversity of candidates",
       ],
     }, {
-      "summary": "Maintains and strengthens the integrity of the current process, and regularly brings in great candidates",
+      "summary": "Maintains and strengthens the integrity of the current process, and regularly brings in great candidates	",
       "signals": [
         "Teaches new interviewers how to interview with empathy",
         "Models great interview technique and feedback when shadowed",
@@ -1069,28 +730,222 @@ export const tracks: Tracks = {
         "Proposed useful, tangible improvements to the interview process",
       ],
     }, {
-      "summary": "Actively contributes to and leads hiring decisions, and goes to great lengths to source great candidates",
+      "summary": "Actively contributes to and leads hiring decisions, and goes to great lengths to source great candidates	",
       "signals": [
         "Documents subtle cues in interviews that indicate values alignment",
         "Makes hiring decisions, resolving discrepancies between conflicting reports",
-        "Top-grades candidates and teases out character traits",
+        "Identifies great fits for Skookum and leads them through the hiring process",
       ],
       "examples": [
-        "Planned engineering summit on interview process and training",
-        "Organized and lead Medium's presence at a recruitment fair",
-        "Started CODE2040 internship program",
+        "Planned engineering meeting on interview process and training",
+        "Organized and lead Skookum's presence at a recruitment fair",
+        "Maintained relationship with local code schools to build our reputation among graduates",
       ],
     }, {
-      "summary": "Sets recruitment strategy, invests in long-term relationships for critical roles, and recruits at scale",
+      "summary": "Sets recruitment strategy, invests in long-term relationships for critical roles, and recruits at scale	",
       "signals": [
         "Sets the tone, policy and goals around building a diverse, high-quality team",
-        "Identifies and brings in promising acquisitions",
+        "Leads efforts to increase diversity among engineering team",
         "Tracks industry activity, identifying opportunities for critical roles",
       ],
       "examples": [
         "Talked with a senior candidate over many months to fill a critical role",
-        "Organized efforts around convincing acquired engineers to join and stay",
+        "Helped quickly fill multiple positions that were open with quality candidates",
         "Set goals, then tracked and reported metrics on team demographics over time",
+      ],
+    }],
+  },
+
+  "MENTORSHIP": {
+    "displayName": "Mentorship",
+    "category": "C",
+    "description": "Provides support to colleagues, spreads knowledge, and develops the team outside formal reporting structures",
+    "milestones": [{
+      "summary": "Informally mentors individuals in an ad-hoc way, supports new hires, and conveys institutional knowledge",
+      "signals": [
+        "Makes themself available for informal support and advice",
+        "Acts as sounding board for peers and more junior members",
+        "Provides sound advice when asked",
+      ],
+      "examples": [
+        "Acted as an onboarding buddy",
+        "Paired with an engineer to help them with an unfamiliar area",
+        "Helped a colleague understand their feelings",
+      ],
+    }, {
+      "summary": "Mentors people proactively, and guides people to realizations rather than providing the answer	",
+      "signals": [
+        "Takes time to explain concepts and best practices",
+        "Asks questions to illuminate concepts, rather than stating them",
+        "Allows others to lead efforts when it will help their development",
+      ],
+      "examples": [
+        "Shared interesting article with a team member to help with their growth",
+        "Offered unprompted feedback to help growth, with empathy",
+        "Lead from behind to support someone new to a leadership role",
+      ],
+    }, {
+      "summary": "Teaches small groups of engineers and contributes to Skookum's shared knowledge base",
+      "signals": [
+        "Avoids siloing information when it can be usefully shared with others",
+        "Drives healthy discussion around new ideas",
+        "Finds tools that work best for a team member's personality",
+      ],
+      "examples": [
+        "Gave a brown bag presentation on a technology",
+        "Engaged audience in presentation at company lunch",
+        "Ran book club on relevant book",
+      ],
+    }, {
+      "summary": "Encourages people to mentor each other, and creates ways for them to do so",
+      "signals": [
+        "Defines an entire curriculum for a discipline",
+        "Draws positive attention to well-modeled mentor and teaching behaviours",
+        "Creates brown bag series and lines up speakers",
+      ],
+      "examples": [
+        "Created and lead Skookum's Women in Eng group",
+        "Organized an Eng Team Meeting with an outside speaker",
+        "Connected junior engineer with senior engineer that was looking for leadership opportunity",
+      ],
+    }, {
+      "summary": "Instills and promotes a culture of learning and development within the entire engineering team",
+      "signals": [
+        "Sets incentive structures to recognise and reward mentorship",
+        "Empowers team members to develop themselves",
+        "Role models productive and healthy mentor relationships",
+      ],
+      "examples": [
+        "Instituted the professional education budget for engineers",
+        "Mentored mentors",
+        "Started the eng advisor program and lined up external mentors",
+      ],
+    }],
+  },
+
+  "SALES_MARKETING": {
+    "displayName": "Sales and Marketing",
+    "category": "D",
+    "description": "Helps the sales and marketing teams sell our services in order to increase the number of people that we can help	",
+    "milestones": [{
+      "summary": "Helps create opportunities for our sales team to start conversations",
+      "signals": [
+        "Refer clients to our sales team",
+        "Create content for the marketing team through existing channels",
+        "Assist in marketing development needs",
+      ],
+      "examples": [
+        "Identify an acquaintance that needs one of Skookum's services",
+        "Write a new blog post about a relevant technology topic",
+        "Fix a bug on Skookum.com",
+      ],
+    }, {
+      "summary": "Consults with the Sales Team to help scope and estimate a client project",
+      "signals": [
+        "Empathizes with clients to identify their problem",
+        "Estimates the size of projects analytically",
+        "Identifies other opportunities with a client to work with Skookum",
+      ],
+      "examples": [
+        "Joined sales team on sales calls/meetings",
+        "Filled out the estimation template to document sales estimations",
+        "Helped the sales team sell a support contract",
+      ],
+    }, {
+      "summary": "Looks for opportunities to create efficiencies in the sales and marketing of Skookum's services",
+      "signals": [
+        "Creates tools to increase quality of estimates",
+        "Helps marketing gather more data about potential clients",
+        "Author significant portion of a proposal",
+      ],
+      "examples": [
+        "Improved the estimation template",
+        "Ran statistical analysis of old estimates vs actuals",
+        "Worked with Marketing to add new analytics framework to website",
+      ],
+    }, {
+      "summary": "Opens new ways for potential clients to interact with Skookum",
+      "signals": [
+        "Creates new marketing channels",
+        "Generates new sales from current clients",
+        "Sells the value of Skookum as a partner",
+      ],
+      "examples": [
+        "Started a Skookum podcast and reached a significant audience",
+        "Built demo space to showcase Skookum projects",
+        "Organized tech conference that attracts technical leaders",
+      ],
+    }, {
+      "summary": "Resolves complex organizational dysfunction, or persistent conflict at senior levels",
+      "signals": [
+        "Creates new service area for Skookum to sell",
+      ],
+      "examples": [
+        "Built BlockChain prototype and worked with Sales to find a buyer",
+      ],
+    }],
+  },
+
+  "CUSTOMER_VALUE": {
+    "displayName": "Customer Value",
+    "category": "D",
+    "description": "Creates more value for our customers in order to increase retention and provide a world class experience. We focus on value not cost",
+    "milestones": [{
+      "summary": "Empathizes with customers and the problems that they come to us for help with",
+      "signals": [
+        "Engages with clients during meetings (and before and after)",
+        "Actively listens to client problem desciption and ask thoughtful follow-up questions",
+        "Understands the constraints of a project",
+      ],
+      "examples": [
+        "Researched news about a client company before a meeting with them",
+        "Intentionally gave the client the better seat at a meeting or meal",
+        "Came prepared to client meeting with calrifying questions",
+      ],
+    }, {
+      "summary": "Identifies areas where their project team can provide more value to the customer",
+      "signals": [
+        "Builds trust with the client through execution",
+        "Asks client probing questions",
+        "Empathizes with client's problems",
+      ],
+      "examples": [
+        "Solicited feedback from a client to make sure that we are aligned",
+        "Researched competitors and presented it to the client for feedback",
+        "Shared industry information with project team and how it applies to the work we're doing",
+      ],
+    }, {
+      "summary": "Creates more value for customers on projects	",
+      "signals": [
+        "Executes on ideas to create more value for the client",
+        "Presents Skookum's value effectively",
+        "Does not sacrifice contractual work in order to create more value",
+      ],
+      "examples": [
+        "Delivered small tweaks to delight users",
+        "Rehearsed client presentation and made changes based on feedback",
+        "Created media assets showing the process to demonstrate value to the client",
+      ],
+    }, {
+      "summary": "Leads efforts on project to maximize customer on projects",
+      "signals": [
+        "Identifies areas for others to create more value for the client",
+        "Encourages others to look for ways to create more value for the client",
+      ],
+      "examples": [
+        "Coordinated brainstorming session on creative ways to solve client's problems",
+        "Developed lasting relationship with a client that lead to a referral of another client",
+        "Provide appropriate feedback on the client's processes",
+      ],
+    }, {
+      "summary": "Effects change that increases cuctomer retention across the entire company",
+      "signals": [
+        "Create value with every interaction with a client",
+        "Challenges clients to think differently about their business",
+      ],
+      "examples": [
+        "Leads clients to change their business processes",
+        "Clients refer work to us because of the value you created for them",
       ],
     }],
   },
@@ -1098,65 +953,65 @@ export const tracks: Tracks = {
   "COMMUNITY": {
     "displayName": "Community",
     "category": "D",
-    "description": "Builds community internally, gives of themself to the team, and champions and extols company values",
+    "description": "Builds community internally and/or externally, gives of themself to the team, and champions and extols company values",
     "milestones": [{
-      "summary": "Is available and present on current teams, and works to contribute positively to company culture",
+      "summary": "Represents Skookum well, and influences individuals positively",
       "signals": [
         "Participates in team activities and offsites",
         "Treats colleagues and clients with respect",
-        "Joins groups or committees outside regular duties",
+        "Attends Skookum-hosted events and engages with guests",
       ],
       "examples": [
-        "Joined and actively participated in the web client guild",
-        "Brought a small gift back from vacation for the team",
-        "Wrote entertaining and informative Prod Ops writeups on Hatch",
+        "Joined and actively participated in a local meetup",
+        "Planned an informal group activity for co-workers",
+        "Shared a Skookum event post on social media",
       ],
     }, {
-      "summary": "Steps up, builds connectedness, and takes concrete actions to promote an inclusive culture",
+      "summary": "Participates more centrally in small events, and takes simple actions that positively influence groups of people",
       "signals": [
         "Makes space for others to participate",
         "Collaborates with other engineers outside direct responsibilities",
-        "Finds ways to ramp up and engage new hires quickly",
+        "Takes meaningful action to introduce people to Skookum",
       ],
       "examples": [
-        "Created onboarding bingo",
-        "Brought shy and introverted people into a dominant conversation",
-        "Volunteered as secretary for a team",
+        "Volunteered with local school to talk about jobs in tech",
+        "Presented at a local Meetup",
+        "Routinely participates in on-boarding training",
       ],
     }, {
-      "summary": "Contributes to improving team relatedness, and helps build a culture of lending support",
+      "summary": "Works hard to positively influence large groups of people on their views of Skookum	",
       "signals": [
-        "Takes on additional Watch shifts at short notice",
-        "Pitches in to help other teams hit deadlines, without missing own deadlines",
-        "Uses position to raise difficult issues on someone's behalf",
+        "Mentors or participates in a high visibility way in an external organization",
+        "Builds fruitful partnerships with external organizations",
+        "Writes blog posts about Skookum that receive moderate traffic",
       ],
       "examples": [
-        "Lead Watch cycles with little support while still contributing to projects",
-        "Started and drove the LGBTQIA ERG",
-        "Stayed positive and improved team morale during period after layoffs",
+        "Represented Skookum on a panel at a conference of industry experts",
+        "Ran a Meetup that introduced qualified candidates to Skookum",
+        "Built a durable, long-standing org relationship with non-profit",
       ],
     }, {
-      "summary": "Exemplifies selflessness for the team without compromising responsibilities, and lifts everyone up",
+      "summary": "Establishes Skookum as an great, innovative company and workplace to the whole industry",
       "signals": [
-        "Goes above and beyond on the Watch, serving the team without complaint",
+        "Establishes themself as an industry thought leader who attracts talent",
         "Implements concrete programs to signficantly improve team inclusivity",
-        "Takes on large amounts of tedious grunt work for the team without being asked",
+        "Creates community around Skookum to grow community awareness of us as a company and employer",
       ],
       "examples": [
         "Devoted large amount of time to helping outside direct responsibilities",
-        "Refactored hundreds of legacy Shepherd nodes",
-        "Acted as sole maintainer of Boxen for years",
+        "Published a paper on Skookum technology in a peer-reviewed journal",
+        "Active maintainer of Skookum open source project for a prolonged period of time",
       ],
     }, {
       "summary": "Lives the company values, guards positive culture, and defines policies that support relatedness between teams",
       "signals": [
-        "Brings separate teams together to build relatedness",
-        "Holds individuals, teams, and leadership accountable to Medium's values",
+        "Influences people with large audiences to talk about Skookum positively",
+        "Holds individuals, teams, and leadership accountable to Skookum's values",
         "Sets the tone, policy, and goals around maintaining an inclusive company",
       ],
       "examples": [
-        "Organized wine and olive tasting offsite to Napa for the whole engineering org",
-        "Devised, delivered and acted on findings from an engineer happiness survey",
+        "Organized offsite for the whole company",
+        "Published or interviewed in a mainstream newspaper or website outside tech",
         "Challenged and corrected exclusionary behaviour or policies",
       ],
     }],

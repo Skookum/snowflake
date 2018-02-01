@@ -57,14 +57,12 @@ const emptyState = (): SnowflakeAppState => {
       'PROJECT_MANAGEMENT': 0,
       'COMMUNICATION': 0,
       'CRAFT': 0,
-      'INITIATIVE': 0,
+      'INSTITUTIONAL_KNOWLEDGE': 0,
       'CAREER_DEVELOPMENT': 0,
-      'ORG_DESIGN': 0,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 0,
-      'MENTORSHIP': 0,
-      'EVANGELISM': 0,
       'RECRUITING': 0,
+      'MENTORSHIP': 0,
+      'SALES_MARKETING': 0,
+      'CUSTOMER_VALUE': 0,
       'COMMUNITY': 0
     },
     focusedTrackId: 'MOBILE'
@@ -73,25 +71,23 @@ const emptyState = (): SnowflakeAppState => {
 
 const defaultState = (): SnowflakeAppState => {
   return {
-    name: 'Cersei Lannister',
-    title: 'Staff Engineer',
+    name: 'Developer McSkookum',
+    title: 'Senior Engineer',
     milestoneByTrack: {
-      'MOBILE': 1,
-      'WEB_CLIENT': 2,
-      'FOUNDATIONS': 3,
+      'MOBILE': 0,
+      'WEB_CLIENT': 3,
+      'FOUNDATIONS': 2,
       'SERVERS': 2,
-      'PROJECT_MANAGEMENT': 4,
-      'COMMUNICATION': 1,
-      'CRAFT': 1,
-      'INITIATIVE': 4,
-      'CAREER_DEVELOPMENT': 3,
-      'ORG_DESIGN': 2,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 4,
+      'PROJECT_MANAGEMENT': 3,
+      'COMMUNICATION': 2,
+      'CRAFT': 4,
+      'INSTITUTIONAL_KNOWLEDGE': 2,
+      'CAREER_DEVELOPMENT': 0,
+      'RECRUITING': 2,
       'MENTORSHIP': 2,
-      'EVANGELISM': 2,
-      'RECRUITING': 3,
-      'COMMUNITY': 0
+      'SALES_MARKETING': 2,
+      'CUSTOMER_VALUE': 3,
+      'COMMUNITY': 2
     },
     focusedTrackId: 'MOBILE'
   }
@@ -156,7 +152,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
           }
         `}</style>
         <div style={{margin: '19px auto 0', width: 142}}>
-          <a href="https://medium.com/" target="_blank">
+          <a href="https://skookum.com/" target="_blank">
             <Wordmark />
           </a>
         </div>
