@@ -189,8 +189,8 @@ export const tracks: Tracks = {
         "Acts a caretaker for all of web client code",
       ],
       "examples": [
-        "Designed font loading strategy for Medium",
-        "Researched utility of service workers for Medium",
+        "Designed font loading strategy for Skookum",
+        "Researched utility of service workers for Skookum",
         "Designed and implemented ResponseScreen",
       ],
     }, {
@@ -201,8 +201,8 @@ export const tracks: Tracks = {
         "Makes architectural decisions that eliminate entire classes of bugs",
       ],
       "examples": [
-        "Designed Medium's post morpher and delta system",
-        "Implemented Medium's scrolling text over image blur",
+        "Build a production-ready GraphQL Server",
+        "Compare and contrast various front-end state management approaches using popular frameworks",
         "Designed and pioneered proto-based model storage",
       ],
     }, {
@@ -232,8 +232,8 @@ export const tracks: Tracks = {
         "Performs backfills safely and effectively, without causing pages",
       ],
       "examples": [
-        "Made safe and effective Ansible changes",
-        "Implemented new ETL pipelines based on existing ones",
+        "Made safe and effective Ansible/Cloudformation/etc changes",
+        "Implemented new ETL pipelines based on existing ones. Sets up Jenkins jobs to auto deploy",
         "Resolved out of disk errors independently",
       ],
     }, {
@@ -245,19 +245,19 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Upgraded NodeJS from 8.0 to 8.1.1",
-        "Built custom packages for RPMs",
+        "Creates usable metrics that are publicly displayed",
         "Improved ETL efficiency by improving Dynamo to S3 loading",
       ],
     }, {
       "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
       "signals": [
         "Acts as primary maintainer for existing critical systems",
-        "Designs moderately complex systems",
+        "Designs moderately complex systems and documents them with Architecture Description",
         "Makes major version upgrades to libraries",
       ],
       "examples": [
-        "Designed Ansible configuration management",
-        "Built Medium's realtime stats pipeline",
+        "Designed Cloudformation configuration management",
+        "Creates entire CI/CD deploy pipeline for project",
         "Designed flexible framework for writing machine learning jobs",
       ],
     }, {
@@ -268,9 +268,9 @@ export const tracks: Tracks = {
         "Introduces new databases and technologies to meet underserved needs",
       ],
       "examples": [
-        "Designed and built BBFD",
+        "Utilizes containers and orchestrators effectively, sharing knowledge with the team",
         "Designed AWS configuration management",
-        "Introduced Kinesis and pioneered streaming events pipeline",
+        "Introduced Kafka or other log-based persistence and pioneered streaming events pipeline",
       ],
     }, {
       "summary": "Is an industry-leading expert in foundational engineering or sets strategic foundational direction for an eng team",
@@ -280,8 +280,8 @@ export const tracks: Tracks = {
         "Invents industry-leading techniques to solve complex problems",
       ],
       "examples": [
-        "Invented a novel ML technique that advanced the state of the art",
-        "Defined and developed Medium's continuous delivery strategy",
+        "Compare and contrast various application architecture approaches and use cases for each",
+        "Defined and developed Skookum's continuous delivery strategy",
         "Developed and implemented HA strategy",
       ],
     }],
@@ -294,14 +294,14 @@ export const tracks: Tracks = {
     "milestones": [{
       "summary": "Works effectively within established server side frameworks, following current best practices",
       "signals": [
-        "Adds NodeJS endpoints using layers architecture",
-        "Adds golang endpoints using Gotham architecture",
+        "Adds NodeJS/Ruby/Go/etc endpoints using layers architecture",
+        "SSH into remote servers and check status (memory, disk space, top, etc)",
         "Makes minor server changes to support client needs",
       ],
       "examples": [
-        "Added IFTTT trigger for new bookmark to medium2",
-        "Added delete audio route to Buggle",
-        "Queried a Dynamo LSI appropriately",
+        "Read and understand the Technology Strategy/Architecture Description template",
+        "Create a web server on a cloud provider",
+        "Query a NoSQL database, understand the use case for NoSQL",
       ],
     }, {
       "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
@@ -311,9 +311,10 @@ export const tracks: Tracks = {
         "Determines data needs from product requirements",
       ],
       "examples": [
-        "Identified need for new index on Dynamo",
-        "Acted as caretaker for routes protos",
-        "Updated Facebook API version and codebase dependencies",
+        "Describe and apply database indexes correctly in multiple dbs",
+        "Setup scripts, etc. to build application server from scratch automatically",
+        "Make a Dockerfile for a web app/service",
+        "Demonstrate solid understanding of RESTful services and associated data patterns (JSON API, etc.)",
       ],
     }, {
       "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
@@ -323,9 +324,9 @@ export const tracks: Tracks = {
         "Writes playbooks for new service maintenance",
       ],
       "examples": [
-        "Implemented Google Auth login to Medium",
+        "Demonstrate and implement understanding of OAuth2, OpenID Connect, JWT",
         "Implemented payments integration with Stripe",
-        "Built Textshots server",
+        "Build Nginx Server",
       ],
     }, {
       "summary": "Builds complex, reusable architectures that pioneer best practices for other engineers, or multi-system services",
@@ -335,9 +336,10 @@ export const tracks: Tracks = {
         "Makes appropriate buy vs build choices",
       ],
       "examples": [
-        "Designed Medium's ranked feed architecture",
+        "Build a microservices framework with 2 or more services",
         "Designed custom domains architecture",
-        "Created Gotham framework for creating Go services",
+        "Deploy an application to the web using container technology",
+        "Present new learning around server architecture to Skookum team",
       ],
     }, {
       "summary": "Is an industry-leading expert in server side engineering or sets strategic server side direction for an eng team",
@@ -347,9 +349,9 @@ export const tracks: Tracks = {
         "Identifies and solves systemic problems with current architecture",
       ],
       "examples": [
-        "Researched, vetted, and selected Go as Medium's statically typed language",
-        "Defined microservices architecture and medium2 migration plan",
-        "Defined and implemented proprietary IP core to the company's success",
+        "Demonstrate abiliity to select appropriate language for complex projects and justify",
+        "Understand needs of microservices deployment and select technologies and process to meet those needs",
+        "Demostrate solid understanding of RPC or gRPC based communication between services and pros/cons",
       ],
     }],
   },
