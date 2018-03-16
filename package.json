@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "next",
-    "export": "next build && next export",
+    "export": "next build && next export && mv out docs",
     "flow": "flow",
     "start": "next start -p $PORT",
     "heroku-postbuild": "next build"
