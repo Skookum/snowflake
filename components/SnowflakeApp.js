@@ -75,19 +75,19 @@ const defaultState = (): SnowflakeAppState => {
     // title: 'Senior Engineer',
     milestoneByTrack: {
       'MOBILE': 0,
-      'WEB_CLIENT': 3,
-      'DEVOPS': 2,
-      'SERVERS': 2,
-      'PROJECT_MANAGEMENT': 3,
-      'COMMUNICATION': 2,
-      'CRAFT': 4,
-      'INSTITUTIONAL_KNOWLEDGE': 2,
+      'WEB_CLIENT': 0,
+      'DEVOPS': 0,
+      'SERVERS': 0,
+      'PROJECT_MANAGEMENT': 0,
+      'COMMUNICATION': 0,
+      'CRAFT': 0,
+      'INSTITUTIONAL_KNOWLEDGE': 0,
       'CAREER_DEVELOPMENT': 0,
-      'RECRUITING': 2,
-      'MENTORSHIP': 2,
-      'SALES_MARKETING': 2,
-      'CUSTOMER_VALUE': 3,
-      'COMMUNITY': 2
+      'RECRUITING': 0,
+      'MENTORSHIP': 0,
+      'SALES_MARKETING': 0,
+      'CUSTOMER_VALUE': 0,
+      'COMMUNITY': 0
     },
     focusedTrackId: 'MOBILE'
   }
