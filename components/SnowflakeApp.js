@@ -27,8 +27,8 @@ const hashToState = (hash: String): ?SnowflakeAppState => {
   trackIds.forEach((trackId, i) => {
     result.milestoneByTrack[trackId] = coerceMilestone(Number(hashValues[i]))
   })
-  if (hashValues[16]) result.name = decodeURI(hashValues[16])
-  if (hashValues[17]) result.title = decodeURI(hashValues[17])
+  if (hashValues[14]) result.name = decodeURI(hashValues[14])
+  // if (hashValues[15]) result.title = decodeURI(hashValues[15])
   return result
 }
 
@@ -48,7 +48,7 @@ const coerceMilestone = (value: number): Milestone => {
 const emptyState = (): SnowflakeAppState => {
   return {
     name: '',
-    title: '',
+    // title: '',
     milestoneByTrack: {
       'MOBILE': 0,
       'WEB_CLIENT': 0,
@@ -72,7 +72,7 @@ const emptyState = (): SnowflakeAppState => {
 const defaultState = (): SnowflakeAppState => {
   return {
     name: 'Developer McSkookum',
-    title: 'Senior Engineer',
+    // title: 'Senior Engineer',
     milestoneByTrack: {
       'MOBILE': 0,
       'WEB_CLIENT': 3,
@@ -95,7 +95,7 @@ const defaultState = (): SnowflakeAppState => {
 
 const stateToHash = (state: SnowflakeAppState) => {
   if (!state || !state.milestoneByTrack) return null
-  const values = trackIds.map(trackId => state.milestoneByTrack[trackId]).concat(encodeURI(state.name), encodeURI(state.title))
+  const values = trackIds.map(trackId => state.milestoneByTrack[trackId]).concat(encodeURI(state.name))//, encodeURI(state.title))
   return values.join(',')
 }
 
