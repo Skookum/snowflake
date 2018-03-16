@@ -52,7 +52,7 @@ const emptyState = (): SnowflakeAppState => {
     milestoneByTrack: {
       'MOBILE': 0,
       'WEB_CLIENT': 0,
-      'FOUNDATIONS': 0,
+      'DEVOPS': 0,
       'SERVERS': 0,
       'PROJECT_MANAGEMENT': 0,
       'COMMUNICATION': 0,
@@ -76,7 +76,7 @@ const defaultState = (): SnowflakeAppState => {
     milestoneByTrack: {
       'MOBILE': 0,
       'WEB_CLIENT': 3,
-      'FOUNDATIONS': 2,
+      'DEVOPS': 2,
       'SERVERS': 2,
       'PROJECT_MANAGEMENT': 3,
       'COMMUNICATION': 2,

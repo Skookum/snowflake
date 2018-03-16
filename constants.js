@@ -1,7 +1,7 @@
 // @flow
 import * as d3 from 'd3'
 
-export type TrackId = 'MOBILE' | 'WEB_CLIENT' | 'FOUNDATIONS' | 'SERVERS' |
+export type TrackId = 'MOBILE' | 'WEB_CLIENT' | 'DEVOPS' | 'SERVERS' |
   'PROJECT_MANAGEMENT' | 'COMMUNICATION' | 'CRAFT' | 'INSTITUTIONAL_KNOWLEDGE' |
   'CAREER_DEVELOPMENT' | 'RECRUITING' | 'MENTORSHIP' | 'SALES_MARKETING' |
   'CUSTOMER_VALUE' | 'COMMUNITY'
@@ -10,7 +10,7 @@ export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
 export type MilestoneMap = {
   'MOBILE': Milestone,
   'WEB_CLIENT': Milestone,
-  'FOUNDATIONS': Milestone,
+  'DEVOPS': Milestone,
   'SERVERS': Milestone,
   'PROJECT_MANAGEMENT': Milestone,
   'COMMUNICATION': Milestone,
@@ -71,7 +71,7 @@ export type Track = {
 type Tracks = {|
   'MOBILE': Track,
   'WEB_CLIENT': Track,
-  'FOUNDATIONS': Track,
+  'DEVOPS': Track,
   'SERVERS': Track,
   'PROJECT_MANAGEMENT': Track,
   'COMMUNICATION': Track,
@@ -220,8 +220,8 @@ export const tracks: Tracks = {
     }],
   },
 
-  "FOUNDATIONS": {
-    "displayName": "Foundations",
+  "DEVOPS": {
+    "displayName": "DevOps",
     "category": "A",
     "description": "Develops expertise in foundational systems, such as deployments, pipelines, databases and machine learning",
     "milestones": [{
@@ -229,7 +229,7 @@ export const tracks: Tracks = {
       "signals": [
         "Writes thorough postmortems for service outages",
         "Makes simple configuration changes to services",
-        "Performs backfills safely and effectively, without causing pages",
+        "Automates simple operational tasks",
       ],
       "examples": [
         "Made safe and effective Ansible/Cloudformation/etc changes",
@@ -247,6 +247,7 @@ export const tracks: Tracks = {
         "Upgraded NodeJS from 8.0 to 8.1.1",
         "Creates usable metrics that are publicly displayed",
         "Improved ETL efficiency by improving Dynamo to S3 loading",
+        "Setup Jenkins for new native app to automatically deploy new versions",
       ],
     }, {
       "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
