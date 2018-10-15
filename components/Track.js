@@ -36,7 +36,7 @@ class Track extends React.Component<Props> {
           }
           td {
             line-height: 50px;
-            width: 50px;
+            padding: 0 25px;
             text-align: center;
             background: #eee;
             font-weight: bold;
