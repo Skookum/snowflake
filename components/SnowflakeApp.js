@@ -43,7 +43,7 @@ const hashToState = (hash: String): ?SnowflakeAppState => {
     result.milestoneByTrack[trackId] = coerceMilestone(Number(hashValues[i]))
   })
   if (hashValues[14]) result.name = decodeURI(hashValues[14])
-  // if (hashValues[15]) result.title = decodeURI(hashValues[15])
+  if (hashValues[15]) result.title = decodeURI(hashValues[15])
   return result
 }
 
@@ -93,7 +93,7 @@ const defaultState = (): SnowflakeAppState => {
 const stateToHash = (state: SnowflakeAppState) => {
   if (!state || !state.milestoneByTrack) return null
   const trackIds = Object.keys(state.activeTracks)
-  const values = trackIds.map(trackId => state.milestoneByTrack[trackId]).concat(encodeURI(state.name))//, encodeURI(state.title))
+  const values = trackIds.map(trackId => state.milestoneByTrack[trackId]).concat(encodeURI(state.name), encodeURI(state.title))
   return values.join(',')
 }
 
@@ -165,7 +165,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                   onChange={e => this.setState({name: e.target.value})}
                   placeholder="Name"
                   />
-                  <TitleSelector
+              <TitleSelector
                   milestoneByTrack={this.state.milestoneByTrack}
                   currentTitle={this.state.title}
                   setTitleFn={(title) => this.setTitle(title)} />
@@ -258,7 +258,28 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
   setTitle(title: string) {
     let titles = eligibleTitles(this.state.milestoneByTrack)
     title = titles.indexOf(title) == -1 ? titles[0] : title
-    this.setState({ title })
+    let tracks
+    switch (title) {
+      case 'Development':
+        tracks = developmentTracks
+        break
+      case 'Design':
+        tracks = designTracks
+        break
+      case 'Product':
+        tracks = productTracks
+        break
+      case 'Quality Assurance':
+        tracks = qaTracks
+        break
+    }
+    this.setState({
+      title,
+      milestoneByTrack: milestoneByTrack(tracks),
+      activeTracks: tracks,
+      focusedTrackId: Object.keys(tracks)[0],
+      categoryColorScale: categoryColorScale(tracks)
+    })
   }
 }
 

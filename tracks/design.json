@@ -1,11 +1,11 @@
 {
   "ART": {
-    "displayName": "Art",
+    "displayName": "Design",
     "category": "A",
     "description": "Makes pretty pictures",
     "milestones": [
       {
-        "summary": "Works effectively within art",
+        "summary": "Works effectively within design",
         "signals": [
           "Joins project team as designer",
           "Build new UI with default platfrom components",
