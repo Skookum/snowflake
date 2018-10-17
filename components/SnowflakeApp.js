@@ -27,17 +27,37 @@ type SnowflakeAppState = {
   categoryColorScale: Function
 }
 
+const tracksByTitle = (title: string): TrackMap => {
+  switch (title) {
+    case 'Design':
+      return designTracks
+    case 'Product':
+      return productTracks
+    case 'Quality Assurance':
+      return qaTracks
+    default:
+      return developmentTracks
+  }
+}
+
 const hashToState = (hash: String): ?SnowflakeAppState => {
   if (!hash) return null
   const result = defaultState()
   const hashValues = hash.split('#')[1].split(',')
   if (!hashValues) return null
+  if (hashValues[14]) result.name = decodeURI(hashValues[14])
+  if (hashValues[15]) {
+    result.title = decodeURI(hashValues[15])
+    const tracks = tracksByTitle(result.title)
+    result.activeTracks = tracks
+    result.milestoneByTrack = milestoneByTrack(tracks)
+    result.focusedTrackId = Object.keys(tracks)[0]
+    result.categoryColorScale = categoryColorScale(tracks)
+  }
   const trackIds = Object.keys(result.activeTracks)
   trackIds.forEach((trackId, i) => {
     result.milestoneByTrack[trackId] = coerceMilestone(Number(hashValues[i]))
   })
-  if (hashValues[14]) result.name = decodeURI(hashValues[14])
-  if (hashValues[15]) result.title = decodeURI(hashValues[15])
   return result
 }
 
@@ -65,10 +85,10 @@ const emptyState = (): SnowflakeAppState => {
   return {
     name: '',
     title: '',
-    milestoneByTrack: milestoneByTrack(productTracks),
-    activeTracks: productTracks,
-    focusedTrackId: 'PRODUCT',
-    categoryColorScale: categoryColorScale(productTracks)
+    milestoneByTrack: milestoneByTrack(developmentTracks),
+    activeTracks: developmentTracks,
+    focusedTrackId: 'MOBILE',
+    categoryColorScale: categoryColorScale(developmentTracks)
   }
 }
 
@@ -76,10 +96,10 @@ const defaultState = (): SnowflakeAppState => {
   return {
     name: '',
     title: '',
-    milestoneByTrack: milestoneByTrack(productTracks),
-    activeTracks: productTracks,
-    focusedTrackId: 'PRODUCT',
-    categoryColorScale: categoryColorScale(productTracks)
+    milestoneByTrack: milestoneByTrack(developmentTracks),
+    activeTracks: developmentTracks,
+    focusedTrackId: 'MOBILE',
+    categoryColorScale: categoryColorScale(developmentTracks)
   }
 }
 
@@ -162,7 +182,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
               <TitleSelector
                   milestoneByTrack={this.state.milestoneByTrack}
                   currentTitle={this.state.title}
-                  setTitleFn={(title) => this.setTitle(title)} />
+                  handleTitleChangeFn={(title) => this.handleTitleChange(title)} />
               </form>
             {/* <div style={{ backgroundColor: "#eee", width: "50px", height: "35px", paddingLeft: "20px", paddingRight: "20px",
                         paddingBottom: "10px", paddingTop: "8px"
@@ -177,7 +197,6 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                 milestoneByTrack={this.state.milestoneByTrack}
                 activeTracks={this.state.activeTracks}
                 categoryColorScale={this.state.categoryColorScale} />
-         
           </div>
           
           <div style={{flex: 0}}>
@@ -249,24 +268,10 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
     this.handleTrackMilestoneChange(this.state.focusedTrackId, milestone)
   }
 
-  setTitle(title: string) {
+  handleTitleChange(title: string) {
     let titles = eligibleTitles(this.state.milestoneByTrack)
     title = titles.indexOf(title) == -1 ? titles[0] : title
-    let tracks
-    switch (title) {
-      case 'Development':
-        tracks = developmentTracks
-        break
-      case 'Design':
-        tracks = designTracks
-        break
-      case 'Product':
-        tracks = productTracks
-        break
-      case 'Quality Assurance':
-        tracks = qaTracks
-        break
-    }
+    let tracks = tracksByTitle(title)
     this.setState({
       title,
       milestoneByTrack: milestoneByTrack(tracks),
