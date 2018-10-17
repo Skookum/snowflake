@@ -87,21 +87,4 @@ export const categoryColorScale = (trackMap: TrackMap) => {
     .range(['#00abc2', '#428af6', '#e1439f', '#e54552'])
 }
 
-export const titles = [
-  // {label: 'Engineer I', minPoints: 0, maxPoints: 16},
-  // {label: 'Engineer II', minPoints: 17, maxPoints: 35},
-  // {label: 'Senior Engineer', minPoints: 36, maxPoints: 57},
-  // {label: 'Group Lead', minPoints: 36, maxPoints: 57},
-  {label:  'Development', minPoints: 0, maxPoints: 280},
-  {label: 'Design', minPoints: 0, maxPoints: 280},
-  {label: 'Product', minPoints: 0, maxPoints: 280},
-  {label: 'Quality Assurance', minPoints: 0, maxPoints: 280}
-]
-
-export const eligibleTitles = (milestoneMap: MilestoneMap): string[] => {
-  const totalPoints = totalPointsFromMilestoneMap(milestoneMap)
-
-  return titles.filter(title => (title.minPoints === undefined || totalPoints >= title.minPoints)
-                             && (title.maxPoints === undefined || totalPoints <= title.maxPoints))
-    .map(title => title.label)
-}
+export const teams = ['Development', 'Design', 'Product', 'Quality Assurance']
