@@ -84,7 +84,7 @@ const milestoneByTrack = (trackMap: TrackMap): MilestoneMap => {
 const emptyState = (): SnowflakeAppState => {
   return {
     name: '',
-    title: '',
+    title: 'Development',
     milestoneByTrack: milestoneByTrack(developmentTracks),
     activeTracks: developmentTracks,
     focusedTrackId: 'MOBILE',
@@ -95,7 +95,7 @@ const emptyState = (): SnowflakeAppState => {
 const defaultState = (): SnowflakeAppState => {
   return {
     name: '',
-    title: '',
+    title: 'Development',
     milestoneByTrack: milestoneByTrack(developmentTracks),
     activeTracks: developmentTracks,
     focusedTrackId: 'MOBILE',
