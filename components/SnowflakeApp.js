@@ -11,13 +11,7 @@ import PointSummaries from '../components/PointSummaries'
 import type { Milestone, MilestoneMap, TrackMap, TrackId } from '../constants'
 import React from 'react'
 import TitleSelector from '../components/TitleSelector'
-import Dropdown from '../components/Dropdown'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
 import { color } from 'd3-color';
-
-library.add(faStroopwafel)
 
 const developmentTracks = require('../tracks/development.json')
 const designTracks = require('../tracks/design.json')
@@ -214,7 +208,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
         <div style={{display: 'flex', paddingBottom: '20px'}}>
           <div style={{flex: 1}}>
-            <a href="https://skookum.com/careers">Join</a> the Skookum Engineering Team.
+            <a href="https://skookum.com/careers">Join</a> the Skookum Team.
             Based on <a href="https://github.com/Medium/snowflake" target="_blank">Snowflake</a> by <a href="https://medium.engineering" target="_blank">Medium Eng</a>.
           </div>
         </div>
