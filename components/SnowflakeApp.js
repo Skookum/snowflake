@@ -6,9 +6,9 @@ import KeyboardListener from '../components/KeyboardListener'
 import Track from '../components/Track'
 import Wordmark from '../components/Wordmark'
 import LevelThermometer from '../components/LevelThermometer'
-import { eligibleTitles, milestones, milestoneToPoints, trackData } from '../constants'
+import { eligibleTitles, milestones, milestoneToPoints, categoryColorScale } from '../constants'
 import PointSummaries from '../components/PointSummaries'
-import type { Milestone, MilestoneMap, TrackId } from '../constants'
+import type { Milestone, MilestoneMap, TrackMap, TrackId } from '../constants'
 import React from 'react'
 import TitleSelector from '../components/TitleSelector'
 import Dropdown from '../components/Dropdown'
@@ -17,16 +17,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
 import { color } from 'd3-color';
 
-
 library.add(faStroopwafel)
 
+const trackData = require('../tracks/development.json')
 
 type SnowflakeAppState = {
   milestoneByTrack: MilestoneMap,
   name: string,
   title: string,
-  activeTracks: any,
+  activeTracks: TrackMap,
   focusedTrackId: TrackId,
+  categoryColorScale: Function
 }
 
 const hashToState = (hash: String): ?SnowflakeAppState => {
@@ -77,7 +78,8 @@ const emptyState = (): SnowflakeAppState => {
       'COMMUNITY': 0
     },
     activeTracks: trackData.tracks,
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'MOBILE',
+    categoryColorScale: categoryColorScale(trackData.tracks)
   }
 }
 
@@ -102,7 +104,8 @@ const defaultState = (): SnowflakeAppState => {
       'COMMUNITY': 0
     },
     activeTracks: trackData.tracks,
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'MOBILE',
+    categoryColorScale: categoryColorScale(trackData.tracks)
   }
 }
 
@@ -196,7 +199,10 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                     />
             </div> */}
             <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
-            <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} />
+            <LevelThermometer
+                milestoneByTrack={this.state.milestoneByTrack}
+                activeTracks={this.state.activeTracks}
+                categoryColorScale={this.state.categoryColorScale} />
          
           </div>
           
@@ -205,6 +211,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                 milestoneByTrack={this.state.milestoneByTrack}
                 activeTracks={this.state.activeTracks}
                 focusedTrackId={this.state.focusedTrackId}
+                categoryColorScale={this.state.categoryColorScale}
                 handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
           </div>
         </div>
@@ -212,6 +219,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             milestoneByTrack={this.state.milestoneByTrack}
             activeTracks={this.state.activeTracks}
             focusedTrackId={this.state.focusedTrackId}
+            categoryColorScale={this.state.categoryColorScale}
             setFocusedTrackIdFn={this.setFocusedTrackId.bind(this)} />
         <KeyboardListener
             selectNextTrackFn={this.shiftFocusedTrack.bind(this, 1)}
@@ -222,6 +230,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             milestoneByTrack={this.state.milestoneByTrack}
             track={this.state.activeTracks[this.state.focusedTrackId]}
             trackId={this.state.focusedTrackId}
+            categoryColorScale={this.state.categoryColorScale}
             handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
         <div style={{display: 'flex', paddingBottom: '20px'}}>
           <div style={{flex: 1}}>

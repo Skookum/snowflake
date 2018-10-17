@@ -5,7 +5,7 @@ import * as d3 from 'd3'
 export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
 
 export type MilestoneMap = {
-  [key: string]: Milestone
+  [trackId: string]: Milestone
 }
 export const milestones = [0, 1, 2, 3, 4, 5]
 
@@ -52,34 +52,40 @@ export type Track = {
   }[]
 }
 
-export const trackData = require('./tracks/development.json')
+export type TrackMap = {
+  [trackId: string]: Track
+}
 
-export const categoryIds: Set<string> = trackData.trackIds.reduce((set, trackId) => {
-  set.add(trackData.tracks[trackId].category)
-  return set
-}, new Set())
+export const categoryIds = (trackMap: TrackMap): Set<string> => {
+  return Object.keys(trackMap).reduce((set, trackId) => {
+    set.add(trackMap[trackId].category)
+    return set
+  }, new Set())
+}
 
-export const categoryPointsFromMilestoneMap = (milestoneMap: MilestoneMap) => {
+export const categoryPointsFromMilestoneMap = (trackMap: TrackMap, milestoneMap: MilestoneMap) => {
   let pointsByCategory = new Map()
-  trackData.trackIds.forEach((trackId) => {
+  Object.keys(trackMap).forEach((trackId) => {
     const milestone = milestoneMap[trackId]
-    const categoryId = trackData.tracks[trackId].category
+    const categoryId = trackMap[trackId].category
     let currentPoints = pointsByCategory.get(categoryId) || 0
     pointsByCategory.set(categoryId, currentPoints + milestoneToPoints(milestone))
   })
-  return Array.from(categoryIds.values()).map(categoryId => {
+  return Array.from(categoryIds(trackMap).values()).map(categoryId => {
     const points = pointsByCategory.get(categoryId)
     return { categoryId, points: pointsByCategory.get(categoryId) || 0 }
   })
 }
 
 export const totalPointsFromMilestoneMap = (milestoneMap: MilestoneMap): number =>
-  trackData.trackIds.map(trackId => milestoneToPoints(milestoneMap[trackId]))
+  Object.keys(milestoneMap).map(trackId => milestoneToPoints(milestoneMap[trackId]))
     .reduce((sum, addend) => (sum + addend), 0)
 
-export const categoryColorScale = d3.scaleOrdinal()
-  .domain(categoryIds)
-  .range(['#00abc2', '#428af6', '#e1439f', '#e54552'])
+export const categoryColorScale = (trackMap: TrackMap) => {
+  return d3.scaleOrdinal()
+    .domain(categoryIds(trackMap))
+    .range(['#00abc2', '#428af6', '#e1439f', '#e54552'])
+}
 
 export const titles = [
   // {label: 'Engineer I', minPoints: 0, maxPoints: 16},
