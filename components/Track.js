@@ -11,13 +11,13 @@ type Props = {
 }
 
 type State = {
-  hoveredMilestone: Milestone
+  hoveredMilestone: Milestone | null
 }
 
 class Track extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props)
-    this.state = { hoveredMilestone: undefined }
+    this.state = { hoveredMilestone: null }
   }
 
   setHoveredMilestone(hoveredMilestone: Milestone) {
@@ -25,13 +25,13 @@ class Track extends React.Component<Props, State> {
   }
 
   unsetHoveredMilestone() {
-    this.setState({ hoveredMilestone: undefined })
+    this.setState({ hoveredMilestone: null })
   }
 
   render() {
     const track = tracks[this.props.trackId]
     const currentMilestoneId = this.props.milestoneByTrack[this.props.trackId]
-    const activeMilestoneId = typeof(this.state.hoveredMilestone) !== 'undefined' ? this.state.hoveredMilestone - 1 : currentMilestoneId - 1
+    const activeMilestoneId = this.state.hoveredMilestone !== null ? this.state.hoveredMilestone - 1 : currentMilestoneId - 1
     const activeMilestone = track.milestones[activeMilestoneId]
     return (
       <div className="track">
