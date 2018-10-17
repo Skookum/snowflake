@@ -5,20 +5,7 @@ import * as d3 from 'd3'
 export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
 
 export type MilestoneMap = {
-  'MOBILE': Milestone,
-  'WEB_CLIENT': Milestone,
-  'DEVOPS': Milestone,
-  'SERVERS': Milestone,
-  'PROJECT_MANAGEMENT': Milestone,
-  'COMMUNICATION': Milestone,
-  'CRAFT': Milestone,
-  'INSTITUTIONAL KNOWLEDGE': Milestone,
-  'CAREER_DEVELOPMENT': Milestone,
-  'RECRUITING': Milestone,
-  'MENTORSHIP': Milestone,
-  'SALES AND MARKETING': Milestone,
-  'CUSTOMER VALUE': Milestone,
-  'COMMUNITY': Milestone
+  [key: string]: Milestone
 }
 export const milestones = [0, 1, 2, 3, 4, 5]
 
@@ -65,35 +52,16 @@ export type Track = {
   }[]
 }
 
-type Tracks = {|
-  'MOBILE': Track,
-  'WEB_CLIENT': Track,
-  'DEVOPS': Track,
-  'SERVERS': Track,
-  'PROJECT_MANAGEMENT': Track,
-  'COMMUNICATION': Track,
-  'CRAFT': Track,
-  'INSTITUTIONAL_KNOWLEDGE': Track,
-  'CAREER_DEVELOPMENT': Track,
-  'RECRUITING': Track,
-  'MENTORSHIP': Track,
-  'SALES_MARKETING': Track,
-  'CUSTOMER_VALUE': Track,
-  'COMMUNITY': Track
-|}
+export const trackData = require('./tracks/development.json')
 
-export const trackData= require('./tracks/development.json')
-
-export const trackIds: string[] = trackData.trackIds 
-
-export const categoryIds: Set<string> = trackIds.reduce((set, trackId) => {
+export const categoryIds: Set<string> = trackData.trackIds.reduce((set, trackId) => {
   set.add(trackData.tracks[trackId].category)
   return set
 }, new Set())
 
 export const categoryPointsFromMilestoneMap = (milestoneMap: MilestoneMap) => {
   let pointsByCategory = new Map()
-  trackIds.forEach((trackId) => {
+  trackData.trackIds.forEach((trackId) => {
     const milestone = milestoneMap[trackId]
     const categoryId = trackData.tracks[trackId].category
     let currentPoints = pointsByCategory.get(categoryId) || 0
@@ -106,7 +74,7 @@ export const categoryPointsFromMilestoneMap = (milestoneMap: MilestoneMap) => {
 }
 
 export const totalPointsFromMilestoneMap = (milestoneMap: MilestoneMap): number =>
-  trackIds.map(trackId => milestoneToPoints(milestoneMap[trackId]))
+  trackData.trackIds.map(trackId => milestoneToPoints(milestoneMap[trackId]))
     .reduce((sum, addend) => (sum + addend), 0)
 
 export const categoryColorScale = d3.scaleOrdinal()

@@ -6,7 +6,7 @@ import KeyboardListener from '../components/KeyboardListener'
 import Track from '../components/Track'
 import Wordmark from '../components/Wordmark'
 import LevelThermometer from '../components/LevelThermometer'
-import { eligibleTitles, trackIds, milestones, milestoneToPoints } from '../constants'
+import { eligibleTitles, milestones, milestoneToPoints, trackData } from '../constants'
 import PointSummaries from '../components/PointSummaries'
 import type { Milestone, MilestoneMap, TrackId } from '../constants'
 import React from 'react'
@@ -33,7 +33,7 @@ const hashToState = (hash: String): ?SnowflakeAppState => {
   const result = defaultState()
   const hashValues = hash.split('#')[1].split(',')
   if (!hashValues) return null
-  trackIds.forEach((trackId, i) => {
+  trackData.trackIds.forEach((trackId, i) => {
     result.milestoneByTrack[trackId] = coerceMilestone(Number(hashValues[i]))
   })
   if (hashValues[14]) result.name = decodeURI(hashValues[14])
@@ -106,7 +106,7 @@ const defaultState = (): SnowflakeAppState => {
 
 const stateToHash = (state: SnowflakeAppState) => {
   if (!state || !state.milestoneByTrack) return null
-  const values = trackIds.map(trackId => state.milestoneByTrack[trackId]).concat(encodeURI(state.name))//, encodeURI(state.title))
+  const values = trackData.trackIds.map(trackId => state.milestoneByTrack[trackId]).concat(encodeURI(state.name))//, encodeURI(state.title))
   return values.join(',')
 }
 
@@ -237,15 +237,15 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
   }
 
   shiftFocusedTrack(delta: number) {
-    let index = trackIds.indexOf(this.state.focusedTrackId)
-    index = (index + delta + trackIds.length) % trackIds.length
-    const focusedTrackId = trackIds[index]
+    let index = trackData.trackIds.indexOf(this.state.focusedTrackId)
+    index = (index + delta + trackData.trackIds.length) % trackData.trackIds.length
+    const focusedTrackId = trackData.trackIds[index]
     this.setState({ focusedTrackId })
   }
 
   setFocusedTrackId(trackId: TrackId) {
-    let index = trackIds.indexOf(trackId)
-    const focusedTrackId = trackIds[index]
+    let index = trackData.trackIds.indexOf(trackId)
+    const focusedTrackId = trackData.trackIds[index]
     this.setState({ focusedTrackId })
   }
 
