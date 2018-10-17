@@ -1,20 +1,20 @@
 // @flow
 
-import { milestones, categoryColorScale, trackData } from '../constants'
+import { milestones, categoryColorScale } from '../constants'
 import React from 'react'
 import type { MilestoneMap, TrackId, Milestone } from '../constants'
 
 type Props = {
   milestoneByTrack: MilestoneMap,
+  track: any,
   trackId: TrackId,
   handleTrackMilestoneChangeFn: (TrackId, Milestone) => void
 }
 
 class Track extends React.Component<Props> {
   render() {
-    const track = trackData.tracks[this.props.trackId]
     const currentMilestoneId = this.props.milestoneByTrack[this.props.trackId]
-    const currentMilestone = track.milestones[currentMilestoneId - 1]
+    const currentMilestone = this.props.track.milestones[currentMilestoneId - 1]
     return (
       <div className="track">
         <style jsx>{`
@@ -48,8 +48,8 @@ class Track extends React.Component<Props> {
             line-height: 1.5em;
           }
         `}</style>
-        <h2>{track.displayName}</h2>
-        <p className="track-description">{track.description}</p>
+        <h2>{this.props.track.displayName}</h2>
+        <p className="track-description">{this.props.track.description}</p>
         <div style={{display: 'flex'}}>
           <table style={{flex: 0, marginRight: 50}}>
             <tbody>
@@ -58,7 +58,7 @@ class Track extends React.Component<Props> {
                 return (
                   <tr key={milestone}>
                     <td onClick={() => this.props.handleTrackMilestoneChangeFn(this.props.trackId, milestone)}
-                        style={{border: `4px solid ${milestone === currentMilestoneId ? '#000' : isMet ? categoryColorScale(track.category) : '#eee'}`, background: isMet ? categoryColorScale(track.category) : undefined}}>
+                        style={{border: `4px solid ${milestone === currentMilestoneId ? '#000' : isMet ? categoryColorScale(this.props.track.category) : '#eee'}`, background: isMet ? categoryColorScale(this.props.track.category) : undefined}}>
                       {milestone}
                     </td>
                   </tr>

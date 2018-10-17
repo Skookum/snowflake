@@ -25,6 +25,7 @@ type SnowflakeAppState = {
   milestoneByTrack: MilestoneMap,
   name: string,
   title: string,
+  activeTracks: any,
   focusedTrackId: TrackId,
 }
 
@@ -33,7 +34,8 @@ const hashToState = (hash: String): ?SnowflakeAppState => {
   const result = defaultState()
   const hashValues = hash.split('#')[1].split(',')
   if (!hashValues) return null
-  trackData.trackIds.forEach((trackId, i) => {
+  const trackIds = Object.keys(result.activeTracks)
+  trackIds.forEach((trackId, i) => {
     result.milestoneByTrack[trackId] = coerceMilestone(Number(hashValues[i]))
   })
   if (hashValues[14]) result.name = decodeURI(hashValues[14])
@@ -74,6 +76,7 @@ const emptyState = (): SnowflakeAppState => {
       'CUSTOMER_VALUE': 0,
       'COMMUNITY': 0
     },
+    activeTracks: trackData.tracks,
     focusedTrackId: 'MOBILE'
   }
 }
@@ -98,15 +101,16 @@ const defaultState = (): SnowflakeAppState => {
       'CUSTOMER_VALUE': 0,
       'COMMUNITY': 0
     },
-    // team: [{ id: 1, title: 'Development', href:'../SnowflakeApp/constants.js'}, {id: 2, title: 'Design', href:'../SnowflakeApp/constants-design.js'},{id: 3, title: 'Product', href:'../SnowflakeApp/constants-product.js'}, {id: 4, title: 'Quality Assurance', href:'../SnowflakeApp/constants-QA.js' }],
-    // focusedTrack00Id: 'MOBILE'
+    activeTracks: trackData.tracks,
+    focusedTrackId: 'MOBILE'
   }
 }
 
 
 const stateToHash = (state: SnowflakeAppState) => {
   if (!state || !state.milestoneByTrack) return null
-  const values = trackData.trackIds.map(trackId => state.milestoneByTrack[trackId]).concat(encodeURI(state.name))//, encodeURI(state.title))
+  const trackIds = Object.keys(state.activeTracks)
+  const values = trackIds.map(trackId => state.milestoneByTrack[trackId]).concat(encodeURI(state.name))//, encodeURI(state.title))
   return values.join(',')
 }
 
@@ -199,12 +203,14 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
           <div style={{flex: 0}}>
             <NightingaleChart
                 milestoneByTrack={this.state.milestoneByTrack}
+                activeTracks={this.state.activeTracks}
                 focusedTrackId={this.state.focusedTrackId}
                 handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
           </div>
         </div>
         <TrackSelector
             milestoneByTrack={this.state.milestoneByTrack}
+            activeTracks={this.state.activeTracks}
             focusedTrackId={this.state.focusedTrackId}
             setFocusedTrackIdFn={this.setFocusedTrackId.bind(this)} />
         <KeyboardListener
@@ -214,6 +220,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             decreaseFocusedMilestoneFn={this.shiftFocusedTrackMilestoneByDelta.bind(this, -1)} />
         <Track
             milestoneByTrack={this.state.milestoneByTrack}
+            track={this.state.activeTracks[this.state.focusedTrackId]}
             trackId={this.state.focusedTrackId}
             handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
         <div style={{display: 'flex', paddingBottom: '20px'}}>
@@ -237,15 +244,17 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
   }
 
   shiftFocusedTrack(delta: number) {
-    let index = trackData.trackIds.indexOf(this.state.focusedTrackId)
-    index = (index + delta + trackData.trackIds.length) % trackData.trackIds.length
-    const focusedTrackId = trackData.trackIds[index]
+    const trackIds = Object.keys(this.state.activeTracks)
+    let index = trackIds.indexOf(this.state.focusedTrackId)
+    index = (index + delta + trackIds.length) % trackIds.length
+    const focusedTrackId = trackIds[index]
     this.setState({ focusedTrackId })
   }
 
   setFocusedTrackId(trackId: TrackId) {
-    let index = trackData.trackIds.indexOf(trackId)
-    const focusedTrackId = trackData.trackIds[index]
+    const trackIds = Object.keys(this.state.activeTracks)
+    let index = trackIds.indexOf(trackId)
+    const focusedTrackId = trackIds[index]
     this.setState({ focusedTrackId })
   }
 

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import * as d3 from 'd3'
-import { milestones, categoryColorScale, trackData } from '../constants'
+import { milestones, categoryColorScale } from '../constants'
 import type { TrackId, Milestone, MilestoneMap } from '../constants'
 
 const width = 400
@@ -10,6 +10,7 @@ const arcMilestones = milestones.slice(1) // we'll draw the '0' milestone with a
 
 type Props = {
   milestoneByTrack: MilestoneMap,
+  activeTracks: any,
   focusedTrackId: TrackId,
   handleTrackMilestoneChangeFn: (TrackId, Milestone) => void
 }
@@ -22,6 +23,8 @@ class NightingaleChart extends React.Component<Props> {
   constructor(props: *) {
     super(props)
 
+    const trackIds = Object.keys(props.activeTracks)
+
     this.colorScale = d3.scaleSequential(d3.interpolateWarm)
       .domain([0, 5])
 
@@ -33,14 +36,15 @@ class NightingaleChart extends React.Component<Props> {
     this.arcFn = d3.arc()
       .innerRadius(milestone => this.radiusScale(milestone))
       .outerRadius(milestone => this.radiusScale(milestone) + this.radiusScale.bandwidth())
-      .startAngle(- Math.PI / trackData.trackIds.length)
-      .endAngle(Math.PI / trackData.trackIds.length)
+      .startAngle(- Math.PI / trackIds.length)
+      .endAngle(Math.PI / trackIds.length)
       .padAngle(Math.PI / 200)
       .padRadius(.45 * width)
       .cornerRadius(2)
   }
 
   render() {
+    const trackIds = Object.keys(this.props.activeTracks)
     const currentMilestoneId = this.props.milestoneByTrack[this.props.focusedTrackId]
     return (
       <figure>
@@ -64,10 +68,10 @@ class NightingaleChart extends React.Component<Props> {
         `}</style>
         <svg>
           <g transform={`translate(${width/2},${width/2}) rotate(-33.75)`}>
-            {trackData.trackIds.map((trackId, i) => {
+            {trackIds.map((trackId, i) => {
               const isCurrentTrack = trackId == this.props.focusedTrackId
               return (
-                <g key={trackId} transform={`rotate(${i * 360 / trackData.trackIds.length})`}>
+                <g key={trackId} transform={`rotate(${i * 360 / trackIds.length})`}>
                   {arcMilestones.map((milestone) => {
                     const isCurrentMilestone = isCurrentTrack && milestone == currentMilestoneId
                     const isMet = this.props.milestoneByTrack[trackId] >= milestone || milestone == 0
@@ -77,14 +81,14 @@ class NightingaleChart extends React.Component<Props> {
                           className={'track-milestone ' + (isMet ? 'is-met ' : ' ') + (isCurrentMilestone ? 'track-milestone-current' : '')}
                           onClick={() => this.props.handleTrackMilestoneChangeFn(trackId, milestone)}
                           d={this.arcFn(milestone)}
-                          style={{fill: isMet ? categoryColorScale(trackData.tracks[trackId].category) : undefined}} />
+                          style={{fill: isMet ? categoryColorScale(this.props.activeTracks[trackId].category) : undefined}} />
                     )
                   })}
                   <circle
                       r="8"
                       cx="0"
                       cy="-50"
-                      style={{fill: categoryColorScale(trackData.tracks[trackId].category)}}
+                      style={{fill: categoryColorScale(this.props.activeTracks[trackId].category)}}
                       className={"track-milestone " + (isCurrentTrack && !currentMilestoneId ? "track-milestone-current" : "")}
                       onClick={() => this.props.handleTrackMilestoneChangeFn(trackId, 0)} />
                 </g>
