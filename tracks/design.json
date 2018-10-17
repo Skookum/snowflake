@@ -1,18 +1,18 @@
 {
-  "MOBILE": {
-    "displayName": "Mobile",
+  "ART": {
+    "displayName": "Art",
     "category": "A",
-    "description": "Develops expertise in native mobile platform engineering, such as iOS or Android",
+    "description": "Makes pretty pictures",
     "milestones": [
       {
-        "summary": "Works effectively within established iOS or Android architectures, following current best practices",
+        "summary": "Works effectively within art",
         "signals": [
-          "Joins project team as secondary mobile engineer",
+          "Joins project team as designer",
           "Build new UI with default platfrom components",
           "Reuses existing custom UI components appropriately"
         ],
         "examples": [
-          "Fix the positioning of a button based on feedback from design",
+          "Fix the positioning of a button in Sketch",
           "Add new features to an existing view in an app",
           "Create a new subclass of UICollectionViewCell to be used in an existing Collection View"
         ]

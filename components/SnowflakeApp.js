@@ -19,7 +19,10 @@ import { color } from 'd3-color';
 
 library.add(faStroopwafel)
 
-const trackData = require('../tracks/development.json')
+const developmentTracks = require('../tracks/development.json')
+const designTracks = require('../tracks/design.json')
+const productTracks = require('../tracks/product.json')
+const qaTracks = require('../tracks/qa.json')
 
 type SnowflakeAppState = {
   milestoneByTrack: MilestoneMap,
@@ -57,29 +60,21 @@ const coerceMilestone = (value: number): Milestone => {
   }
 }
 
+const milestoneByTrack = (trackMap: TrackMap): MilestoneMap => {
+  return Object.keys(trackMap).reduce((milestoneMap, trackId) => {
+    milestoneMap[trackId] = 0
+    return milestoneMap
+  }, {})
+}
+
 const emptyState = (): SnowflakeAppState => {
   return {
     name: '',
     title: '',
-    milestoneByTrack: {
-      'MOBILE': 0,
-      'WEB_CLIENT': 0,
-      'DEVOPS': 0,
-      'SERVERS': 0,
-      'PROJECT_MANAGEMENT': 0,
-      'COMMUNICATION': 0,
-      'CRAFT': 0,
-      'INSTITUTIONAL_KNOWLEDGE': 0,
-      'CAREER_DEVELOPMENT': 0,
-      'RECRUITING': 0,
-      'MENTORSHIP': 0,
-      'SALES_MARKETING': 0,
-      'CUSTOMER_VALUE': 0,
-      'COMMUNITY': 0
-    },
-    activeTracks: trackData.tracks,
-    focusedTrackId: 'MOBILE',
-    categoryColorScale: categoryColorScale(trackData.tracks)
+    milestoneByTrack: milestoneByTrack(productTracks),
+    activeTracks: productTracks,
+    focusedTrackId: 'PRODUCT',
+    categoryColorScale: categoryColorScale(productTracks)
   }
 }
 
@@ -87,25 +82,10 @@ const defaultState = (): SnowflakeAppState => {
   return {
     name: '',
     title: '',
-    milestoneByTrack: {
-      'MOBILE': 0,
-      'WEB_CLIENT': 0,
-      'DEVOPS': 0,
-      'SERVERS': 0,
-      'PROJECT_MANAGEMENT': 0,
-      'COMMUNICATION': 0,
-      'CRAFT': 0,
-      'INSTITUTIONAL_KNOWLEDGE': 0,
-      'CAREER_DEVELOPMENT': 0,
-      'RECRUITING': 0,
-      'MENTORSHIP': 0,
-      'SALES_MARKETING': 0,
-      'CUSTOMER_VALUE': 0,
-      'COMMUNITY': 0
-    },
-    activeTracks: trackData.tracks,
-    focusedTrackId: 'MOBILE',
-    categoryColorScale: categoryColorScale(trackData.tracks)
+    milestoneByTrack: milestoneByTrack(productTracks),
+    activeTracks: productTracks,
+    focusedTrackId: 'PRODUCT',
+    categoryColorScale: categoryColorScale(productTracks)
   }
 }
 
