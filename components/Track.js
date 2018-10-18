@@ -2,14 +2,14 @@
 
 import { milestones } from '../constants'
 import React from 'react'
-import type { MilestoneMap, TrackId, Milestone } from '../constants'
+import type { MilestoneMap, Milestone } from '../constants'
 
 type Props = {
   milestoneByTrack: MilestoneMap,
   track: any,
-  trackId: TrackId,
+  trackId: string,
   categoryColorScale: Function,
-  handleTrackMilestoneChangeFn: (TrackId, Milestone) => void
+  handleTrackMilestoneChangeFn: (string, Milestone) => void
 }
 
 class Track extends React.Component<Props> {

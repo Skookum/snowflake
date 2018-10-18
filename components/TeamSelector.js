@@ -5,11 +5,11 @@ import { teams } from '../constants'
 import type { MilestoneMap } from '../constants'
 
 type Props = {
-  currentTeam: String,
+  currentTeam: string,
   handleTeamChangeFn: (string) => void
 }
 
-class TeamSelector extends React.Component {
+class TeamSelector extends React.Component<Props> {
   render() {
     return <select value={this.props.currentTeam} onChange={e => this.props.handleTeamChangeFn(e.target.value)}>
       <style jsx>{`

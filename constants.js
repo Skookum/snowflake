@@ -84,7 +84,7 @@ export const totalPointsFromMilestoneMap = (milestoneMap: MilestoneMap): number 
 export const categoryColorScale = (trackMap: TrackMap) => {
   return d3.scaleOrdinal()
     .domain(categoryIds(trackMap))
-    .range(['#00abc2', '#428af6', '#e1439f', '#e54552'])
+    .range(['#f16521', '#ffdd2e', '#0dcb7b', '#0e99dd'])
 }
 
 export const teams = ['Development', 'Design', 'Product', 'Quality Assurance']

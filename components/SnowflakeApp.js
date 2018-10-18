@@ -8,10 +8,9 @@ import Wordmark from '../components/Wordmark'
 import LevelThermometer from '../components/LevelThermometer'
 import { milestones, milestoneToPoints, categoryColorScale } from '../constants'
 import PointSummaries from '../components/PointSummaries'
-import type { Milestone, MilestoneMap, TrackMap, TrackId } from '../constants'
+import type { Milestone, MilestoneMap, TrackMap } from '../constants'
 import React from 'react'
-import TeamSelector from './TeamSelector'
-import { color } from 'd3-color';
+import TeamSelector from '../components/TeamSelector'
 
 const developmentTracks = require('../tracks/development.json')
 const designTracks = require('../tracks/design.json')
@@ -23,7 +22,7 @@ type SnowflakeAppState = {
   name: string,
   team: string,
   activeTracks: TrackMap,
-  focusedTrackId: TrackId,
+  focusedTrackId: string,
   categoryColorScale: Function
 }
 
@@ -227,7 +226,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
     )
   }
 
-  handleTrackMilestoneChange(trackId: TrackId, milestone: Milestone) {
+  handleTrackMilestoneChange(trackId: string, milestone: Milestone) {
     const milestoneByTrack = this.state.milestoneByTrack
     milestoneByTrack[trackId] = milestone
     this.setState({ milestoneByTrack, focusedTrackId: trackId })
@@ -241,7 +240,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
     this.setState({ focusedTrackId })
   }
 
-  setFocusedTrackId(trackId: TrackId) {
+  setFocusedTrackId(trackId: string) {
     const trackIds = Object.keys(this.state.activeTracks)
     let index = trackIds.indexOf(trackId)
     const focusedTrackId = trackIds[index]
@@ -253,7 +252,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
     let milestone = prevMilestone + delta
     if (milestone < 0) milestone = 0
     if (milestone > 5) milestone = 5
-    this.handleTrackMilestoneChange(this.state.focusedTrackId, milestone)
+    this.handleTrackMilestoneChange(this.state.focusedTrackId, coerceMilestone(milestone))
   }
 
   handleTeamChange(team: string) {

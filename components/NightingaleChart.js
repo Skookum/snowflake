@@ -3,7 +3,7 @@
 import React from 'react'
 import * as d3 from 'd3'
 import { milestones } from '../constants'
-import type { TrackMap, TrackId, Milestone, MilestoneMap } from '../constants'
+import type { TrackMap, Milestone, MilestoneMap } from '../constants'
 
 const width = 400
 const arcMilestones = milestones.slice(1) // we'll draw the '0' milestone with a circle, not an arc.
@@ -11,9 +11,9 @@ const arcMilestones = milestones.slice(1) // we'll draw the '0' milestone with a
 type Props = {
   milestoneByTrack: MilestoneMap,
   activeTracks: TrackMap,
-  focusedTrackId: TrackId,
+  focusedTrackId: string,
   categoryColorScale: Function,
-  handleTrackMilestoneChangeFn: (TrackId, Milestone) => void
+  handleTrackMilestoneChangeFn: (string, Milestone) => void
 }
 
 class NightingaleChart extends React.Component<Props> {
