@@ -11,7 +11,6 @@ import PointSummaries from '../components/PointSummaries'
 import type { Milestone, MilestoneMap, TrackMap, TrackId } from '../constants'
 import React from 'react'
 import TitleSelector from '../components/TitleSelector'
-import { color } from 'd3-color';
 
 const developmentTracks = require('../tracks/development.json')
 const designTracks = require('../tracks/design.json')
@@ -183,15 +182,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                   milestoneByTrack={this.state.milestoneByTrack}
                   currentTitle={this.state.title}
                   handleTitleChangeFn={(title) => this.handleTitleChange(title)} />
-              </form>
-            {/* <div style={{ backgroundColor: "#eee", width: "50px", height: "35px", paddingLeft: "20px", paddingRight: "20px",
-                        paddingBottom: "10px", paddingTop: "8px"
-                      }}>
-                    <Dropdown
-                        title="Select Team" 
-                        list={this.state.team}   
-                    />
-            </div> */}
+            </form>
             <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
             <LevelThermometer
                 milestoneByTrack={this.state.milestoneByTrack}

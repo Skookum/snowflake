@@ -84,14 +84,10 @@ export const totalPointsFromMilestoneMap = (milestoneMap: MilestoneMap): number 
 export const categoryColorScale = (trackMap: TrackMap) => {
   return d3.scaleOrdinal()
     .domain(categoryIds(trackMap))
-    .range(['#00abc2', '#428af6', '#e1439f', '#e54552'])
+    .range(['#f16521', '#ffdd2e', '#0dcb7b', '#0e99dd'])
 }
 
 export const titles = [
-  // {label: 'Engineer I', minPoints: 0, maxPoints: 16},
-  // {label: 'Engineer II', minPoints: 17, maxPoints: 35},
-  // {label: 'Senior Engineer', minPoints: 36, maxPoints: 57},
-  // {label: 'Group Lead', minPoints: 36, maxPoints: 57},
   {label:  'Development', minPoints: 0, maxPoints: 280},
   {label: 'Design', minPoints: 0, maxPoints: 280},
   {label: 'Product', minPoints: 0, maxPoints: 280},
