@@ -12,6 +12,9 @@ import type { Milestone, MilestoneMap, TrackId } from '../constants'
 import React from 'react'
 import TitleSelector from '../components/TitleSelector'
 
+
+
+
 type SnowflakeAppState = {
   milestoneByTrack: MilestoneMap,
   name: string,
@@ -48,7 +51,7 @@ const coerceMilestone = (value: number): Milestone => {
 const emptyState = (): SnowflakeAppState => {
   return {
     name: '',
-    // title: '',
+    title: '',
     milestoneByTrack: {
       'MOBILE': 0,
       'WEB_CLIENT': 0,
@@ -71,8 +74,8 @@ const emptyState = (): SnowflakeAppState => {
 
 const defaultState = (): SnowflakeAppState => {
   return {
-    name: 'Developer McSkookum',
-    // title: 'Senior Engineer',
+    name: '',
+    title: '',
     milestoneByTrack: {
       'MOBILE': 0,
       'WEB_CLIENT': 0,
@@ -89,9 +92,11 @@ const defaultState = (): SnowflakeAppState => {
       'CUSTOMER_VALUE': 0,
       'COMMUNITY': 0
     },
-    focusedTrackId: 'MOBILE'
+
+      focusedTrack00Id: 'Mobile'
   }
 }
+
 
 const stateToHash = (state: SnowflakeAppState) => {
   if (!state || !state.milestoneByTrack) return null
@@ -150,6 +155,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             color: #888;
             text-decoration: none;
           }
+
         `}</style>
         <div style={{margin: '19px auto 0', width: 142}}>
           <a href="https://skookum.com/" target="_blank">
@@ -166,10 +172,16 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                   onChange={e => this.setState({name: e.target.value})}
                   placeholder="Name"
                   />
-            </form>
+                  <TitleSelector
+                  milestoneByTrack={this.state.milestoneByTrack}
+                  currentTitle={this.state.title}
+                  setTitleFn={(title) => this.setTitle(title)} />
+              </form>
             <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
             <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} />
+         
           </div>
+          
           <div style={{flex: 0}}>
             <NightingaleChart
                 milestoneByTrack={this.state.milestoneByTrack}

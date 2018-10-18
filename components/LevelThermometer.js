@@ -22,8 +22,8 @@ class LevelThermometer extends React.Component<Props> {
   pointScale: any
   topAxisFn: any
   bottomAxisFn: any
-  topAxis: *
-  bottomAxis: *
+  topAxis: any
+  bottomAxis: any
 
   constructor(props: *) {
     super(props)
