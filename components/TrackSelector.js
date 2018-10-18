@@ -1,14 +1,14 @@
 // @flow
 
 import React from 'react'
-import type { MilestoneMap, TrackMap, TrackId } from '../constants'
+import type { MilestoneMap, TrackMap } from '../constants'
 
 type Props = {
   milestoneByTrack: MilestoneMap,
   activeTracks: TrackMap,
-  focusedTrackId: TrackId,
+  focusedTrackId: string,
   categoryColorScale: Function,
-  setFocusedTrackIdFn: (TrackId) => void
+  setFocusedTrackIdFn: (string) => void
 }
 
 class TrackSelector extends React.Component<Props> {

@@ -6,11 +6,11 @@ import type { MilestoneMap } from '../constants'
 
 type Props = {
   milestoneByTrack: MilestoneMap,
-  currentTitle: String,
+  currentTitle: string,
   handleTitleChangeFn: (string) => void
 }
 
-class TitleSelector extends React.Component {
+class TitleSelector extends React.Component<Props> {
   render() {
     const titles = eligibleTitles(this.props.milestoneByTrack)
     return <select value={this.props.currentTitle} onChange={e => this.props.handleTitleChangeFn(e.target.value)}>
