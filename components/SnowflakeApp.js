@@ -11,7 +11,7 @@ import PointSummaries from '../components/PointSummaries'
 import type { Milestone, MilestoneMap, TrackId } from '../constants'
 import React from 'react'
 import TitleSelector from '../components/TitleSelector'
-import { color } from 'd3-color';
+
 
 
 
@@ -92,6 +92,8 @@ const defaultState = (): SnowflakeAppState => {
       'CUSTOMER_VALUE': 0,
       'COMMUNITY': 0
     },
+
+      focusedTrack00Id: 'Mobile'
   }
 }
 
