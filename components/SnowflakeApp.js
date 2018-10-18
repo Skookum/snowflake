@@ -11,14 +11,8 @@ import PointSummaries from '../components/PointSummaries'
 import type { Milestone, MilestoneMap, TrackId } from '../constants'
 import React from 'react'
 import TitleSelector from '../components/TitleSelector'
-import Dropdown from '../components/Dropdown'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
 import { color } from 'd3-color';
 
-
-library.add(faStroopwafel)
 
 
 type SnowflakeAppState = {
@@ -98,8 +92,6 @@ const defaultState = (): SnowflakeAppState => {
       'CUSTOMER_VALUE': 0,
       'COMMUNITY': 0
     },
-    // team: [{ id: 1, title: 'Development', href:'../SnowflakeApp/constants.js'}, {id: 2, title: 'Design', href:'../SnowflakeApp/constants-design.js'},{id: 3, title: 'Product', href:'../SnowflakeApp/constants-product.js'}, {id: 4, title: 'Quality Assurance', href:'../SnowflakeApp/constants-QA.js' }],
-    // focusedTrack00Id: 'MOBILE'
   }
 }
 
@@ -183,14 +175,6 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                   currentTitle={this.state.title}
                   setTitleFn={(title) => this.setTitle(title)} />
               </form>
-            {/* <div style={{ backgroundColor: "#eee", width: "50px", height: "35px", paddingLeft: "20px", paddingRight: "20px",
-                        paddingBottom: "10px", paddingTop: "8px"
-                      }}>
-                    <Dropdown
-                        title="Select Team" 
-                        list={this.state.team}   
-                    />
-            </div> */}
             <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
             <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} />
          
