@@ -12,10 +12,28 @@ type Props = {
   handleTrackMilestoneChangeFn: (string, Milestone) => void
 }
 
-class Track extends React.Component<Props> {
+type State = {
+  hoveredMilestone: Milestone | null
+}
+
+class Track extends React.Component<Props, State> {
+  constructor(props: Props) {
+    super(props)
+    this.state = { hoveredMilestone: null }
+  }
+
+  setHoveredMilestone(hoveredMilestone: Milestone) {
+    this.setState({ hoveredMilestone })
+  }
+
+  unsetHoveredMilestone() {
+    this.setState({ hoveredMilestone: null })
+  }
+
   render() {
     const currentMilestoneId = this.props.milestoneByTrack[this.props.trackId]
-    const currentMilestone = this.props.track.milestones[currentMilestoneId - 1]
+    const activeMilestoneId = this.state.hoveredMilestone !== null ? this.state.hoveredMilestone - 1 : currentMilestoneId - 1
+    const activeMilestone = this.props.track.milestones[activeMilestoneId]
     return (
       <div className="track">
         <style jsx>{`
@@ -37,7 +55,7 @@ class Track extends React.Component<Props> {
           }
           td {
             line-height: 50px;
-            padding: 0 25px;
+            width: 50px;
             text-align: center;
             background: #eee;
             font-weight: bold;
@@ -52,14 +70,17 @@ class Track extends React.Component<Props> {
         <h2>{this.props.track.displayName}</h2>
         <p className="track-description">{this.props.track.description}</p>
         <div style={{display: 'flex'}}>
-          <table style={{flex: 0, marginRight: 50}}>
+          <table style={{marginRight: 50}}>
             <tbody>
               {milestones.slice().reverse().map((milestone) => {
                 const isMet = milestone <= currentMilestoneId
                 return (
                   <tr key={milestone}>
-                    <td onClick={() => this.props.handleTrackMilestoneChangeFn(this.props.trackId, milestone)}
-                        style={{border: `4px solid ${milestone === currentMilestoneId ? '#000' : isMet ? this.props.categoryColorScale(this.props.track.category) : '#eee'}`, background: isMet ? this.props.categoryColorScale(this.props.track.category) : undefined}}>
+                    <td onMouseEnter={() => this.setHoveredMilestone(milestone)}
+                        onMouseLeave={() => this.unsetHoveredMilestone()}
+                        onClick={() => this.props.handleTrackMilestoneChangeFn(this.props.trackId, milestone)}
+                        style={{border: `4px solid ${milestone === currentMilestoneId ? '#000' : isMet ? this.props.categoryColorScale(this.props.track.category) : '#eee'}`, background: isMet ? this.props.categoryColorScale(this.props.track.category) : undefined}}
+                    >
                       {milestone}
                     </td>
                   </tr>
@@ -67,18 +88,18 @@ class Track extends React.Component<Props> {
               })}
             </tbody>
           </table>
-          {currentMilestone ? (
+          {activeMilestone ? (
             <div style={{flex: 1}}>
-              <h3>{currentMilestone.summary}</h3>
+              <h3>{activeMilestone.summary}</h3>
               <h4>Example behaviors:</h4>
               <ul>
-                {currentMilestone.signals.map((signal, i) => (
+                {activeMilestone.signals.map((signal, i) => (
                   <li key={i}>{signal}</li>
                 ))}
               </ul>
               <h4>Example tasks:</h4>
               <ul>
-                {currentMilestone.examples.map((example, i) => (
+                {activeMilestone.examples.map((example, i) => (
                   <li key={i}>{example}</li>
                 ))}
               </ul>
