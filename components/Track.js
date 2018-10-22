@@ -1,13 +1,15 @@
 // @flow
 
-import { tracks, milestones, categoryColorScale, trackData } from '../constants'
+import { milestones } from '../constants'
 import React from 'react'
-import type { MilestoneMap, TrackId, Milestone } from '../constants'
+import type { MilestoneMap, Milestone } from '../constants'
 
 type Props = {
   milestoneByTrack: MilestoneMap,
-  trackId: TrackId,
-  handleTrackMilestoneChangeFn: (TrackId, Milestone) => void
+  track: any,
+  trackId: string,
+  categoryColorScale: Function,
+  handleTrackMilestoneChangeFn: (string, Milestone) => void
 }
 
 type State = {
@@ -29,10 +31,9 @@ class Track extends React.Component<Props, State> {
   }
 
   render() {
-    const track = trackData.tracks[this.props.trackId]
     const currentMilestoneId = this.props.milestoneByTrack[this.props.trackId]
     const activeMilestoneId = this.state.hoveredMilestone !== null ? this.state.hoveredMilestone - 1 : currentMilestoneId - 1
-    const activeMilestone = track.milestones[activeMilestoneId]
+    const activeMilestone = this.props.track.milestones[activeMilestoneId]
     return (
       <div className="track">
         <style jsx>{`
@@ -54,7 +55,7 @@ class Track extends React.Component<Props, State> {
           }
           td {
             line-height: 50px;
-            padding: 0 25px;
+            width: 50px;
             text-align: center;
             background: #eee;
             font-weight: bold;
@@ -66,8 +67,8 @@ class Track extends React.Component<Props, State> {
             line-height: 1.5em;
           }
         `}</style>
-        <h2>{track.displayName}</h2>
-        <p className="track-description">{track.description}</p>
+        <h2>{this.props.track.displayName}</h2>
+        <p className="track-description">{this.props.track.description}</p>
         <div style={{display: 'flex'}}>
           <table style={{marginRight: 50}}>
             <tbody>
@@ -78,7 +79,7 @@ class Track extends React.Component<Props, State> {
                     <td onMouseEnter={() => this.setHoveredMilestone(milestone)}
                         onMouseLeave={() => this.unsetHoveredMilestone()}
                         onClick={() => this.props.handleTrackMilestoneChangeFn(this.props.trackId, milestone)}
-                        style={{border: `4px solid ${milestone === currentMilestoneId ? '#000' : isMet ? categoryColorScale(track.category) : '#eee'}`, background: isMet ? categoryColorScale(track.category) : undefined}}
+                        style={{border: `4px solid ${milestone === currentMilestoneId ? '#000' : isMet ? this.props.categoryColorScale(this.props.track.category) : '#eee'}`, background: isMet ? this.props.categoryColorScale(this.props.track.category) : undefined}}
                     >
                       {milestone}
                     </td>

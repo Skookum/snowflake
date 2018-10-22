@@ -6,20 +6,37 @@ import KeyboardListener from '../components/KeyboardListener'
 import Track from '../components/Track'
 import Wordmark from '../components/Wordmark'
 import LevelThermometer from '../components/LevelThermometer'
-import { eligibleTitles, trackIds, milestones, milestoneToPoints } from '../constants'
+import { eligibleTitles, milestones, milestoneToPoints, categoryColorScale } from '../constants'
 import PointSummaries from '../components/PointSummaries'
-import type { Milestone, MilestoneMap, TrackId } from '../constants'
+import type { Milestone, MilestoneMap, TrackMap } from '../constants'
 import React from 'react'
 import TitleSelector from '../components/TitleSelector'
 
-
-
+const developmentTracks = require('../tracks/development.json')
+const designTracks = require('../tracks/design.json')
+const productTracks = require('../tracks/product.json')
+const qaTracks = require('../tracks/qa.json')
 
 type SnowflakeAppState = {
   milestoneByTrack: MilestoneMap,
   name: string,
   title: string,
-  focusedTrackId: TrackId,
+  activeTracks: TrackMap,
+  focusedTrackId: string,
+  categoryColorScale: Function
+}
+
+const tracksByTitle = (title: string): TrackMap => {
+  switch (title) {
+    case 'Design':
+      return designTracks
+    case 'Product':
+      return productTracks
+    case 'Quality Assurance':
+      return qaTracks
+    default:
+      return developmentTracks
+  }
 }
 
 const hashToState = (hash: String): ?SnowflakeAppState => {
@@ -27,11 +44,19 @@ const hashToState = (hash: String): ?SnowflakeAppState => {
   const result = defaultState()
   const hashValues = hash.split('#')[1].split(',')
   if (!hashValues) return null
+  if (hashValues[14]) result.name = decodeURI(hashValues[14])
+  if (hashValues[15]) {
+    result.title = decodeURI(hashValues[15])
+    const tracks = tracksByTitle(result.title)
+    result.activeTracks = tracks
+    result.milestoneByTrack = milestoneByTrack(tracks)
+    result.focusedTrackId = Object.keys(tracks)[0]
+    result.categoryColorScale = categoryColorScale(tracks)
+  }
+  const trackIds = Object.keys(result.activeTracks)
   trackIds.forEach((trackId, i) => {
     result.milestoneByTrack[trackId] = coerceMilestone(Number(hashValues[i]))
   })
-  if (hashValues[14]) result.name = decodeURI(hashValues[14])
-  // if (hashValues[15]) result.title = decodeURI(hashValues[15])
   return result
 }
 
@@ -48,59 +73,40 @@ const coerceMilestone = (value: number): Milestone => {
   }
 }
 
+const milestoneByTrack = (trackMap: TrackMap): MilestoneMap => {
+  return Object.keys(trackMap).reduce((milestoneMap, trackId) => {
+    milestoneMap[trackId] = 0
+    return milestoneMap
+  }, {})
+}
+
 const emptyState = (): SnowflakeAppState => {
   return {
     name: '',
-    title: '',
-    milestoneByTrack: {
-      'MOBILE': 0,
-      'WEB_CLIENT': 0,
-      'DEVOPS': 0,
-      'SERVERS': 0,
-      'PROJECT_MANAGEMENT': 0,
-      'COMMUNICATION': 0,
-      'CRAFT': 0,
-      'INSTITUTIONAL_KNOWLEDGE': 0,
-      'CAREER_DEVELOPMENT': 0,
-      'RECRUITING': 0,
-      'MENTORSHIP': 0,
-      'SALES_MARKETING': 0,
-      'CUSTOMER_VALUE': 0,
-      'COMMUNITY': 0
-    },
-    focusedTrackId: 'MOBILE'
+    title: 'Development',
+    milestoneByTrack: milestoneByTrack(developmentTracks),
+    activeTracks: developmentTracks,
+    focusedTrackId: 'MOBILE',
+    categoryColorScale: categoryColorScale(developmentTracks)
   }
 }
 
 const defaultState = (): SnowflakeAppState => {
   return {
     name: '',
-    title: '',
-    milestoneByTrack: {
-      'MOBILE': 0,
-      'WEB_CLIENT': 0,
-      'DEVOPS': 0,
-      'SERVERS': 0,
-      'PROJECT_MANAGEMENT': 0,
-      'COMMUNICATION': 0,
-      'CRAFT': 0,
-      'INSTITUTIONAL_KNOWLEDGE': 0,
-      'CAREER_DEVELOPMENT': 0,
-      'RECRUITING': 0,
-      'MENTORSHIP': 0,
-      'SALES_MARKETING': 0,
-      'CUSTOMER_VALUE': 0,
-      'COMMUNITY': 0
-    },
-
-      focusedTrack00Id: 'Mobile'
+    title: 'Development',
+    milestoneByTrack: milestoneByTrack(developmentTracks),
+    activeTracks: developmentTracks,
+    focusedTrackId: 'MOBILE',
+    categoryColorScale: categoryColorScale(developmentTracks)
   }
 }
 
 
 const stateToHash = (state: SnowflakeAppState) => {
   if (!state || !state.milestoneByTrack) return null
-  const values = trackIds.map(trackId => state.milestoneByTrack[trackId]).concat(encodeURI(state.name))//, encodeURI(state.title))
+  const trackIds = Object.keys(state.activeTracks)
+  const values = trackIds.map(trackId => state.milestoneByTrack[trackId]).concat(encodeURI(state.name), encodeURI(state.title))
   return values.join(',')
 }
 
@@ -172,26 +178,32 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                   onChange={e => this.setState({name: e.target.value})}
                   placeholder="Name"
                   />
-                  <TitleSelector
+              <TitleSelector
                   milestoneByTrack={this.state.milestoneByTrack}
                   currentTitle={this.state.title}
-                  setTitleFn={(title) => this.setTitle(title)} />
-              </form>
+                  handleTitleChangeFn={(title) => this.handleTitleChange(title)} />
+            </form>
             <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
-            <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} />
-         
+            <LevelThermometer
+                milestoneByTrack={this.state.milestoneByTrack}
+                activeTracks={this.state.activeTracks}
+                categoryColorScale={this.state.categoryColorScale} />
           </div>
           
           <div style={{flex: 0}}>
             <NightingaleChart
                 milestoneByTrack={this.state.milestoneByTrack}
+                activeTracks={this.state.activeTracks}
                 focusedTrackId={this.state.focusedTrackId}
+                categoryColorScale={this.state.categoryColorScale}
                 handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
           </div>
         </div>
         <TrackSelector
             milestoneByTrack={this.state.milestoneByTrack}
+            activeTracks={this.state.activeTracks}
             focusedTrackId={this.state.focusedTrackId}
+            categoryColorScale={this.state.categoryColorScale}
             setFocusedTrackIdFn={this.setFocusedTrackId.bind(this)} />
         <KeyboardListener
             selectNextTrackFn={this.shiftFocusedTrack.bind(this, 1)}
@@ -200,11 +212,13 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             decreaseFocusedMilestoneFn={this.shiftFocusedTrackMilestoneByDelta.bind(this, -1)} />
         <Track
             milestoneByTrack={this.state.milestoneByTrack}
+            track={this.state.activeTracks[this.state.focusedTrackId]}
             trackId={this.state.focusedTrackId}
+            categoryColorScale={this.state.categoryColorScale}
             handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
         <div style={{display: 'flex', paddingBottom: '20px'}}>
           <div style={{flex: 1}}>
-            <a href="https://skookum.com/careers">Join</a> the Skookum Engineering Team.
+            <a href="https://skookum.com/careers">Join</a> the Skookum Team.
             Based on <a href="https://github.com/Medium/snowflake" target="_blank">Snowflake</a> by <a href="https://medium.engineering" target="_blank">Medium Eng</a>.
           </div>
         </div>
@@ -212,7 +226,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
     )
   }
 
-  handleTrackMilestoneChange(trackId: TrackId, milestone: Milestone) {
+  handleTrackMilestoneChange(trackId: string, milestone: Milestone) {
     const milestoneByTrack = this.state.milestoneByTrack
     milestoneByTrack[trackId] = milestone
 
@@ -223,13 +237,15 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
   }
 
   shiftFocusedTrack(delta: number) {
+    const trackIds = Object.keys(this.state.activeTracks)
     let index = trackIds.indexOf(this.state.focusedTrackId)
     index = (index + delta + trackIds.length) % trackIds.length
     const focusedTrackId = trackIds[index]
     this.setState({ focusedTrackId })
   }
 
-  setFocusedTrackId(trackId: TrackId) {
+  setFocusedTrackId(trackId: string) {
+    const trackIds = Object.keys(this.state.activeTracks)
     let index = trackIds.indexOf(trackId)
     const focusedTrackId = trackIds[index]
     this.setState({ focusedTrackId })
@@ -240,13 +256,20 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
     let milestone = prevMilestone + delta
     if (milestone < 0) milestone = 0
     if (milestone > 5) milestone = 5
-    this.handleTrackMilestoneChange(this.state.focusedTrackId, milestone)
+    this.handleTrackMilestoneChange(this.state.focusedTrackId, coerceMilestone(milestone))
   }
 
-  setTitle(title: string) {
+  handleTitleChange(title: string) {
     let titles = eligibleTitles(this.state.milestoneByTrack)
     title = titles.indexOf(title) == -1 ? titles[0] : title
-    this.setState({ title })
+    let tracks = tracksByTitle(title)
+    this.setState({
+      title,
+      milestoneByTrack: milestoneByTrack(tracks),
+      activeTracks: tracks,
+      focusedTrackId: Object.keys(tracks)[0],
+      categoryColorScale: categoryColorScale(tracks)
+    })
   }
 }
 

@@ -1,9 +1,9 @@
 // @flow
 
 import * as d3 from 'd3'
-import { pointsToLevels, categoryPointsFromMilestoneMap, categoryColorScale, categoryIds } from '../constants'
+import { pointsToLevels, categoryPointsFromMilestoneMap } from '../constants'
 import React from 'react'
-import type { MilestoneMap } from '../constants'
+import type { MilestoneMap, TrackMap } from '../constants'
 
 const margins = {
   top: 30,
@@ -16,6 +16,8 @@ const width = 550
 
 type Props = {
   milestoneByTrack: MilestoneMap,
+  activeTracks: TrackMap,
+  categoryColorScale: Function
 }
 
 class LevelThermometer extends React.Component<Props> {
@@ -61,7 +63,7 @@ class LevelThermometer extends React.Component<Props> {
       .style('text-anchor', 'start')
   }
 
-  rightRoundedRect(x, y, width, height, radius) {
+  rightRoundedRect(x: number, y: number, width: number, height: number, radius: number): string {
     return "M" + x + "," + y
          + "h" + (width - radius)
          + "a" + radius + "," + radius + " 0 0 1 " + radius + "," + radius
@@ -70,8 +72,9 @@ class LevelThermometer extends React.Component<Props> {
          + "h" + (radius - width)
          + "z";
   }
+  
   render() {
-    let categoryPoints = categoryPointsFromMilestoneMap(this.props.milestoneByTrack)
+    let categoryPoints = categoryPointsFromMilestoneMap(this.props.activeTracks, this.props.milestoneByTrack)
     let lastCategoryIndex = 0
     categoryPoints.forEach((categoryPoint, i) => {
       if (categoryPoint.points) lastCategoryIndex = i
@@ -101,12 +104,12 @@ class LevelThermometer extends React.Component<Props> {
                     y={0}
                     width={width}
                     height={height - margins.top - margins.bottom}
-                    style={{fill: categoryColorScale(categoryPoint.categoryId), borderRight: "1px solid #000"}}
+                    style={{fill: this.props.categoryColorScale(categoryPoint.categoryId), borderRight: "1px solid #000"}}
                     /> :
                 <path
                     key={categoryPoint.categoryId}
                     d={this.rightRoundedRect(x, 0, width, height - margins.top - margins.bottom, 3)}
-                    style={{fill: categoryColorScale(categoryPoint.categoryId)}}
+                    style={{fill: this.props.categoryColorScale(categoryPoint.categoryId)}}
                     />
               )
             })}
