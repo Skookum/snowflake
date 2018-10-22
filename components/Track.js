@@ -55,7 +55,7 @@ class Track extends React.Component<Props, State> {
           }
           td {
             line-height: 50px;
-            padding: 0 25px;
+            width: 50px;
             text-align: center;
             background: #eee;
             font-weight: bold;
