@@ -1,11 +1,11 @@
 {
   "PRODUCT 1": {
-    "displayName": "Product 1",
+    "displayName": "Strategy & Innovation",
     "category": "A",
-    "description": "",
+    "description": "Shows expertise in business strategy, product strategy, innovation, and current trends",
     "milestones": [
       {
-        "summary": "",
+        "summary": "Works effectively within established strategic or innovative architectures, following current best practices",
         "signals": [
           "",
           "",
@@ -18,7 +18,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Add new contributions, or minor improvements to existing structures",
         "signals": [
           "",
           "",
@@ -31,7 +31,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Designs major new contributions and demonstrates a detailed understanding of strategy and innovation within business and technical constraints",
         "signals": [
           "",
           "",
@@ -44,7 +44,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Creates complex, reusable systems that pioneer best practices and enable product and business teams to work more effectively",
         "signals": [
           "",
           "",
@@ -57,7 +57,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Is an industry-leading expert in strategy and innovation or sets strategic direction for a product team",
         "signals": [
           "",
           "",
@@ -73,12 +73,12 @@
   },
 
   "PRODUCT 2": {
-    "displayName": "Product 2",
+    "displayName": "Client Consulting",
     "category": "A",
-    "description": "",
+    "description": "Shows expertise in external client relationships, alignment, and business acumen",
     "milestones": [
       {
-        "summary": "",
+        "summary": "Works effectively within established client consulting structures, following current best practices",
         "signals": [
           "",
           "",
@@ -91,7 +91,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Add new contributions, or minor improvements to existing structures",
         "signals": [
           "",
           "",
@@ -104,7 +104,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Designs major new contributions and demonstrates a detailed understanding of consulting within business constraints",
         "signals": [
           "",
           "",
@@ -117,7 +117,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Creates complex, reusable systems that pioneer best practices and enable product and business teams to work more effectively",
         "signals": [
           "",
           "",
@@ -130,7 +130,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Is an industry-leading expert in client consulting or sets strategic direction for a product team",
         "signals": [
           "",
           "",
@@ -146,12 +146,12 @@
   },
 
   "PRODUCT 3": {
-    "displayName": "Product 3",
+    "displayName": "Production Management",
     "category": "A",
-    "description": "",
+    "description": "Shows expertise product development life cycle, collaboration, and technical acumen",
     "milestones": [
       {
-        "summary": "",
+        "summary": "Works effectively within established production, following current best practices",
         "signals": [
           "",
           "",
@@ -164,7 +164,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Add new contributions, or minor improvements to existing structures",
         "signals": [
           "",
           "",
@@ -177,7 +177,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Designs major new contributions and demonstrates an understanding of product production within technical constraints",
         "signals": [
           "",
           "",
@@ -190,7 +190,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Creates complex, reusable systems that pioneer best practices and enable product and business teams to work more effectively",
         "signals": [
           "",
           "",
@@ -203,7 +203,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Is an industry-leading expert in production manegment or sets strategic production direction for a product team",
         "signals": [
           "",
           "",
@@ -219,12 +219,12 @@
   },
 
   "PRODUCT 4": {
-    "displayName": "Product 4",
+    "displayName": "Project Leadership",
     "category": "A",
-    "description": "",
+    "description": "Shows expertise in internal projects, team coordination, leadership, mentorship, alignment, and team oversight",
     "milestones": [
       {
-        "summary": "",
+        "summary": "Works effectively within established leadership architectures, following current best practices",
         "signals": [
           "",
           "",
@@ -237,7 +237,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Add new contributions, or minor improvements to existing structures",
         "signals": [
           "",
           "",
@@ -250,7 +250,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Designs major new contributions and demonstrates a detailed understanding of leadership within business constraints",
         "signals": [
           "",
           "",
@@ -263,7 +263,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Creates complex, reusable systems that pioneer best practices and enable product and business teams to work more effectively",
         "signals": [
           "",
           "",
@@ -276,7 +276,7 @@
         ]
       },
       {
-        "summary": "",
+        "summary": "Is an industry-leading expert in project leadership or sets strategic project direction for a product team",
         "signals": [
           "",
           "",
