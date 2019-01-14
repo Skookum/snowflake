@@ -1,294 +1,287 @@
 {
-  "PRODUCT 1": {
-    "displayName": "Product 1",
-    "category": "A",
-    "description": "",
-    "milestones": [
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      }
-    ]
+  "RESEARCH & INSIGHTS": {
+      "displayName": "Research & Insights",
+      "description": "Focuses on conducting research and generating insights based on the business, users, landscape and environment",
+      "milestones": [
+          {
+              "summary": "Level 1",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 2",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 2",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 4",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 5",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          }
+      ]
   },
-
-  "PRODUCT 2": {
-    "displayName": "Product 2",
-    "category": "A",
-    "description": "",
-    "milestones": [
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      }
-    ]
+  "PRODUCT DESIGN": {
+      "displayName": "Product Design",
+      "description": "The ability to create user flows, customer journeys, test design prototypes and develop phased roadmaps",
+      "milestones": [
+          {
+              "summary": "Level 1",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 2",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 3",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 4",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 5",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          }
+      ]
   },
-
-  "PRODUCT 3": {
-    "displayName": "Product 3",
-    "category": "A",
-    "description": "",
-    "milestones": [
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      }
-    ]
+  "PRODUCT EXECUTION": {
+      "displayName": "Product Execution",
+      "description": "Ability to product manage and partner with developers through engineering to deployment and run an agile method",
+      "milestones": [
+          {
+              "summary": "Level 1",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 2",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 3",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 4",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 5",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          }
+      ]
   },
-
-  "PRODUCT 4": {
-    "displayName": "Product 4",
-    "category": "A",
-    "description": "",
-    "milestones": [
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "",
-        "signals": [
-          "",
-          "",
-          ""
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      }
-    ]
+  "DIGITAL TRANSFORMATION": {
+      "displayName": "Digital Transformation",
+      "description": "Focuses on how products contribute to an organization’s goals, their impact on the company and how the products are managed",
+      "milestones": [
+          {
+              "summary": "Level 1",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 2",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 3",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 4",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          },
+          {
+              "summary": "Level 5",
+              "signals": [
+                  "",
+                  "",
+                  ""
+              ],
+              "examples": [
+                  "",
+                  "",
+                  ""
+              ]
+          }
+      ]
   },
 
   "PROJECT MANAGEMENT": {
@@ -583,7 +576,7 @@
   "CAREER DEVELOPMENT": {
       "displayName": "Career Development",
       "category": "C",
-      "description": "Provides strategic support to engineers to help them build the career they want",
+      "description": "Provides strategic support to others to help them build the career they want",
       "milestones": [
           {
               "summary": "Gives insight into opportunities and helps identify individuals' strengths and weaknesses",
@@ -633,12 +626,12 @@
               ],
               "examples": [
                   "Completed training on situational leadership",
-                  "Coached engineer through tough situation with client",
+                  "Coached a teammate through tough situation with client",
                   "Prevented regretted attrition with intentional, targeted intervention"
               ]
           },
           {
-              "summary": "Supports the development of a signficant part of the engineering org, and widely viewed as a trusted advisor",
+              "summary": "Supports the development of a signficant part of the services org, and widely viewed as a trusted advisor",
               "signals": [
                   "Supports and develops senior leaders",
                   "Identified leadership training opportunities for senior leadership",
@@ -738,7 +731,7 @@
               ],
               "examples": [
                   "Acted as an onboarding buddy",
-                  "Paired with an engineer to help them with an unfamiliar area",
+                  "Paired with a teammate to help them with an unfamiliar area",
                   "Helped a colleague understand their feelings"
               ]
           },
@@ -756,7 +749,7 @@
               ]
           },
           {
-              "summary": "Teaches small groups of engineers and contributes to Skookum's shared knowledge base",
+              "summary": "Teaches small groups of teammates and contributes to Skookum's shared knowledge base",
               "signals": [
                   "Avoids siloing information when it can be usefully shared with others",
                   "Drives healthy discussion around new ideas",
@@ -782,7 +775,7 @@
               ]
           },
           {
-              "summary": "Instills and promotes a culture of learning and development within the entire engineering team",
+              "summary": "Instills and promotes a culture of learning and development within the entire team",
               "signals": [
                   "Sets incentive structures to recognise and reward mentorship",
                   "Empowers team members to develop themselves",
@@ -963,7 +956,7 @@
               "summary": "Participates more centrally in small events, and takes simple actions that positively influence groups of people",
               "signals": [
                   "Makes space for others to participate",
-                  "Collaborates with other engineers outside direct responsibilities",
+                  "Collaborates with others outside direct responsibilities",
                   "Takes meaningful action to introduce people to Skookum"
               ],
               "examples": [

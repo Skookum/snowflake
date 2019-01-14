@@ -1,7 +1,6 @@
 {
-  "ANALYSIS/ADMINSTRATION": {
-      "displayName": "Analysis / Adminstration",
-      "category": "A",
+  "ANALYSIS/ADMINISTRATION": {
+      "displayName": "Analysis/Administration",
       "description": "Digests requirements and provides thoughtful recommendations about the product all while ensuring quality is met on the project and application level. ",
       "milestones": [
           {
@@ -27,7 +26,7 @@
               "examples": [
                   "Designed a test strategy to ensure all scope is considered",
                   "Organized a meeting with the team to discuss requirement concerns ",
-                  "Worked with a developer to accomodate a change in testing direction"
+                  "Worked with a developer to accommodate a change in testing direction"
               ]
           },
           {
@@ -47,7 +46,7 @@
               "summary": "Is a subject matter expert and provides valuable insight, direction and reference for the team",
               "signals": [
                   "Identifies faults and delivers clear, actionable insight",
-                  "Intenionally maintains a diplomatic relationship with other team members",
+                  "Intentionally maintains a diplomatic relationship with other team members",
                   "Provides insight as an authority on a particular application or deliverable"
               ],
               "examples": [
@@ -73,7 +72,6 @@
   },
   "ISSUE MANAGEMENT": {
       "displayName": "Issue Management",
-      "category": "A",
       "description": "Writes test cases that efficiently validate the expected behaviors, manages test libraries to ensure tests remain valid and captures defects while accurately logging reproducible behavior.",
       "milestones": [
           {
@@ -125,27 +123,26 @@
               "examples": [
                   "Created specialized test scenarios capable of undermining even the best developed systems ",
                   "Resourcefully created a single test which succinctly verifies numerous acceptance criteria",
-                  "Identifies enhancements and/or improvements to provide further value to the product"
+                  "Identified enhancements and/or improvements to provide further value to the product"
               ]
           },
           {
               "summary": "Is an industry-leading expert in test case creation, testing methodologies and test management best practices",
               "signals": [
                   "Creates an industry-recognized test creation strategy",
-                  "",
-                  ""
+                  "Maintains a popular test management blog that is recognized by industry leaders\n",
+                  "Presents best practices for issue management at industry recognized conferences\n"
               ],
               "examples": [
-                  "",
-                  "",
-                  ""
+                  "Created and delivered detailed reports outlining issue statuses to better inform team about standings\n",
+                  "Worked with clients to provide guidance on QA best practices\n",
+                  "Contributed to QA best practices in order to share as part of company wide fundamentals\n"
               ]
           }
       ]
   },
   "TEST EXECUTION": {
       "displayName": "Test Execution",
-      "category": "A",
       "description": "Tests software to identify if the expected results are met or not.",
       "milestones": [
           {
@@ -183,7 +180,7 @@
               ],
               "examples": [
                   "Documented results per step to add an extra level of assurance\n",
-                  "Marked test status appropriately along with any execution details (bulild/OS) and moved test to appropriate column in workflow tool\n",
+                  "Marked test status appropriately along with any execution details (build/OS) and moved test to appropriate column in workflow tool\n",
                   "Updated story status based on test execution results and included any pertinent information regarding linked issues found during execution\n"
               ]
           },
@@ -192,32 +189,31 @@
               "signals": [
                   "Utilizes visual reporting methods such as screen shots or video recordings in order to more effectively demonstrate issues identified\n",
                   "Uses api testing tools to mock or validate tests prior to front end user interface being completed\n",
-                  ""
+                  "Seeds data for environments and tests utilizing scripts or an automated process"
               ],
               "examples": [
                   "Performed a test inside Postman to further validate the behavior on the front end\n",
-                  "Executed tests utilizing specific tools such as Postman and Swagger.\n",
-                  ""
+                  "Executed tests utilizing specific tools such as Postman and Swagger\n",
+                  "Used Travis CI/Circle CI to kick off automated test suites and monitor results of a build"
               ]
           },
           {
               "summary": "Is an industry-leading expert in test case execution",
               "signals": [
-                  "",
-                  "",
-                  ""
+                  "Takes ownership of the QA Environment so maintenance/upkeep isn't reliant on developers and ensures efficient test execution and testing needs of the QA Team are met.\n",
+                  "Creates an industry recognized test execution strategy\n",
+                  "Presents best practices for test execution at industry recognized conferences\n"
               ],
               "examples": [
-                  "",
-                  "",
-                  ""
+                  "Worked with clients to provide guidance on QA Test Execution\n",
+                  "Modified existing code within a given code base to validate and/or improve tests, test execution process",
+                  "Provided a proof of concept for a new testing tool or integration to work with Skookum's Issue and Project tracking software"
               ]
           }
       ]
   },
   "TEST AUTOMATION": {
       "displayName": "Test Automation",
-      "category": "A",
       "description": "Utilizing tools which test software to identify where the expected results are met or not.        ",
       "milestones": [
           {
@@ -230,7 +226,7 @@
               "examples": [
                   "Update identifier or click option for a drop down menu test",
                   "Identify what areas can be tested with automation and those which should be manually tested",
-                  "Experince using Selenium, Appium, Cucumber method and writing basic tests"
+                  "Experience using Selenium, Appium, Cucumber method and writing basic tests"
               ]
           },
           {
@@ -247,36 +243,36 @@
               ]
           },
           {
-              "summary": "Develop testing tools and deployment strategies for automated tests",
+              "summary": "Builds, updates and supports an automated testing suite for various platforms",
               "signals": [
-                  "Create test harnesses and infrastructure",
-                  "Take a leadership role and advance our automated software testing efforts",
-                  "CI/CD experience "
+                  "On a project level, identifies which language/framework/tools are needed to successfully automate.\n",
+                  "Takes a leadership role and advances our automated software testing efforts",
+                  "Throughout the testing process, recognizes the necessity to reuse existing code components to reduce duplicate work, creating a living, breathing test suite"
               ],
               "examples": [
-                  "Created Automated Test for Web Services, Micro-Services and data processes.",
+                  "Wrote automated code using different coding languages and different frameworks (Angular vs Java) (Protractor vs Puppeteer)\n",
                   "Build new, or extend current functionality in our automated test framework",
-                  "Implement and monitor automated test execution and reporting for incremental builds, as well as release candidate builds"
+                  "Utilizes Page Object Models to minimize redundant code and improve code maintenance"
               ]
           },
           {
-              "summary": "Builds, updates and supports an automated testing suite for various platforms",
+              "summary": "Develop testing tools and deployment strategies for automated tests",
               "signals": [
-                  "",
-                  "",
-                  ""
+                  "Creates test harnesses and infrastructure",
+                  "Identify ways to improve the quality of a testing framework and work to implement those improvements",
+                  "Creates and maintains YAML file for CI/CD"
               ],
               "examples": [
-                  "",
-                  "",
-                  ""
+                  "Created Automated Test for Web Services, Micro-Services and data processes.",
+                  "Created docker containers to run e2e test across multiple frameworks and browsers.",
+                  "Implemented and monitored automated test execution and reporting for incremental builds, as well as release candidate builds"
               ]
           },
           {
               "summary": "Is an industry-leading expert in test automation",
               "signals": [
                   "Invents new tools/frameworks to innovate automation efforts",
-                  "Presents best practices at industry recognized conferences",
+                  "Presents best practices for test automation at industry recognized conferences",
                   ""
               ],
               "examples": [
@@ -580,7 +576,7 @@
   "CAREER DEVELOPMENT": {
       "displayName": "Career Development",
       "category": "C",
-      "description": "Provides strategic support to engineers to help them build the career they want",
+      "description": "Provides strategic support to teammates to help them build the career they want",
       "milestones": [
           {
               "summary": "Gives insight into opportunities and helps identify individuals' strengths and weaknesses",
@@ -630,12 +626,12 @@
               ],
               "examples": [
                   "Completed training on situational leadership",
-                  "Coached engineer through tough situation with client",
+                  "Coached teammate through tough situation with client",
                   "Prevented regretted attrition with intentional, targeted intervention"
               ]
           },
           {
-              "summary": "Supports the development of a signficant part of the engineering org, and widely viewed as a trusted advisor",
+              "summary": "Supports the development of a signficant part of the services org, and widely viewed as a trusted advisor",
               "signals": [
                   "Supports and develops senior leaders",
                   "Identified leadership training opportunities for senior leadership",
@@ -735,7 +731,7 @@
               ],
               "examples": [
                   "Acted as an onboarding buddy",
-                  "Paired with an engineer to help them with an unfamiliar area",
+                  "Paired with a teammate to help them with an unfamiliar area",
                   "Helped a colleague understand their feelings"
               ]
           },
@@ -753,7 +749,7 @@
               ]
           },
           {
-              "summary": "Teaches small groups of engineers and contributes to Skookum's shared knowledge base",
+              "summary": "Teaches small groups of teammates and contributes to Skookum's shared knowledge base",
               "signals": [
                   "Avoids siloing information when it can be usefully shared with others",
                   "Drives healthy discussion around new ideas",
@@ -779,7 +775,7 @@
               ]
           },
           {
-              "summary": "Instills and promotes a culture of learning and development within the entire engineering team",
+              "summary": "Instills and promotes a culture of learning and development within the entire team",
               "signals": [
                   "Sets incentive structures to recognise and reward mentorship",
                   "Empowers team members to develop themselves",
@@ -960,7 +956,7 @@
               "summary": "Participates more centrally in small events, and takes simple actions that positively influence groups of people",
               "signals": [
                   "Makes space for others to participate",
-                  "Collaborates with other engineers outside direct responsibilities",
+                  "Collaborates with other teammates outside direct responsibilities",
                   "Takes meaningful action to introduce people to Skookum"
               ],
               "examples": [
