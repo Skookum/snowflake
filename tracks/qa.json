@@ -1,288 +1,288 @@
 {
-  "ANALYSIS/ADMINISTRATION": {
-      "displayName": "Analysis/Administration",
-      "description": "Digests requirements and provides thoughtful recommendations about the product all while ensuring quality is met on the project and application level. ",
-      "milestones": [
-          {
-              "summary": "Understands simple concepts and functionality within a defined requirement",
-              "signals": [
-                  "Provides feedback during story review",
-                  "Understands how multiple stories in an epic connect",
-                  "Identifies risks, dependencies and testing gaps"
-              ],
-              "examples": [
-                  "Identified an inconsistent requirement",
-                  "Requested clarification in regards to unclear requirements",
-                  "Planned tests around happy path and scenarios outlined in requirements"
-              ]
-          },
-          {
-              "summary": "Adapts testing methodology to the need of the project",
-              "signals": [
-                  "Identifies when a testing need is not accounted for within the current testing methodology",
-                  "Pivots testing style to ensure QA is providing the right value",
-                  "Communicates testing methodology needs to team"
-              ],
-              "examples": [
-                  "Designed a test strategy to ensure all scope is considered",
-                  "Organized a meeting with the team to discuss requirement concerns ",
-                  "Worked with a developer to accommodate a change in testing direction"
-              ]
-          },
-          {
-              "summary": "Understands simple concepts and functionality within an undefined requirement",
-              "signals": [
-                  "Understands implied workflows",
-                  "Reviews associated stories to gather context to better understand requirement intent",
-                  "Suggests clarification and improvements to requirements"
-              ],
-              "examples": [
-                  "Made necessary assumptions to effectively become the user in an unclear workflow",
-                  "Discussed unclear information associated to a requirement or feature",
-                  "Identified issues in scenarios not outlined in requirements"
-              ]
-          },
-          {
-              "summary": "Is a subject matter expert and provides valuable insight, direction and reference for the team",
-              "signals": [
-                  "Identifies faults and delivers clear, actionable insight",
-                  "Intentionally maintains a diplomatic relationship with other team members",
-                  "Provides insight as an authority on a particular application or deliverable"
-              ],
-              "examples": [
-                  "Spoke in detail about specific application components",
-                  "Organized and ran a feature rich demo for the team or client",
-                  "Helped new or existing team members understand the 'Why'"
-              ]
-          },
-          {
-              "summary": "Is an industry-leading expert in story and requirement analysis, ",
-              "signals": [
-                  "Provides guidance to Strategist when writing features",
-                  "Helps the client to flesh out new ideas for consideration",
-                  "Pitches company wide processes previously executed on a project basis"
-              ],
-              "examples": [
-                  "Determined stories are invalid",
-                  "Made decisions that have positive, long term, wide ranging consequences for the project and the QA Department",
-                  "Developed a process to accurately estimate stories for QA"
-              ]
-          }
-      ]
-  },
-  "ISSUE MANAGEMENT": {
-      "displayName": "Issue Management",
-      "description": "Writes test cases that efficiently validate the expected behaviors, manages test libraries to ensure tests remain valid and captures defects while accurately logging reproducible behavior.",
-      "milestones": [
-          {
-              "summary": "Keeps test cases up to date as project requirements change",
-              "signals": [
-                  "Updates existing tests when new functionality is integrated",
-                  "Creates proper links from tests to stories or other related issues",
-                  "Pulls existing tests into new sprints for updates and execution"
-              ],
-              "examples": [
-                  "Updated a sign in test to integrate password requirements",
-                  "Updated labels and links when test content changes",
-                  "Identified and marked a test as obsolete when deemed so"
-              ]
-          },
-          {
-              "summary": "Writes simple test cases where requirements are clearly defined, and identifies and documents issues found with basic functionality",
-              "signals": [
-                  "Titles tests clearly and consistently to indicate test objective",
-                  "Considers alternate testing paths to uncover defects",
-                  "Marks tests appropriately based on execution outcome"
-              ],
-              "examples": [
-                  "Created tests that satisfied happy path scenarios",
-                  "Documented and linked a defect to an associated story or test case",
-                  "Wrote simple tests in the Gherkin Method "
-              ]
-          },
-          {
-              "summary": "Creates and maintains thorough test suites in a rapid agile environment",
-              "signals": [
-                  "Actively strategizes on how to best manage tests on a sprint by sprint basis",
-                  "Throughout the testing process, recognizes the necessity to thoroughly regress a feature or component of functionality creating a living, breathing test suite",
-                  "Borrows from existing test suites in other projects to not create duplicate work"
-              ],
-              "examples": [
-                  "Created testing cycles specific to device and operating system to better visualize areas of weakness",
-                  "Created and managed a regression testing cycle",
-                  "Tested associated features via ad hoc tests, when functionality is implemented up or updated"
-              ]
-          },
-          {
-              "summary": "Writes complex tests that reveal areas where requirements are vague",
-              "signals": [
-                  "Provides and requests feedback on tests, defects and enhancements to reduce ambiguity",
-                  "Identifies defects that pinpoint system weaknesses or pitfalls",
-                  "Writes rigorous, well documented tests that are easy to execute even for someone without domain knowledge"
-              ],
-              "examples": [
-                  "Created specialized test scenarios capable of undermining even the best developed systems ",
-                  "Resourcefully created a single test which succinctly verifies numerous acceptance criteria",
-                  "Identified enhancements and/or improvements to provide further value to the product"
-              ]
-          },
-          {
-              "summary": "Is an industry-leading expert in test case creation, testing methodologies and test management best practices",
-              "signals": [
-                  "Creates an industry-recognized test creation strategy",
-                  "Maintains a popular test management blog that is recognized by industry leaders\n",
-                  "Presents best practices for issue management at industry recognized conferences\n"
-              ],
-              "examples": [
-                  "Created and delivered detailed reports outlining issue statuses to better inform team about standings\n",
-                  "Worked with clients to provide guidance on QA best practices\n",
-                  "Contributed to QA best practices in order to share as part of company wide fundamentals\n"
-              ]
-          }
-      ]
-  },
-  "TEST EXECUTION": {
-      "displayName": "Test Execution",
-      "description": "Tests software to identify if the expected results are met or not.",
-      "milestones": [
-          {
-              "summary": "Performs basic exploratory tests to reveal if requirements are met",
-              "signals": [
-                  "Explores a testable environment for verification of requirements",
-                  "Concludes if features or requirements are implemented successfully or not",
-                  "Performs basic user interface and functional tests"
-              ],
-              "examples": [
-                  "Identified an issue not related to requirements",
-                  "Documented pertinent findings related to exploratory testing",
-                  "Demonstrated an issue found to a developer or product owner"
-              ]
-          },
-          {
-              "summary": "Performs complex exploratory testing as thoroughly as if following a well written test, demonstrating a clear attention to detail.",
-              "signals": [
-                  "Approaches testing as an end user to extend the bounds of exploration\n",
-                  "Intuitively understands a product with little help ",
-                  "Separates themselves from institutional knowledge to test in an unpredictable manner"
-              ],
-              "examples": [
-                  "Furthered test exploration when a defect is found to potentially uncover others",
-                  "Leveraged additional testing tools (Postman, Swagger) to further solidify exploratory efforts\n",
-                  "Kept a concentrated approach when performing exploratory testing "
-              ]
-          },
-          {
-              "summary": "Executes simple (written) tests and concludes results sufficiently",
-              "signals": [
-                  "Loosely explore new features before test execution to ensure application integrity\n",
-                  "Follows test steps and embellishes where necessary to expose risks or weaknesses\n",
-                  "Is deliberate in test step execution in order to not overlook any significant details"
-              ],
-              "examples": [
-                  "Documented results per step to add an extra level of assurance\n",
-                  "Marked test status appropriately along with any execution details (build/OS) and moved test to appropriate column in workflow tool\n",
-                  "Updated story status based on test execution results and included any pertinent information regarding linked issues found during execution\n"
-              ]
-          },
-          {
-              "summary": "Executes complex tests which utilize a varying degree of technology to validate expected results",
-              "signals": [
-                  "Utilizes visual reporting methods such as screen shots or video recordings in order to more effectively demonstrate issues identified\n",
-                  "Uses api testing tools to mock or validate tests prior to front end user interface being completed\n",
-                  "Seeds data for environments and tests utilizing scripts or an automated process"
-              ],
-              "examples": [
-                  "Performed a test inside Postman to further validate the behavior on the front end\n",
-                  "Executed tests utilizing specific tools such as Postman and Swagger\n",
-                  "Used Travis CI/Circle CI to kick off automated test suites and monitor results of a build"
-              ]
-          },
-          {
-              "summary": "Is an industry-leading expert in test case execution",
-              "signals": [
-                  "Takes ownership of the QA Environment so maintenance/upkeep isn't reliant on developers and ensures efficient test execution and testing needs of the QA Team are met.\n",
-                  "Creates an industry recognized test execution strategy\n",
-                  "Presents best practices for test execution at industry recognized conferences\n"
-              ],
-              "examples": [
-                  "Worked with clients to provide guidance on QA Test Execution\n",
-                  "Modified existing code within a given code base to validate and/or improve tests, test execution process",
-                  "Provided a proof of concept for a new testing tool or integration to work with Skookum's Issue and Project tracking software"
-              ]
-          }
-      ]
-  },
-  "TEST AUTOMATION": {
-      "displayName": "Test Automation",
-      "description": "Utilizing tools which test software to identify where the expected results are met or not.        ",
-      "milestones": [
-          {
-              "summary": "Writes simple automated tests where requirements are clearly defined",
-              "signals": [
-                  "Able to update existing automation tests when new functionality is integrated",
-                  "Develop basic automation test strategies ",
-                  "Understanding of basic automation frameworks and languages"
-              ],
-              "examples": [
-                  "Update identifier or click option for a drop down menu test",
-                  "Identify what areas can be tested with automation and those which should be manually tested",
-                  "Experience using Selenium, Appium, Cucumber method and writing basic tests"
-              ]
-          },
-          {
-              "summary": "Performs complex automated tests and identifies and documents functionality issues.",
-              "signals": [
-                  "Read an engineering design proposal for a new feature and provide suggestions about how and where to build in testability.",
-                  "Make suggestions for the improvement and evolution of overall development practices, including quality assurance, defect tracking, and release/configuration management",
-                  "Understanding of more advanced automation tools and API testing"
-              ],
-              "examples": [
-                  "How to design it better to work with the automation, where to add ID's and other anchors so automation will run smooth on the UI",
-                  "Write moderately complex code or scripts to test systems",
-                  "Soap vs Rest API, Using Postman"
-              ]
-          },
-          {
-              "summary": "Builds, updates and supports an automated testing suite for various platforms",
-              "signals": [
-                  "On a project level, identifies which language/framework/tools are needed to successfully automate.\n",
-                  "Takes a leadership role and advances our automated software testing efforts",
-                  "Throughout the testing process, recognizes the necessity to reuse existing code components to reduce duplicate work, creating a living, breathing test suite"
-              ],
-              "examples": [
-                  "Wrote automated code using different coding languages and different frameworks (Angular vs Java) (Protractor vs Puppeteer)\n",
-                  "Build new, or extend current functionality in our automated test framework",
-                  "Utilizes Page Object Models to minimize redundant code and improve code maintenance"
-              ]
-          },
-          {
-              "summary": "Develop testing tools and deployment strategies for automated tests",
-              "signals": [
-                  "Creates test harnesses and infrastructure",
-                  "Identify ways to improve the quality of a testing framework and work to implement those improvements",
-                  "Creates and maintains YAML file for CI/CD"
-              ],
-              "examples": [
-                  "Created Automated Test for Web Services, Micro-Services and data processes.",
-                  "Created docker containers to run e2e test across multiple frameworks and browsers.",
-                  "Implemented and monitored automated test execution and reporting for incremental builds, as well as release candidate builds"
-              ]
-          },
-          {
-              "summary": "Is an industry-leading expert in test automation",
-              "signals": [
-                  "Invents new tools/frameworks to innovate automation efforts",
-                  "Presents best practices for test automation at industry recognized conferences",
-                  ""
-              ],
-              "examples": [
-                  "Invented industry recognized framework like Appium or Cucumber",
-                  "Gave a presentation on Automated Testing Fundamentals at TISQA",
-                  ""
-              ]
-          }
-      ]
-  },
+    "ANALYSIS/ADMINSTRATION": {
+        "displayName": "Analysis/Adminstration",
+        "description": "Digests requirements and provides thoughtful recommendations about the product all while ensuring quality is met on the project and application level.",
+        "milestones": [
+            {
+                "summary": "Understands simple concepts and functionality within a defined requirement",
+                "signals": [
+                    "Provides feedback during story review",
+                    "Understands how multiple stories in an epic connect",
+                    "Identifies risks, dependencies and testing gaps"
+                ],
+                "examples": [
+                    "Identified an inconsistent requirement and requested clarification on those requirements",
+                    "Provides and requests feedback on all issue types to reduce ambiguity",
+                    "Planned tests around happy path and scenarios outlined in requirements"
+                ]
+            },
+            {
+                "summary": "Adapts testing methodology to the need of the project",
+                "signals": [
+                    "Identifies when a testing need is not accounted for within the current testing methodology",
+                    "Pivots testing style to ensure QA is providing the right value",
+                    "Communicates testing methodology needs to team"
+                ],
+                "examples": [
+                    "Designed a test strategy to ensure all scope is considered",
+                    "Organized a meeting with the team to discuss requirement concerns ",
+                    "Worked with a developer to accomodate a change in testing direction"
+                ]
+            },
+            {
+                "summary": "Understands simple concepts and functionality within an undefined requirement",
+                "signals": [
+                    "Understands implied workflows",
+                    "Reviews associated stories to gather context to better understand requirement intent",
+                    "Suggests clarification and improvements to requirements"
+                ],
+                "examples": [
+                    "Made necessary assumptions to effectively become the user in an unclear workflow",
+                    "Indirectly contributing to a sale via QA blog",
+                    "Identified inconsistent feature standards"
+                ]
+            },
+            {
+                "summary": "Is a subject matter expert and provides valuable insight, direction and reference for the team",
+                "signals": [
+                    "Identifies weaknesses and delivers clear, actionable insight",
+                    "Intenionally maintains a diplomatic relationship with other team members",
+                    "Provides insight as an authority on a particular application or deliverable"
+                ],
+                "examples": [
+                    "Spoke in detail about specific application components",
+                    "Organized and ran a feature rich demo for the team or client",
+                    "Implemented a project wide process that benefits the development lifecycle"
+                ]
+            },
+            {
+                "summary": "Is an industry-leading expert in story and requirement analysis or sets strategic direction for a QA team",
+                "signals": [
+                    "Supports the sales team from a QA perspective\n",
+                    "Pitches company wide processes previously executed on a project basis",
+                    "As a power user of a product, provides direction to the client to improve user experience"
+                ],
+                "examples": [
+                    "Proposes standardized user story format such as Behavior Driven Development (BDD) to Skookum stakeholders",
+                    "Made decisions that have positive, long term, wide ranging consequences for the project and the QA Department",
+                    "Developed a process to accurately estimate stories for QA"
+                ]
+            }
+        ]
+    },
+    "ISSUE MANAGEMENT": {
+        "displayName": "Issue Management",
+        "description": "Writes test cases that efficiently validate the expected behaviors, manages test libraries to ensure tests remain valid and captures defects while accurately logging reproducible behavior.",
+        "milestones": [
+            {
+                "summary": "Keeps test cases up to date as project requirements change",
+                "signals": [
+                    "Updates existing tests when new functionality is integrated",
+                    "Creates proper links from tests to stories or other related issues",
+                    "Pulls existing tests into new sprints for updates and execution"
+                ],
+                "examples": [
+                    "Updated a sign-in test to integrate password requirements",
+                    "Updated labels and links when test content changes",
+                    "Identified and marked a test as obsolete when deemed so"
+                ]
+            },
+            {
+                "summary": "Writes simple test cases where requirements are clearly defined, and identifies and documents issues found with basic functionality",
+                "signals": [
+                    "Titles tests clearly and consistently to indicate test objective",
+                    "Considers alternate testing paths to uncover defects",
+                    "Utilizes visual reporting methods such as screen shots or video recordings in order to more effectively demonstrate issues identified\n"
+                ],
+                "examples": [
+                    "Created tests that satisfied happy path scenarios",
+                    "Documented and linked a defect to an associated story or test case",
+                    "Wrote simple tests in the Gherkin Method "
+                ]
+            },
+            {
+                "summary": "Creates and maintains thorough test suites in a rapid agile environment",
+                "signals": [
+                    "Actively strategizes on how to best manage tests on a sprint by sprint basis",
+                    "Throughout the testing process, recognizes the necessity to thoroughly regress a feature or component of functionality creating a living, breathing test suite",
+                    "Borrows from existing test suites in other projects to not create duplicate work"
+                ],
+                "examples": [
+                    "Created testing cycles specific to device and operating system to better visualize areas of weakness",
+                    "Created and managed a regression testing cycle",
+                    "Tested associated features via ad hoc tests, when functionality is implemented or updated"
+                ]
+            },
+            {
+                "summary": "Writes complex tests that incorporate edge case scenarios exposing vague requirements, and documents issues",
+                "signals": [
+                    "Refactors tests to account for changes in the source code that do not modify the functional requirements",
+                    "Identifies defects that pinpoint system weaknesses or pitfalls",
+                    "Writes rigorous, well documented tests that are easy to execute even for someone without domain knowledge"
+                ],
+                "examples": [
+                    "Created specialized test scenarios capable of undermining even the best developed systems ",
+                    "Resourcefully created a test which succinctly verifies numerous acceptance criteria",
+                    "Identified enhancements and/or improvements to provide further value to the product"
+                ]
+            },
+            {
+                "summary": "Is an industry-leading expert in test case creation, testing methodologies and test management best practices or sets strategic direction for a QA team",
+                "signals": [
+                    "Designs company-wide strategy for issue management\n",
+                    "Maintains a popular QA blog",
+                    "Presents best practices for issue management at popular QA conferences\n"
+                ],
+                "examples": [
+                    "Created and delivered detailed reports outlining issue statuses to better inform team about standings\n",
+                    "Created a new industry-recognized testing methodology",
+                    "Contributed to QA best practices in order to share as part of company wide guidelines"
+                ]
+            }
+        ]
+    },
+    "TEST EXECUTION": {
+        "displayName": "Test Execution",
+        "description": "Tests software to identify if the expected results are met or not",
+        "milestones": [
+            {
+                "summary": "Performs basic exploratory tests to reveal if requirements are met",
+                "signals": [
+                    "Loosely explore new features before test execution to ensure application integrity\n",
+                    "Marks tests appropriately based on execution outcome",
+                    "Performs basic user interface and functional tests"
+                ],
+                "examples": [
+                    "Identified an issue not related to requirements",
+                    "Documented pertinent findings related to exploratory testing",
+                    "Demonstrated an issue found to a developer or product owner"
+                ]
+            },
+            {
+                "summary": "Executes simple (written) tests and concludes results sufficiently",
+                "signals": [
+                    "Follows written tests to perform intermediate UI and functional tests",
+                    "Follows test steps and embellishes where necessary to expose risks or weaknesses\n",
+                    "Is deliberate in test step execution in order to not overlook any significant details"
+                ],
+                "examples": [
+                    "Documented results per step to add an extra level of assurance\n",
+                    "Marked test status appropriately along with any test configuration (build/OS/browser/device)",
+                    "Updated story status based on test execution results and included any pertinent information regarding linked issues found during execution\n"
+                ]
+            },
+            {
+                "summary": "Performs complex exploratory testing as thoroughly as if following a well written test, demonstrating a clear attention to detail",
+                "signals": [
+                    "Approaches testing as an end user to extend the bounds of exploration\n",
+                    "Keeps a concentrated approach when performing exploratory testing ",
+                    "Separates themselves from institutional knowledge to test in an unpredictable manner"
+                ],
+                "examples": [
+                    "Furthered test exploration when a defect is found to potentially uncover others",
+                    "Leveraged additional testing tools (Postman, Swagger) to further solidify exploratory efforts\n",
+                    "Extended testing to a real world setting to better account for uncontrolled variables surrounding the product"
+                ]
+            },
+            {
+                "summary": "Executes complex (written) tests which utilize a varying degree of technology to validate expected results",
+                "signals": [
+                    "Demonstrates proficiency in multiple testing methodologies to ensure a well rounded product\n",
+                    "Uses api testing tools to mock or validate tests prior to front end user interface being completed\n",
+                    "Seeds data for environments and tests utilizing scripts or an automated process"
+                ],
+                "examples": [
+                    "Performed a test inside Postman to further validate the behavior on the front end\n",
+                    "Used Xcode to view application logs found during test execution\n",
+                    "Used Travis CI/Circle CI to kick off automated test suites and monitor results of a build"
+                ]
+            },
+            {
+                "summary": "Is an industry-leading expert in test case execution or sets strategic direction for a QA team",
+                "signals": [
+                    "Takes ownership maintaining the QA environment to ensure efficient testing needs of the QA team are met",
+                    "Designs company-wide strategies to reduce execution errors and increase confidence with results\n",
+                    "Presents best practices for test execution at industry recognized conferences\n"
+                ],
+                "examples": [
+                    "Entered a Testathon\n",
+                    "Modified mock data (ex. Postman) created by other team members to produce more efficient results.\n",
+                    "Researched and experimented with specific testing tools to improve the efficiency of test execution\n"
+                ]
+            }
+        ]
+    },
+    "TEST AUTOMATION": {
+        "displayName": "Test Automation",
+        "description": "Utilizing tools which test software to identify whether the expected results are met or not",
+        "milestones": [
+            {
+                "summary": "Writes simple automated tests where requirements are clearly defined",
+                "signals": [
+                    "Updates existing automation tests when new functionality is integrated",
+                    "Updates existing automation test strategies to fit the needs of a project ",
+                    "Understanding of basic automation frameworks and languages"
+                ],
+                "examples": [
+                    "Updated identifier or click option for a drop down menu test",
+                    "Identify what areas can be tested with automation and those which should be manually tested",
+                    "Experince using Selenium, Appium, Cucumber method and writing basic tests"
+                ]
+            },
+            {
+                "summary": "Performs complex automated tests and identifies and documents functionality issues.",
+                "signals": [
+                    "Read an engineering design proposal for a new feature and provide suggestions about how and where to build in testability",
+                    "Develops Automation test strategies ",
+                    "Understanding of more advanced automation tools and API testing"
+                ],
+                "examples": [
+                    "Worked with dev team to standardized ID's",
+                    "Wrote moderately complex code or scripts to test systems",
+                    "Utilized technology such as Postman to write API automation scripts"
+                ]
+            },
+            {
+                "summary": "Builds, updates and supports an automated testing suite for various platforms",
+                "signals": [
+                    "On a project level, identifies which language/framework/tools are needed to successfully automate\n",
+                    "Takes a leadership role and advances our automated software testing efforts",
+                    "Throughout the testing process, recognizes the necessity to reuse existing code components to reduce duplicate work, creating a living, breathing test suite"
+                ],
+                "examples": [
+                    "Wrote automated code using different coding languages and different frameworks (JS vs Java) (Protractor vs Puppeteer)\n",
+                    "Build new, or extend current functionality in our automated test framework",
+                    "Utilizes Page Object Models to minimize redundant code and improve code maintenance"
+                ]
+            },
+            {
+                "summary": "Creates deployment strategies and maintains the integrations for different CI/CD pipelines.",
+                "signals": [
+                    "Creates test harnesses and infrastructure aiding in the creation of test data to improve productivity of both manual and automated tests",
+                    "Identifies and communicates testing framework enhancements",
+                    "Creates and maintains YAML file for CI/CD"
+                ],
+                "examples": [
+                    "Created Automated Test for Web Services, Micro-Services and data processes",
+                    "Created docker containers to run e2e test across multiple frameworks and browsers",
+                    "Implemented and monitored automated test execution and reporting for incremental builds, as well as release candidate builds"
+                ]
+            },
+            {
+                "summary": "Is an industry-leading expert in test automation or sets strategic direction for a QA team",
+                "signals": [
+                    "Invents new tools/frameworks to innovate automation efforts",
+                    "Presents best practices for test automation at QA conferences",
+                    "Wrote a \"How-to automation for dummies\" curriculum that covers a wide range of test automation skills\n"
+                ],
+                "examples": [
+                    "Invented industry recognized framework like Appium or Cucumber",
+                    "Gave a presentation on Automated Testing Fundamentals at TISQA",
+                    "Worked with clients to provide guidance and recommendations on QA Automation best practices"
+                ]
+            }
+        ]
+    },
 
   "PROJECT MANAGEMENT": {
       "displayName": "Project Management",
