@@ -1,288 +1,289 @@
 {
-  "RESEARCH & INSIGHTS": {
-      "displayName": "Research & Insights",
-      "description": "Focuses on conducting research and generating insights based on the business, users, landscape and environment",
-      "milestones": [
-          {
-              "summary": "Level 1",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 2",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 2",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 4",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 5",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          }
-      ]
-  },
-  "PRODUCT DESIGN": {
-      "displayName": "Product Design",
-      "description": "The ability to create user flows, customer journeys, test design prototypes and develop phased roadmaps",
-      "milestones": [
-          {
-              "summary": "Level 1",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 2",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 3",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 4",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 5",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          }
-      ]
-  },
-  "PRODUCT EXECUTION": {
-      "displayName": "Product Execution",
-      "description": "Ability to product manage and partner with developers through engineering to deployment and run an agile method",
-      "milestones": [
-          {
-              "summary": "Level 1",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 2",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 3",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 4",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 5",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          }
-      ]
-  },
-  "DIGITAL TRANSFORMATION": {
-      "displayName": "Digital Transformation",
-      "description": "Focuses on how products contribute to an organization’s goals, their impact on the company and how the products are managed",
-      "milestones": [
-          {
-              "summary": "Level 1",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 2",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 3",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 4",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          },
-          {
-              "summary": "Level 5",
-              "signals": [
-                  "",
-                  "",
-                  ""
-              ],
-              "examples": [
-                  "",
-                  "",
-                  ""
-              ]
-          }
-      ]
-  },
+
+      "DISCOVERY": {
+          "displayName": "Discovery",
+          "description": "Focuses on discovery exercises including research, workshops and user analyses among others.",
+          "milestones": [
+              {
+                  "summary": "Works effectively in Discovery support of the Product team by following best practices and direction from senior team members",
+                  "signals": [
+                      "Takes notes in workshop",
+                      "Conducts a Heuristic Analysis",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              },
+              {
+                  "summary": "Facilitates individual Discovery efforts or other research independently",
+                  "signals": [
+                      "Puts together a Discovery Plan",
+                      "Looks for information in the right places",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              },
+              {
+                  "summary": "Effectively facilitates broader Discovery efforts that are less defined and riskier to achieve",
+                  "signals": [
+                      "Runs multi-day discovery workshops",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              },
+              {
+                  "summary": "Consistently uncovers original insights that materially inform strategies",
+                  "signals": [
+                      "",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              },
+              {
+                  "summary": "Is an industry-leading expert in Discovery or has developed original Discovery methods that move the discipline forward",
+                  "signals": [
+                      "",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              }
+          ]
+      },
+      "STRATEGY": {
+          "displayName": "Strategy",
+          "description": "Focuses on generating insights based on the business, users, landscape and environment.",
+          "milestones": [
+              {
+                  "summary": "Works effectively within established structures, following current best practices",
+                  "signals": [
+                      "Completes a Competitive Analysis",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              },
+              {
+                  "summary": "Derives relationships among findings that shape significant direction for an engagement",
+                  "signals": [
+                      "Draws insights from analyses created",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              },
+              {
+                  "summary": "Discovers breakthroughs in a client's strategic approach that appreciably moves a business unit forward in unique and measurable ways",
+                  "signals": [
+                      "Builds a product roadmap",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              },
+              {
+                  "summary": "Drives breakthroughs that appreciably moves the entire organization forward in unique and measurable ways",
+                  "signals": [
+                      "Is asked to create a new strategy from scratch for a client",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              },
+              {
+                  "summary": "Is an industry-leading expert in strategy or sets strategic direction for entire industries",
+                  "signals": [
+                      "",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              }
+          ]
+      },
+      "PRODUCTION": {
+          "displayName": "Production",
+          "description": "Ability to product manage and partner with developers through engineering to deployment and run an agile method",
+          "milestones": [
+              {
+                  "summary": "Works effectively within established structures, following current best practices",
+                  "signals": [
+                      "Updates acceptance criteria for stories based on developer feedback",
+                      "Runs story grooming sessions",
+                      ""
+                  ],
+                  "examples": [
+                      "Runs daily standup",
+                      "",
+                      ""
+                  ]
+              },
+              {
+                  "summary": "Executes against a production methodology to deliver products",
+                  "signals": [
+                      "Writes user stories for full application",
+                      "Leads team through development of a marketing website",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              },
+              {
+                  "summary": "Delivers quality products of moderate complexity",
+                  "signals": [
+                      "Leads development team in iOS & Android application development",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              },
+              {
+                  "summary": "Delivers complex, large scale products or creates best practices that enrich and inspire the entire production team",
+                  "signals": [
+                      "Leads development team in large application with multiple system integrations of high complexity",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              },
+              {
+                  "summary": "Is an industry-leading expert in product management or has created new and unique methods for delivering software in an Agile environment",
+                  "signals": [
+                      "",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      "",
+                      "",
+                      ""
+                  ]
+              }
+          ]
+      },
+      "PRESENCE": {
+          "displayName": "Presence",
+          "description": "Focuses on establishing relationships both internally and externally through rapport, presentation excellence and actively driving project success.",
+          "milestones": [
+              {
+                  "summary": "Works effectively in a professional environment by supporting senior team members and contributes in client interactions",
+                  "signals": [
+                      "Leads client meetings regularly",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      null,
+                      null,
+                      null
+                  ]
+              },
+              {
+                  "summary": "Quickly creates rapport with a client and instills confidence with internal teams",
+                  "signals": [
+                      "Delivers effective status reports",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      null,
+                      null,
+                      null
+                  ]
+              },
+              {
+                  "summary": "Directs client and team interactions and conveys information in an engaging manner",
+                  "signals": [
+                      "Delivers large executive presentations",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      null,
+                      null,
+                      null
+                  ]
+              },
+              {
+                  "summary": "Establishes enriching relationships such that they are requested to lead engagements.",
+                  "signals": [
+                      "Client requests you to lead a strategic team",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      null,
+                      null,
+                      null
+                  ]
+              },
+              {
+                  "summary": "Well regarded expert across multiple industries that could create their own consultancy",
+                  "signals": [
+                      "",
+                      "",
+                      ""
+                  ],
+                  "examples": [
+                      null,
+                      null,
+                      null
+                  ]
+              }
+          ]
+      },
 
   "PROJECT MANAGEMENT": {
       "displayName": "Project Management",
