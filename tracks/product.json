@@ -1,6 +1,7 @@
 {
   "DISCOVERY": {
       "displayName": "Discovery",
+      "category": "A",
       "description": "Focuses on discovery exercises including research, workshops and user analyses among others.",
       "milestones": [
           {
@@ -72,6 +73,7 @@
   },
   "STRATEGY": {
       "displayName": "Strategy",
+      "category": "A",
       "description": "Focuses on generating insights based on the business, users, landscape and environment.",
       "milestones": [
           {
@@ -143,6 +145,7 @@
   },
   "PRODUCTION": {
       "displayName": "Production",
+      "category": "A",
       "description": "Ability to product manage and partner with developers through engineering to deployment and run an agile method",
       "milestones": [
           {
@@ -214,6 +217,7 @@
   },
   "PRESENCE": {
       "displayName": "Presence",
+      "category": "A",
       "description": "Focuses on establishing relationships both internally and externally through rapport, presentation excellence and actively driving project success.",
       "milestones": [
           {

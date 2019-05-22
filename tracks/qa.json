@@ -1,6 +1,7 @@
 {
     "ANALYSIS/ADMINISTRATION": {
         "displayName": "Analysis / Administration",
+        "category": "A",
         "description": "Digests requirements and provides thoughtful recommendations about the product all while ensuring quality is met on the project and application level.",
         "milestones": [
             {
@@ -72,6 +73,7 @@
     },
     "ISSUE MANAGEMENT": {
         "displayName": "Issue Management",
+        "category": "A",
         "description": "Writes test cases that efficiently validate the expected behaviors, manages test libraries to ensure tests remain valid and captures defects while accurately logging reproducible behavior.",
         "milestones": [
             {
@@ -143,6 +145,7 @@
     },
     "TEST EXECUTION": {
         "displayName": "Test Execution",
+        "category": "A",
         "description": "Tests software to identify if the expected results are met or not",
         "milestones": [
             {
@@ -214,6 +217,7 @@
     },
     "TEST AUTOMATION": {
         "displayName": "Test Automation",
+        "category": "A",
         "description": "Utilizing tools which test software to identify whether the expected results are met or not",
         "milestones": [
             {
