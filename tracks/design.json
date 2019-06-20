@@ -1,7 +1,6 @@
 {
   "RESEARCH & USER EXPERIENCE": {
       "displayName": "Research & User Experience",
-      "category": "A",
       "description": "Creatively and systematically works to increase a person’s perceptions and responses from the use of a product or experience.",
       "milestones": [
           {
@@ -46,7 +45,7 @@
           {
               "summary": "Demonstrates, articulates and teaches others understanding of information architecture, multi-step and cross-platform flows. Consistently consider the holistic user experience, potential states (errors, successes, empty states, etc.) and product overlap in their own and others' work. Points out connections and potential collisions between different products, features and platforms.",
               "signals": [
-                  "Excells at explaining & teaching UX approaches and processes with teamates and stakeholders.",
+                  "Excels at explaining & teaching UX approaches and processes with teamates and stakeholders.",
                   "Is very familair with when and how design workshops are done at Skookum",
                   "Has aquired strong, accurate design instincts based on experience and past work examples."
               ],
@@ -73,58 +72,57 @@
   },
   "INTERFACE DESIGN": {
       "displayName": "Interface Design",
-      "category": "A",
       "description": "Works to create designs that users will find easy to use and pleasurable focusing on looks or style and ensures that the interface has elements that are easy to access and understand.",
       "milestones": [
           {
               "summary": "Demonstrates taste in layout, typography and visual hierarchy. Uses existing visual frameworks creatively to produce designs.",
               "signals": [
                   "Can effectively reference existing applications or component libraries when designing new UI ",
-                  "Familiarity with design pricinples across multiple platforms.",
+                  "Familiarity with design principles across multiple platforms.",
                   "Stays up to date with emergent UI patterns"
               ],
               "examples": [
                   "Utilizes Material Design UI controls effectively",
                   "Designs new pages that fit in with existing applications",
-                  "Refers to real life UI examples when desiging"
+                  "Refers to pre-established UI examples when designing"
               ]
           },
           {
               "summary": "Demonstrates understanding of layout, typography and visual hierarchy. Uses existing visual frameworks creatively to produce designs and, where appropriate, new styles and patterns.",
               "signals": [
-                  "Can create consistent UI across large applications",
+                  "",
                   "Considers how applications will function across use cases and screen sizes.",
-                  "Identifies opportunities to break patterns and introduce more effective componentry"
+                  "Able to identify opportunities to break patterns and introduce more effective componentry"
               ],
               "examples": [
-                  "Is organized and strategic with file structure",
+                  "Is able to handoff organized assets/design files to other teams",
                   "Designs responsive applications that don't sacrifice functionality.",
-                  ""
+                  "Creates strong visual hierarchies that drive users to essential actions and information "
               ]
           },
           {
               "summary": "Demonstrates and articulates the understanding of layout, typography and visual hierarchy. Uses existing visual frameworks creatively to produce designs and, where appropriate, new styles and patterns. Maintains and suggests evolutions of Skookum’s design principles.",
               "signals": [
                   "Has an understanding how feature-sets evolve over the life of a product and considers future interface needs.",
-                  "Knows how reusuable interface components can be leveraged across an application",
-                  ""
+                  "Knows how reusuable interface components can be levereged across an application",
+                  "Can create consistent UI across an enitre application"
               ],
               "examples": [
                   "Creates navigation systems that can scale",
                   "Works in components and patterns.",
-                  "Extends existing components when appropriate"
+                  "Creates a design system for a specific client"
               ]
           },
           {
               "summary": "Demonstrates, articulates and teaches the understanding of layout, typography and visual hierarchy. Gives strong design direction to other designers on the team, encouraging creative use of existing visual frameworks to produce designs and, where appropriate, new styles and patterns. Maintains, suggests and advocates for evolutions of Skookum’s design principles.",
               "signals": [
-                  "",
+                  "Is sought out by others for advice/mentorship on the subject of interface design.",
                   "",
                   ""
               ],
               "examples": [
                   "Builds a design system used across multiple applications",
-                  "",
+                  "Recognized as a thought leader outside of the company",
                   ""
               ]
           },
@@ -136,8 +134,8 @@
                   ""
               ],
               "examples": [
-                  "Develops a new user interaction such as: spin to refresh",
-                  "",
+                  "Develops a new intuitive user interaction that becomes a standard.",
+                  "Regularly gives talks at conferences on interface design.",
                   ""
               ]
           }
@@ -145,20 +143,19 @@
   },
   "VISUAL DESIGN": {
       "displayName": "Visual Design",
-      "category": "A",
       "description": "Leverages and integrates other fields of design to create visual assets that improve the interface and user experience design. This includes, but is not limited to, interaction design, animation, illustration, graphic design and more.",
       "milestones": [
           {
               "summary": "Demonstrates taste in visual design. Uses existing visual assets creatively to produce designs.",
               "signals": [
-                  "Can itterate upon styles/visuals used in existing applications and designs",
+                  "Can iterate upon styles/visuals used in existing applications and designs",
                   "Familiarity with a variety web and mobile layouts",
-                  "Can apply existing brand styles effectively when creating new deliverables."
+                  "Understands basic design principles such as balance, unity, rhythm, proportion. etc. "
               ],
               "examples": [
-                  "Understands basic design principles such as balance, unity, rhythm, proportion. etc. ",
+                  "Can leverage existing iconography kits for brand or product",
                   "Can create an original color palette",
-                  ""
+                  "Can apply existing brand styles effectively when creating new deliverables."
               ]
           },
           {
@@ -171,20 +168,20 @@
               "examples": [
                   "Creates something beautiful for a company that doesn't have brand standards",
                   "Understands and utilizes design trends to elevate a brand or product",
-                  "Creates consistent designs that utilize well balanced colors, typography, and iconography"
+                  "Can establish custom, accessible iconography kits for brands or products"
               ]
           },
           {
               "summary": "Demonstrates and articulates the understanding of visual design. Uses existing visual assets creatively to produce designs and, where appropriate, new styles and patterns. Maintains and suggests evolutions of Skookum’s visual design principles.",
               "signals": [
-                  "Can create original artwork that can be leveraged for specific business goals.",
+                  "Creates original artwork that can be leveraged for specific business goals.",
                   "Understands how motion and illustration can be applied in a functional way.",
-                  ""
+                  "Has a firm understanding of the underlying customer experience to ensure that the overall experience with a company is aligned with the product being built"
               ],
               "examples": [
-                  "Develops brand specific assets that represent an existing brand identity effectively",
-                  "has a firm understanding of the underlying customer experience to ensure that the overall experience with a company is aligned with the product being built",
-                  ""
+                  "Design brand assets that can scale across large companies and design systems",
+                  "Can establish thoughtful motion and animation standards at scale ",
+                  "Creates consistent designs that utilize well balanced colors, typography, and iconography"
               ]
           },
           {
@@ -195,9 +192,9 @@
                   ""
               ],
               "examples": [
-                  "",
-                  "",
-                  ""
+                  "Speaks a about Visual Design at conferences",
+                  "Established an audience in the visual design community",
+                  "Featured in publications"
               ]
           },
           {
@@ -208,7 +205,7 @@
                   ""
               ],
               "examples": [
-                  "",
+                  "Signature style that is sought after and recognized outside the community",
                   "",
                   ""
               ]
@@ -217,18 +214,17 @@
   },
   "TECHNICAL KNOWLEDGE & ABILITY": {
       "displayName": "Technical Knowledge & Ability",
-      "category": "A",
       "description": "Works to understand the constraints and feasibility of the technology they’re designing within and is familiar with the platform design standards.",
       "milestones": [
           {
               "summary": "Employs design tools to solve and communicate user flows, interaction and motion.",
               "signals": [
-                  "Has basic understanding of HTML + CSS",
+                  "Proficient in a specific design and prototyping tool",
                   "Familiar with the Human Interface Guidelines and Material Design Standards",
-                  ""
+                  "Actively trying out new tools and exploring design software landscape"
               ],
               "examples": [
-                  "",
+                  "Researching new tools that will improve a project",
                   "",
                   ""
               ]
@@ -237,26 +233,26 @@
               "summary": "Employs design tools to solve and communicate user flows, interaction and motion, and knows which tool to use depending on scope and phase of the project.",
               "signals": [
                   "Comunicates with developers when navigating design decisions.",
-                  "",
+                  "Has basic understanding of HTML + CSS",
                   "How an application will be built plays a role in their design process"
               ],
               "examples": [
-                  "Creates a smooth handoff through the organization of files and design assets",
-                  "",
-                  ""
+                  "Creates a smooth handoff through the organization of files and design assets ",
+                  "Understands the limitations from a dev perspective to impact design",
+                  "Organizes design files in a structured manner for easy handoff to other designers"
               ]
           },
           {
               "summary": "Employs a broad set of design tools to best solve and communicate user flows, interaction and motion, and knows which tool to use depending on scope and phase of the project. Additionally, seeks out new techniques and tools, tries them out and makes recommendations to the Product Design team.",
               "signals": [
-                  "Can develop mobile & responsive static websites from Zeplin or Sketch",
-                  "",
-                  ""
+                  "Can develop mobile & responsive static websites using frontend UI frameworks",
+                  "Helping team members on how to use design/prototyping tools",
+                  "Helping develop product roadmaps for different tools"
               ],
               "examples": [
                   "Familiarity with animation frameworks",
-                  "",
-                  ""
+                  "Audit codebase for accessibility",
+                  "Understands and knows when/how to implement new technologies such AR, AI, blockchain, etc."
               ]
           },
           {
@@ -268,15 +264,15 @@
               ],
               "examples": [
                   "Familiarity with patterns for effective CSS architecture",
-                  "",
+                  "Developing plugin extensions",
                   ""
               ]
           },
           {
               "summary": "Creating a new set of design tools to best solve and communicate user flows, interaction and motion, and knows which tool to use depending on scope and phase of the project. Additionally, seeks out new techniques and tools, tries them out, makes recommendations and teaches those tools to the Product Design team.",
               "signals": [
-                  "",
-                  "",
+                  "Can develop an application",
+                  "Create a new design tool that is adopted",
                   ""
               ],
               "examples": [

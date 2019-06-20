@@ -1,7 +1,6 @@
 {
   "DISCOVERY": {
       "displayName": "Discovery",
-      "category": "A",
       "description": "Focuses on discovery exercises including research, workshops and user analyses among others.",
       "milestones": [
           {
@@ -73,79 +72,77 @@
   },
   "STRATEGY": {
       "displayName": "Strategy",
-      "category": "A",
       "description": "Focuses on generating insights based on the business, users, landscape and environment.",
       "milestones": [
           {
               "summary": "Works effectively within established structures, following current best practices",
               "signals": [
-                  "Completes a Competitive Analysis",
-                  "",
-                  ""
+                  "Defines success through quantitative methods ",
+                  "Demonstrates awareness of the risks as well as benefits to a solution",
+                  "Supports other strategists in developing client strategy."
               ],
               "examples": [
-                  "",
-                  "",
-                  ""
+                  "Completed a competitive analysis",
+                  "Validated a hypothesis through data",
+                  "Defined success through a business model canvas"
               ]
           },
           {
               "summary": "Derives relationships among findings that shape significant direction for an engagement",
               "signals": [
-                  "Draws insights from analyses created",
-                  "",
-                  ""
+                  "Draws actioanble insights from analyses created.",
+                  "Understands the design and technical implications of a strategic recommendation",
+                  "Contributes equitably or independently to the development of client strategy."
               ],
               "examples": [
-                  "",
-                  "",
-                  ""
+                  "Used competitive analysis to identify novel opportunities in the market.",
+                  "Leveraged user testing or usability results to synthesize actionable insights ",
+                  "Routinely established alignment with client during an engagement. "
               ]
           },
           {
               "summary": "Discovers breakthroughs in a client's strategic approach that appreciably moves a business unit forward in unique and measurable ways",
               "signals": [
-                  "Builds a product roadmap",
-                  "",
-                  ""
+                  "Offers key perspectives and insights that guide a client's strategic direction. ",
+                  "Utilizes knowledge and experience for offering and capability development ",
+                  "Leads other strategists or team members in pursuit of a client's strategy"
               ],
               "examples": [
-                  "",
-                  "",
-                  ""
+                  "Built a product roadmap",
+                  "Deployed strategy that resulted in meaningful impact for a business unit within a corporation.",
+                  "Synthesized strategic concepts that inspired new work with an existing client."
               ]
           },
           {
               "summary": "Drives breakthroughs that appreciably moves the entire organization forward in unique and measurable ways",
               "signals": [
-                  "Is asked to create a new strategy from scratch for a client",
-                  "",
-                  ""
+                  "Leads, recruits around, and serves clients with a core strategic offering.",
+                  "Routinely sought for mentorship around a specific area of expertise or general strategy.",
+                  "Leads multiple teams of strategists and other disciplines in pursuit of a larger client's strategy."
               ],
               "examples": [
-                  "",
-                  "",
-                  ""
+                  "Deployed strategy that resulted in meaningful impact for an entire corporation.",
+                  "Led a workshop or training session to educate peers on a new skill, framework, approach, etc.",
+                  "Synthesized strategic concepts that won work with an entirely new major client."
               ]
           },
           {
               "summary": "Is an industry-leading expert in strategy or sets strategic direction for entire industries",
               "signals": [
-                  "",
-                  "",
-                  ""
+                  "Leads the industry through thought leadership in client strategy.",
+                  "Receives regular invitations to be a keynote speaker / SME.",
+                  "Sought after by major corporations for engagements."
               ],
               "examples": [
-                  "",
-                  "",
-                  ""
+                  "Wrote a book that is widely adopted by the industry ",
+                  "Developed an original strategic methodology that is widely used.",
+                  "Publicly recognized on a flight or in the street."
               ]
           }
       ]
   },
   "PRODUCTION": {
       "displayName": "Production",
-      "category": "A",
       "description": "Ability to product manage and partner with developers through engineering to deployment and run an agile method",
       "milestones": [
           {
@@ -153,12 +150,12 @@
               "signals": [
                   "Updates acceptance criteria for stories based on developer feedback",
                   "Runs story grooming sessions",
-                  ""
+                  "Basic understanding of web design principles"
               ],
               "examples": [
                   "Runs daily standup",
-                  "",
-                  ""
+                  "Creating status reports",
+                  "Understands Waterfall, Agile, Lean and the tradeoffs of each approach"
               ]
           },
           {
@@ -166,11 +163,11 @@
               "signals": [
                   "Writes user stories for full application",
                   "Leads team through development of a marketing website",
-                  ""
+                  "Identifying risks and dependencies and surfacing those to stakeholders"
               ],
               "examples": [
-                  "",
-                  "",
+                  "Is a practicioner of Agile methodologies and contributing member of the team",
+                  "Understanding frontend, backend and responsive web methodologies",
                   ""
               ]
           },
@@ -178,38 +175,38 @@
               "summary": "Delivers quality products of moderate complexity",
               "signals": [
                   "Leads development team in iOS & Android application development",
-                  "",
-                  ""
+                  "API stuff here",
+                  "Proactively suggest fixes to stakeholders that mitigage indentified risks"
               ],
               "examples": [
-                  "",
+                  "Leads a small development team through end-to-end Agile development",
                   "",
                   ""
               ]
           },
           {
-              "summary": "Delivers complex, large scale products or creates best practices that enrich and inspire the entire production team",
+              "summary": "Delivers complex, large scale products or creates best practices that enrich the entire production team",
               "signals": [
                   "Leads development team in large application with multiple system integrations of high complexity",
-                  "",
+                  "Delivers user story creation feedback and coaches team members in story writing best practices ",
                   ""
               ],
               "examples": [
-                  "",
-                  "",
+                  "Leads a large team through end-to-end Agile development",
+                  "tech continuum",
                   ""
               ]
           },
           {
               "summary": "Is an industry-leading expert in product management or has created new and unique methods for delivering software in an Agile environment",
               "signals": [
-                  "",
-                  "",
-                  ""
+                  "Leads the industry through thought leadership in client production.",
+                  "Receives regular invitations to be a keynote speaker / SME.",
+                  "Sought after by major corporations for engagements."
               ],
               "examples": [
-                  "",
-                  "",
+                  "Wrote a book that is widely adopted by the industry ",
+                  "Developed an original production methodology that is widely used.",
                   ""
               ]
           }
@@ -217,32 +214,31 @@
   },
   "PRESENCE": {
       "displayName": "Presence",
-      "category": "A",
       "description": "Focuses on establishing relationships both internally and externally through rapport, presentation excellence and actively driving project success.",
       "milestones": [
           {
               "summary": "Works effectively in a professional environment by supporting senior team members and contributes in client interactions",
               "signals": [
                   "Leads client meetings regularly",
-                  "",
-                  ""
+                  "Helps to remove obstacles",
+                  "Articulating the needs of the stakeholders"
               ],
               "examples": [
-                  "",
-                  "",
+                  "Delivers effective Status Reports",
+                  "Clearly socializes project needs",
                   ""
               ]
           },
           {
               "summary": "Quickly creates rapport with a client and instills confidence with internal teams",
               "signals": [
-                  "Delivers effective status reports",
-                  "",
-                  ""
+                  "Understands teams' capabilities and strengths",
+                  "Anticipates obstacles",
+                  "Anticipates future needs of stakeholders"
               ],
               "examples": [
-                  "",
-                  "",
+                  "Client demonstrates trust over time",
+                  "Uses understanding of team skills to mitigate risks",
                   ""
               ]
           },
@@ -250,12 +246,12 @@
               "summary": "Directs client and team interactions and conveys information in an engaging manner",
               "signals": [
                   "Delivers large executive presentations",
-                  "",
-                  ""
+                  "Relationships lead to business dev opportunities",
+                  "Routinely completes projects with high levels of autonomy"
               ],
               "examples": [
-                  "",
-                  "",
+                  "Client trusts you at kickoff",
+                  "Anticipates and mitigates Risk",
                   ""
               ]
           },
@@ -263,8 +259,8 @@
               "summary": "Establishes enriching relationships such that they are requested to lead engagements.",
               "signals": [
                   "Client requests you to lead a strategic team",
-                  "",
-                  ""
+                  "Identifying and proposing iterations that are enabled by the current project ",
+                  "Advising and enabling clients & skookumites on best practices and industry perspective "
               ],
               "examples": [
                   "",
@@ -275,8 +271,8 @@
           {
               "summary": "Well regarded expert across multiple industries that could create their own consultancy",
               "signals": [
-                  "",
-                  "",
+                  "Personal Brand (social media presence, conference talks, TEDtalks, speaker series) is publically recognized and leads to growth opportunities",
+                  "Receives regular invitations to be a keynote speaker / SME.",
                   ""
               ],
               "examples": [
