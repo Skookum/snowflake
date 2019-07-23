@@ -21,7 +21,7 @@
               "signals": [
                   "Understands the value in collaboration with non designers",
                   "Can effectively coordinate research to target specific project unknowns",
-                  "Can effectly draw design influence across industries and products"
+                  "Can efficiently draw design influence across industries and products"
               ],
               "examples": [
                   "Follows industry news to understand industry best practices",
@@ -45,9 +45,9 @@
           {
               "summary": "Demonstrates, articulates and teaches others understanding of information architecture, multi-step and cross-platform flows. Consistently consider the holistic user experience, potential states (errors, successes, empty states, etc.) and product overlap in their own and others' work. Points out connections and potential collisions between different products, features and platforms.",
               "signals": [
-                  "Excels at explaining & teaching UX approaches and processes with teamates and stakeholders.",
-                  "Is very familair with when and how design workshops are done at Skookum",
-                  "Has aquired strong, accurate design instincts based on experience and past work examples."
+                  "Excels at explaining & teaching UX approaches and processes with teammates and stakeholders.",
+                  "Is very familiar with when and how design workshops are done at Skookum",
+                  "Has acquired strong, accurate design instincts based on experience and past work examples."
               ],
               "examples": [
                   "Leads design workshops with client and product team.",
@@ -104,8 +104,8 @@
               "summary": "Demonstrates and articulates the understanding of layout, typography and visual hierarchy. Uses existing visual frameworks creatively to produce designs and, where appropriate, new styles and patterns. Maintains and suggests evolutions of Skookum’s design principles.",
               "signals": [
                   "Has an understanding how feature-sets evolve over the life of a product and considers future interface needs.",
-                  "Knows how reusuable interface components can be levereged across an application",
-                  "Can create consistent UI across an enitre application"
+                  "Knows how reusable interface components can be leveraged across an application",
+                  "Can create consistent UI across an entire application"
               ],
               "examples": [
                   "Creates navigation systems that can scale",
@@ -232,12 +232,12 @@
           {
               "summary": "Employs design tools to solve and communicate user flows, interaction and motion, and knows which tool to use depending on scope and phase of the project.",
               "signals": [
-                  "Comunicates with developers when navigating design decisions.",
+                  "Communicates with developers when navigating design decisions.",
                   "Has basic understanding of HTML + CSS",
                   "How an application will be built plays a role in their design process"
               ],
               "examples": [
-                  "Creates a smooth handoff through the organization of files and design assets ",
+                  "Creates a smooth handoff through the organization of files and design assets",
                   "Understands the limitations from a dev perspective to impact design",
                   "Organizes design files in a structured manner for easy handoff to other designers"
               ]
