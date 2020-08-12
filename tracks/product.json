@@ -1,580 +1,571 @@
 {
   "DISCOVERY": {
-    "displayName": "Discovery",
-    "description": "Focuses on discovery exercises including research, workshops and user analyses among others.",
-    "milestones": [
-      {
-        "summary": "Works effectively in Discovery support of the Product team by following best practices and direction from senior team members",
-        "signals": [
-          "Takes notes in workshops/ meetings/ user interviews",
-          "Conducts a Heuristic Analyses",
-          "Organizes and handles logistics related to discovery efforts (e.g., writing a screener, recruiting participants, preparing tech/room)"
-        ],
-        "examples": [
-          "Conducts basic company and competitive research",
-          "Can ask intelligent follow up questions during discovery conversations",
-          ""
-        ]
-      },
-      {
-        "summary": "Facilitates individual Discovery efforts or other research independently",
-        "signals": [
-          "Puts together a Discovery Plan",
-          "Looks for information in the right places",
-          "Synthesizes notes and feedback (user interviews, competitors, heuristic analysis) to draw conclusions"
-        ],
-        "examples": [
-          "Leads/conducts user interviews and ensures they are comprehensive",
-          "Creates a conversation guide and approach to the conversation process",
-          ""
-        ]
-      },
-      {
-        "summary": "Effectively facilitates broader Discovery efforts that are less defined and riskier to achieve",
-        "signals": [
-          "Runs multi-day discovery workshops",
-          "Consistently turns data and information into actionable insights and recommendations",
-          "Can be an ambassador for different approaches and can apply them"
-        ],
-        "examples": [
-          "Can improvise through user interviews",
-          "Can facilitate a medium to large size group through an exercise (workshops, focus groups, etc)",
-          ""
-        ]
-      },
-      {
-        "summary": "Consistently uncovers original insights that materially inform strategies",
-        "signals": [
-          "Teaches different methods to clients and associates based on the problem presented and industry considerations",
-          "Applies industry expertise and learnings to different clients",
-          "Consistently adapts frameworks to meet the needs of the problem"
-        ],
-        "examples": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "summary": "Is an industry-leading expert in Discovery or has developed original Discovery methods that move the discipline forward",
-        "signals": [
-          "Leads the industry through thought leadership in discovery",
-          "Receives regular invitations to be a keynote speaker / SME",
-          "Sought after by major corporations for engagements"
-        ],
-        "examples": [
-          "Authors new approaches and ways of conducting discovery",
-          "Uses expertise to define best practices for specific applications across clients and industries",
-          "Provides thought leadership for the industry"
-        ]
-      }
-    ]
+      "displayName": "Discovery",
+      "description": "Focuses on discovery exercises including research, workshops and user analyses among others.",
+      "milestones": [
+          {
+              "summary": "Works effectively in Discovery support of the Product team by following best practices and direction from senior team members",
+              "signals": [
+                  "Takes direction from senior team members but challenges the status quo",
+                  "Organizes and handles logistics related to discovery efforts (e.g., writing a screener, recruiting participants, preparing tech/room)",
+                  "Has a basic understanding of discovery efforts and how to conduct them, but may not know which tools to use for which scenario"
+              ],
+              "examples": [
+                  "Conducts basic competitive analysis and research",
+                  "Can ask intelligent follow up questions during discovery conversations",
+                  "Takes notes in workshops/ meetings/ user interviews"
+              ]
+          },
+          {
+              "summary": "Facilitates individual Discovery efforts or other research independently",
+              "signals": [
+                  "Has a basic understanding of which tool or framework to use to achieve the right results",
+                  "Looks for information in the right places",
+                  "Synthesizes notes and feedback (user interviews, competitors, heuristic analysis) to draw conclusions"
+              ],
+              "examples": [
+                  "Leads/conducts user interviews and ensures they are comprehensive",
+                  "Creates a conversation guide and approach to the conversation process",
+                  "Puts together and executes a Discovery Plan"
+              ]
+          },
+          {
+              "summary": "Effectively facilitates broader Discovery efforts that are less defined and riskier to achieve",
+              "signals": [
+                  "Consistently turns data and information into actionable insights and recommendations",
+                  "Can be an ambassador for different approaches and can apply them",
+                  "Shows a passion for analysis and fact-finding that drives a search for truth"
+              ],
+              "examples": [
+                  "Can improvise through user interviews",
+                  "Can facilitate a medium to large size group through an exercise (workshops, focus groups, etc)",
+                  "Determines how results of discovery efforts contribute to the overall findings and learnings"
+              ]
+          },
+          {
+              "summary": "Consistently uncovers original insights that materially inform strategies",
+              "signals": [
+                  "Teaches different methods to clients and associates based on the problem presented and industry considerations",
+                  "Applies industry expertise and learnings to different clients",
+                  "Consistently adapts frameworks to meet the needs of the problem"
+              ],
+              "examples": [
+                  "Guides multiple streams of discovery across a project or client",
+                  "Recognizes the advantages and disadvantages of different approaches, tools, and frameworks and guides clients and teams on best practices within each",
+                  "Acts as a SME or expert on projects to guide efforts"
+              ]
+          },
+          {
+              "summary": "Is an industry-leading expert in Discovery or has developed original Discovery methods that move the discipline forward",
+              "signals": [
+                  "Leads the industry through thought leadership in discovery",
+                  "Receives regular invitations to be a keynote speaker / SME",
+                  "Sought after by major corporations for engagements"
+              ],
+              "examples": [
+                  "Authors new approaches and ways of conducting discovery",
+                  "Uses expertise to define best practices for specific applications across clients and industries",
+                  "Provides thought leadership for the industry"
+              ]
+          }
+      ]
   },
   "STRATEGY": {
-    "displayName": "Strategy",
-    "description": "Focuses on generating insights based on the business, users, landscape and environment.",
-    "milestones": [
-      {
-        "summary": "Works effectively within established structures, following current best practices",
-        "signals": [
-          "Defines success through quantitative methods ",
-          "Demonstrates awareness of the risks as well as benefits to a solution",
-          "Supports other strategists in developing client strategy"
-        ],
-        "examples": [
-          "Completed a competitive analysis",
-          "Validated a hypothesis through data",
-          "Defined success through a business model canvas"
-        ]
-      },
-      {
-        "summary": "Derives relationships among findings that shape significant direction for an engagement",
-        "signals": [
-          "Draws actionable insights from analyses created",
-          "Understands the design and technical implications of a strategic recommendation",
-          "Contributes equitably or independently to the development of client strategy"
-        ],
-        "examples": [
-          "Used competitive analysis to identify novel opportunities in the market",
-          "Leveraged user testing or usability results to synthesize actionable insights ",
-          "Routinely established alignment with client during an engagement."
-        ]
-      },
-      {
-        "summary": "Discovers breakthroughs in a client's strategic approach that appreciably moves a business unit forward in unique and measurable ways",
-        "signals": [
-          "Offers key perspectives and insights that guide a client's strategic direction",
-          "Utilizes knowledge and experience for offering and capability development ",
-          "Leads other strategists or team members in pursuit of a client's strategy"
-        ],
-        "examples": [
-          "Built a product roadmap",
-          "Deployed strategy that resulted in meaningful impact for a business unit within a corporation",
-          "Synthesized strategic concepts that inspired new work with an existing client"
-        ]
-      },
-      {
-        "summary": "Drives breakthroughs that appreciably moves the entire organization forward in unique and measurable ways",
-        "signals": [
-          "Leads, recruits around, and serves clients with a core strategic offering",
-          "Routinely sought for mentorship around a specific area of expertise or general strategy",
-          "Leads multiple teams of strategists and other disciplines in pursuit of a larger client's strategy"
-        ],
-        "examples": [
-          "Deployed strategy that resulted in meaningful impact for an entire corporation",
-          "Led a workshop or training session to educate peers on a new skill, framework, approach, etc",
-          "Synthesized strategic concepts that won work with an entirely new major client"
-        ]
-      },
-      {
-        "summary": "Is an industry-leading expert in strategy or sets strategic direction for entire industries",
-        "signals": [
-          "Leads the industry through thought leadership in client strategy",
-          "Receives regular invitations to be a keynote speaker / SME",
-          "Sought after by major corporations for engagements"
-        ],
-        "examples": [
-          "Wrote a book that is widely adopted by the industry ",
-          "Developed an original strategic methodology that is widely used",
-          "Publicly recognized on a flight or in the street"
-        ]
-      }
-    ]
-  },
-  "PRODUCTION": {
-    "displayName": "Production",
-    "description": "Ability to product manage and partner with developers from engineering through deployment and run an agile method",
-    "milestones": [
-      {
-        "summary": "Works effectively within established structures, following current best practices",
-        "signals": [
-          "Updates acceptance criteria for stories based on developer feedback",
-          "Understands basic web design principles"
-        ],
-        "examples": [
-          "Conducts sprint retros",
-          "Understands and follows a technical design and architecture"
-        ]
-      },
-      {
-        "summary": "Executes against a production methodology to deliver products\t",
-        "signals": [
-          "Writes epics and user stories for a small application",
-          "Leads team through development of a website, iOS or Android app, or small product",
-          "Is a practicioner of Agile methodologies and contributing member of the team",
-          "Is aware of cloud platforms and services that contribute to the modern web"
-        ],
-        "examples": [
-          "Runs story grooming sessions",
-          "Understands the purpose of APIs and how they contribute to technical design and modern web applications",
-          "Conducts End of Sprint demos for business unit",
-          "Understands frontend, backend and responsive web methodologies"
-        ]
-      },
-      {
-        "summary": "Delivers quality products of moderate complexity\t",
-        "signals": [
-          "Effectively defines and delivers against a product roadmap",
-          "Certified Scrum Product Owner or other certification"
-        ],
-        "examples": [
-          "Guides a large team through end-to-end Agile development",
-          "Writes blog posts about product management topics"
-        ]
-      },
-      {
-        "summary": "Delivers complex, large scale products or creates best practices that enrich the entire production team\t",
-        "signals": [
-          "Delivers user story creation feedback and coaches team members in story writing best practices ",
-          "Builds thought leadership on production best practices and mentors others",
-          "\"Consults\" on multiple production engagements across Skookum"
-        ],
-        "examples": [
-          "Distills and explains retro findings to business to influence future offerings and processes",
-          "Is a \"go-to person\" for best practices and tangible examples of real-world scenarios",
-          "Contributes product management knowledge to sales proposals and marketing materials"
-        ]
-      },
-      {
-        "summary": "Is an industry-leading expert in product management or has created new and unique methods for delivering software in an Agile environment\t",
-        "signals": [
-          "Leads the industry through thought leadership in client production",
-          "Receives regular invitations to be a keynote speaker / SME",
-          "Sought after by corporations for engagements"
-        ],
-        "examples": [
-          "Writes a book that is widely adopted by the industry",
-          "Develops an original production methodology that is widely used in the market"
-        ]
-      }
-    ]
+      "displayName": "Strategy",
+      "description": "Focuses on generating insights based on the business, users, landscape and environment.",
+      "milestones": [
+          {
+              "summary": "Works effectively within established structures, following current best practices",
+              "signals": [
+                  "Defines success through quantitative methods ",
+                  "Demonstrates awareness of the risks as well as benefits to a solution",
+                  "Supports other strategists in developing client strategy"
+              ],
+              "examples": [
+                  "Completed a competitive analysis",
+                  "Validated a hypothesis through data",
+                  "Contributed to larger analysis efforts for a client (e.g., business model canvas, service blueprint, etc.)"
+              ]
+          },
+          {
+              "summary": "Derives relationships among findings that shape significant direction for an engagement",
+              "signals": [
+                  "Draws actionable insights from analyses created",
+                  "Understands the design and technical implications of a strategic recommendation",
+                  "Contributes equitably or independently to the development of client strategy"
+              ],
+              "examples": [
+                  "Used competitive analysis to identify novel opportunities in the market",
+                  "Leveraged user testing or usability results to synthesize actionable insights ",
+                  "Routinely established alignment with client during an engagement."
+              ]
+          },
+          {
+              "summary": "Discovers breakthroughs in a client's strategic approach that appreciably moves a business unit forward in unique and measurable ways",
+              "signals": [
+                  "Offers key perspectives and insights that guide a client's strategic direction",
+                  "Utilizes knowledge and experience for offering and capability development ",
+                  "Leads other strategists or team members in pursuit of a client's strategy"
+              ],
+              "examples": [
+                  "Built a robust product roadmap",
+                  "Deployed strategy that resulted in meaningful impact for a business unit within a corporation",
+                  "Synthesized strategic concepts that inspired new work with an existing client"
+              ]
+          },
+          {
+              "summary": "Drives breakthroughs that appreciably moves the entire organization forward in unique and measurable ways",
+              "signals": [
+                  "Leads, recruits around, and serves clients with a core strategic offering",
+                  "Routinely sought for mentorship around a specific area of expertise or general strategy",
+                  "Leads multiple teams of strategists and other disciplines in pursuit of a larger client's strategy"
+              ],
+              "examples": [
+                  "Deployed strategy that resulted in meaningful impact for an entire corporation",
+                  "Led a workshop or training session to educate peers on a new skill, framework, approach, etc",
+                  "Synthesized strategic concepts that won work with an entirely new major client"
+              ]
+          },
+          {
+              "summary": "Is an industry-leading expert in strategy or sets strategic direction for entire industries",
+              "signals": [
+                  "Leads the industry through thought leadership in client strategy",
+                  "Receives regular invitations to be a keynote speaker / SME",
+                  "Sought after by major corporations for engagements"
+              ],
+              "examples": [
+                  "Wrote a book that is widely adopted by the industry ",
+                  "Developed an original strategic methodology that is widely used",
+                  "Publicly recognized on a flight or in the street"
+              ]
+          }
+      ]
   },
   "PRESENCE": {
-    "displayName": "Presence",
-    "description": "Focuses on establishing relationships both internally and externally through rapport, presentation excellence and actively driving project success.",
-    "milestones": [
-      {
-        "summary": "Works effectively in a professional environment by supporting senior team members and contributes in client interactions",
-        "signals": [
-          "Asks relevant questions",
-          "Helps to remove obstacles",
-          "Articulates the needs of stakeholders"
-        ],
-        "examples": [
-          "Delivers effective Status Reports",
-          "Clearly socializes project needs",
-          "Leads client meetings regularly"
-        ]
-      },
-      {
-        "summary": "Quickly creates rapport with a client and instills confidence with internal teams",
-        "signals": [
-          "Understands teams' capabilities and strengths",
-          "Anticipates obstacles",
-          "Anticipates future needs of stakeholders"
-        ],
-        "examples": [
-          "Client demonstrates trust over time",
-          "Identifies/raises concerns of risks",
-          "Suggests Other Problems to Solve"
-        ]
-      },
-      {
-        "summary": "Directs client and team interactions and conveys information in an engaging manner",
-        "signals": [
-          "Client trusts you at kickoff",
-          "Involved in client/prospect roadmapping sessions and ties together various pieces outside of project",
-          "Reliable and autonomous on projects"
-        ],
-        "examples": [
-          "Develops Executive Materials for Large Projects",
-          "Anticipates and mitigates Risk",
-          "Delivers Large Executive Presentations"
-        ]
-      },
-      {
-        "summary": "Establishes enriching relationships such that they are requested to lead engagements.",
-        "signals": [
-          "SME used in Business Development",
-          "Relationships from projects lead to business dev opportunities",
-          "Advising and enabling clients & skookumites on best practices and industry perspective "
-        ],
-        "examples": [
-          "Client requests you to lead a strategic team",
-          "Identifying and proposing iterations that are enabled by the current project",
-          "Adds unique takes on current offerings/defines new offerings"
-        ]
-      },
-      {
-        "summary": "Well regarded expert across multiple industries that could create their own consultancy",
-        "signals": [
-          "Personal Brand (social media presence, conference talks, TEDtalks, speaker series) is publicly recognized",
-          "Growth Opportunities arise from personal brand",
-          "Perspective is valued in industry"
-        ],
-        "examples": [
-          "Delivers unique presentation at multiple speaking engagements",
-          "Developed a new methodology for business development",
-          "Content generated attracts large, EM level clients"
-        ]
-      }
-    ]
+      "displayName": "Presence",
+      "description": "Focuses on establishing relationships both internally and externally through rapport, presentation excellence and actively driving project success.",
+      "milestones": [
+          {
+              "summary": "Works effectively in a professional environment by supporting senior team members and contributes in client interactions",
+              "signals": [
+                  "Asks intelligent questions and makes valuable observations",
+                  "Helps to remove obstacles",
+                  "Understands the needs of stakeholders"
+              ],
+              "examples": [
+                  "Effectively delivers status of tasks to the client",
+                  "Clearly socializes project needs",
+                  "Asks helpful questions in client meetings, and leads some client meetings"
+              ]
+          },
+          {
+              "summary": "Quickly creates rapport with a client and instills confidence with internal teams",
+              "signals": [
+                  "Understands teams' capabilities and strengths",
+                  "Anticipates obstacles",
+                  "Anticipates future needs of stakeholders"
+              ],
+              "examples": [
+                  "Client demonstrates trust over time",
+                  "Identifies/raises concerns of risks",
+                  "Suggests Other Problems to Solve"
+              ]
+          },
+          {
+              "summary": "Directs client and team interactions and conveys information in an engaging manner",
+              "signals": [
+                  "Establishes client trust early on",
+                  "Involved in client/prospect roadmapping sessions and ties together various pieces outside of project",
+                  "Reliable and autonomous on projects"
+              ],
+              "examples": [
+                  "Develops Executive Materials for Large Projects ",
+                  "Anticipates and mitigates risk",
+                  "Delivers Large Executive Presentations"
+              ]
+          },
+          {
+              "summary": "Establishes enriching relationships such that they are requested to lead engagements.",
+              "signals": [
+                  "SME used in Business Development/Sales efforts",
+                  "Relationships from projects lead to business dev opportunities",
+                  "Advising and enabling clients & Skookumites on best practices and industry perspective "
+              ],
+              "examples": [
+                  "Client requests you to lead a strategic team",
+                  "Proposes and presents follow on work enabled by current projects to senior client stakeholders for buy-in and sales opportunities",
+                  "Adds unique takes on current offerings/defines new offerings"
+              ]
+          },
+          {
+              "summary": "Well regarded expert across multiple industries that could create their own consultancy",
+              "signals": [
+                  "Personal Brand (social media presence, conference talks, TEDtalks, speaker series) is publically recognized",
+                  "Growth Opportunities arise from personal brand",
+                  "Perspective is valued in industry"
+              ],
+              "examples": [
+                  "Delivers unique presentation at multiple speaking engagements",
+                  "Developed a new methodology for business development",
+                  "Content generated attracts large, EM level clients"
+              ]
+          }
+      ]
+  },
+  "PRODUCTION": {
+      "displayName": "Production",
+      "description": "Ability to product manage and partner with developers from engineering through deployment and run an agile method",
+      "milestones": [
+          {
+              "summary": "Works effectively within established structures, following current best practices",
+              "signals": [
+                  "Updates acceptance criteria for stories based on developer feedback",
+                  "Understands basic web design principles",
+                  ""
+              ],
+              "examples": [
+                  "Conducts sprint retros",
+                  "Understands and follows a technical design and architecture",
+                  ""
+              ]
+          },
+          {
+              "summary": "Executes against a production methodology to deliver products",
+              "signals": [
+                  "Writes epics and user stories for a small application",
+                  "Leads team through development of a website, iOS or Android app, or small product",
+                  "Is a practicioner of Agile methodologies and contributing member of the team"
+              ],
+              "examples": [
+                  "Runs story grooming sessions",
+                  "Understands the purpose of APIs and how they contribute to technical design and modern web applications",
+                  "Conducts End of Sprint demos for business unit"
+              ]
+          },
+          {
+              "summary": "Delivers quality products of moderate complexity",
+              "signals": [
+                  "Effectively defines and delivers against a product roadmap",
+                  "Certified Scrum Product Owner or other certification",
+                  ""
+              ],
+              "examples": [
+                  "Guides a large team through end-to-end Agile development",
+                  "Writes blog posts about product management topics",
+                  ""
+              ]
+          },
+          {
+              "summary": "Delivers complex, large scale products or creates best practices that enrich the entire production team",
+              "signals": [
+                  "Delivers user story creation feedback and coaches team members in story writing best practices ",
+                  "Builds thought leadership on production best practices and mentors others",
+                  "\"Consults\" on multiple production engagements across Skookum"
+              ],
+              "examples": [
+                  "Distills and explains retro findings to business to influence future offerings and processes",
+                  "Is a \"go-to person\" for best practices and tangible examples of real-world scenarios",
+                  "Contributes product management knowledge to sales proposals and marketing materials"
+              ]
+          },
+          {
+              "summary": "Is an industry-leading expert in product management or has created new and unique methods for delivering software in an Agile environment",
+              "signals": [
+                  "Leads the industry through thought leadership in client production",
+                  "Receives regular invitations to be a keynote speaker / SME",
+                  "Sought after by corporations for engagements"
+              ],
+              "examples": [
+                  "Writes a book that is widely adopted by the industry ",
+                  "Develops an original production methodology that is widely used in the market",
+                  ""
+              ]
+          }
+      ]
   },
   "PROJECT MANAGEMENT": {
-    "displayName": "Project Management",
-    "category": "B",
-    "description": "Delivers well-scoped programs of work that meet their goals on time, to budget, and harmoniously",
-    "milestones": [
-      {
-        "summary": "Effectively delivers small projects",
-        "signals": [
-          "Able to identify dependencies that relate to project planning",
-          "Does not sacrifice the important for the sake of the urgent",
-          "Defines and hits interim milestones",
-          "Runs standups and/or status meetings and delivers status reports",
-          "Identifies risks and dependencies, and surfaces those to stakeholders"
-        ],
-        "examples": [
-          "Can estimate tasks with decent accuracy",
-          "Understands different project mgmt approaches and the tradeoffs of each",
-          "Updates team on progress of large task and completes on time",
-          "Helps project teams stay accountable to delivering on time"
-        ]
-      },
-      {
-        "summary": "Leads the delivery of small projects and teams",
-        "signals": [
-          "Helps the team re-prioritize regularly to stay efficient",
-          "Delegates tasks to others appropriately",
-          "Creates and executes a project plan - identify milestones, deadlines, and client/ resource considerations",
-          "Chooses appropriate project management strategy based on context"
-        ],
-        "examples": [
-          "Produces burndown charts for analysis",
-          "Consistenly faciliates client status meetings",
-          "Can understand how the project relates to the dependencies of other projects",
-          "Improves project visibility by publishing metrics in a central location."
-        ]
-      },
-      {
-        "summary": "Effectively delivers projects through a large team, or with a significant amount of stakeholders or complexity",
-        "signals": [
-          "Can effectively manage across multiple workstreams",
-          "Finds ways to deliver requested scope faster by identifying efficiencies",
-          "Can manage time across client responsibilities, internal asks, and self-development",
-          "Identifies good and bad patterns on multiple projects and adapts future projects to those learnings"
-        ],
-        "examples": [
-          "Certified ScrumMaster",
-          "Proactively suggest fixes to stakeholders that mitigage indentified risks",
-          "Teaches classes or delivers learnings on specific topics or subjects",
-          "Analyzes the output of the team to identify trends"
-        ]
-      },
-      {
-        "summary": "Manages major company pushes delivered by multiple teams",
-        "signals": [
-          "Has their PMP",
-          "Considers external constraints and business objectives when planning",
-          "Leads teams of teams, and coordinates effective cross- functional collaboration",
-          "Writes blog posts on effective ways to manage projects and teams"
-        ],
-        "examples": [
-          "Leads development team in large application with multiple system integrations of high complexity",
-          "Can train a new strategist on project management best practices and approaches - seen as a SME",
-          "Oversees multiple project teams and negotiates the resourcing needed to staff all of them",
-          "Requested for projects due to ability to manage well"
-        ]
-      },
-      {
-        "summary": "Seen as an expert who can handle any size and complexity of project\t",
-        "signals": [
-          "Owns a key company-wide metric",
-          "Wrote a book on project management or consistently delivers to insights to the community",
-          "Speaks at conferences on project management"
-        ],
-        "examples": [
-          "Teaches project management courses or ScrumMaster courses at a school or training academy",
-          "Identifies new project management methods or approaches that are adopted in the industry"
-        ]
-      }
-    ]
+      "displayName": "Project Management",
+      "description": "Delivers well-scoped programs of work that meet their goals, on time, to budget, harmoniously",
+      "milestones": [
+          {
+              "summary": "Effectively delivers individual tasks",
+              "signals": [
+                  "Estimates small tasks accurately",
+                  "Delivers tightly-scoped projects efficiently",
+                  "Actively participates in standups"
+              ],
+              "examples": [
+                  "Split a large task into small tasks that can be completed to meet the requirements",
+                  "Completed sprint work that they committed to finish",
+                  "Recorded actuals on stories to help calibrate estimates"
+              ]
+          },
+          {
+              "summary": "Effectively delivers small projects",
+              "signals": [
+                  "Performs research and considers alternative approaches",
+                  "Does not sacrifice the important for the sake of the urgent",
+                  "Defines and hits interim milestones"
+              ],
+              "examples": [
+                  "Re-estimated the backlog to update team on remaining work",
+                  "Timeboxed research into alternative approach to make sure important tasks were still completed",
+                  "Updated team on progress of large story and completed when estimated"
+              ]
+          },
+          {
+              "summary": "Leads the delivery of small projects",
+              "signals": [
+                  "Delegates tasks to others appropriately",
+                  "Integrates client needs into project planning",
+                  "Chooses appropriate project management strategy based on context"
+              ],
+              "examples": [
+                  "Ran sprint retro to assess improvement opportunities",
+                  "Completed launch checklist unprompted for well controlled rollout",
+                  "Facilitated project kickoff meeting to get buy-in"
+              ]
+          },
+          {
+              "summary": "Effectively delivers projects through a large team, or with a significant amount of stakeholders or complexity",
+              "signals": [
+                  "Finds ways to deliver requested scope faster, and prioritizes backlog",
+                  "Manages dependencies on other projects and teams",
+                  "Leverages recognition of repeated project patterns"
+              ],
+              "examples": [
+                  "Improves project visibility by publishing metrics in a central location.",
+                  "Identified dependency on client team for work coming up in the next sprint",
+                  "Analyzed the velocity of the team to identify trends"
+              ]
+          },
+          {
+              "summary": "Manages major company pushes delivered by multiple teams",
+              "signals": [
+                  "Considers external constraints and business objectives when planning",
+                  "Leads teams of teams, and coordinates effective cross- functional collaboration",
+                  "Owns a key company metric"
+              ],
+              "examples": [
+                  "Created Sprint checklists for new project managers and train them on how to use the checklist",
+                  "Oversaw multiple project teams and negotiated the resourcing needed to staff all of them",
+                  "Held project teams accountable to delivering on time"
+              ]
+          }
+      ]
   },
   "COMMUNICATION": {
-    "displayName": "Communication",
-    "category": "B",
-    "description": "Shares the right amount of information with the right people, at the right time, and listens effectively",
-    "milestones": [
-      {
-        "summary": "Communicates effectively to close stakeholders when called upon, and incorporates constructive feedback",
-        "signals": [
-          "Communicates project status clearly and effectively",
-          "Collaborates with others with empathy",
-          "Asks for help at the appropriate juncture"
-        ],
-        "examples": [
-          "Updated release notes for app deployment to denote what changed",
-          "Updated project status changes in JIRA promptly",
-          "Gave thoughtful project updates during standup"
-        ]
-      },
-      {
-        "summary": "Communicates with the wider team appropriately, focusing on timeliness and good quality conversations",
-        "signals": [
-          "Practises active listening and suspension of attention",
-          "Ensures stakeholders are aware of current blockers",
-          "Chooses the appropriate tools for accurate and timely communication"
-        ],
-        "examples": [
-          "Received and integrated critical feedback positively",
-          "Gave a talk about project learnings at Team Meeting",
-          "Spoke to domain experts at Skookum during Engineering phase"
-        ]
-      },
-      {
-        "summary": "Proactively shares information, actively solicits feedback, and facilitates communication for multiple stakeholders",
-        "signals": [
-          "Resolves communication difficulties between others",
-          "Anticipates and shares schedule deviations in plenty of time",
-          "Manages project stakeholder expectations effectively"
-        ],
-        "examples": [
-          "Handled client communication during launch to make sure client had proper expectations",
-          "Coordinated communication with 3rd party vendor to align on goals",
-          "Notified team of upcoming project obstacle and suggested how to handle it"
-        ]
-      },
-      {
-        "summary": "Communicates complex ideas skillfully and with nuance, and establishes alignment within the wider organization",
-        "signals": [
-          "Communicates project risk and tradeoffs skillfully and with nuance",
-          "Contextualizes and clarifies ambiguous direction and strategy for others",
-          "Negotiates resourcing compromises with other teams"
-        ],
-        "examples": [
-          "Lead training for other Skookum employees on giving presentations",
-          "Wrote new hiring process documentation for Functional Team",
-          "Aligned the entire organization around new process"
-        ]
-      },
-      {
-        "summary": "Influences outcomes at the highest level, moves beyond mere broadcasting, and sets best practices for others",
-        "signals": [
-          "Defines processes for clear communication for the entire company",
-          "Shares the right amount of information with the right people, at the right time",
-          "Develops and delivers plans to leadership team"
-        ],
-        "examples": [
-          "Shared vision for where the company is heading to create buy-in with everyone.",
-          "Created the communication plan for a large organizational change",
-          "Presented to the company about key company metrics and projects"
-        ]
-      }
-    ]
+      "displayName": "Communication",
+      "description": "Shares the right amount of information with the right people, at the right time, and listens effectively",
+      "milestones": [
+          {
+              "summary": "Communicates effectively to stakeholders and teammates when called upon",
+              "signals": [
+                  "Contributes to crafting of project status & deliverable messaging",
+                  "Collaborates well with both project team and clients",
+                  "Asks for help at the appropriate juncture"
+              ],
+              "examples": [
+                  "Drafts Status and deliverables independently, with the right language and content",
+                  "Engages teammates in activity to work toward project objective",
+                  "Communicates blindspots and risks to Lead and Peers to gather feedback / insight"
+              ]
+          },
+          {
+              "summary": "Communicates with the wider client and project team effectively. Is able to form a message that focuses on timeliness, content, and conciseness",
+              "signals": [
+                  "Practices active listening and suspension of attention",
+                  "Communicates project status and risks to cleint clearly",
+                  "Chooses the appropriate tools/method for accurate and timely communication"
+              ],
+              "examples": [
+                  "Received and integrated critical feedback positively",
+                  "Presents status to project leadership and receives valuable feedback",
+                  "Pivots status delivery method to accomodate for lack of project visability to key stakeholders"
+              ]
+          },
+          {
+              "summary": "Is a strong storyteller that proactively shares information, actively solicits feedback, and facilitates communication for multiple stakeholders. ",
+              "signals": [
+                  "Mediates communication difficulties between others",
+                  "Anticipates key project communications to prevent surprises",
+                  "Identifies new communication channels within the client/project stakeholder group"
+              ],
+              "examples": [
+                  "Works closely with teammates to workout requirement details that were lost in translation",
+                  "Identifies need for and crafts communication to project stakeholders",
+                  "Identifies stakeholders that aren't being properly included and identifies an avenue for bringing them into the conversation"
+              ]
+          },
+          {
+              "summary": "Communicates complex ideas skillfully and with nuance, and establishes alignment within the wider organization",
+              "signals": [
+                  "Communicates project risk and tradeoffs skillfully and with nuance",
+                  "Contextualizes and clarifies ambiguous direction and strategy for others",
+                  "Negotiates resourcing compromises with other teams"
+              ],
+              "examples": [
+                  "Lead training for other Skookum employees on giving presentations",
+                  "Wrote new hiring process documentation for Functional Team",
+                  "Aligned the entire organization around new process"
+              ]
+          },
+          {
+              "summary": "Influences outcomes at the highest level, moves beyond mere broadcasting, and sets best practices for others",
+              "signals": [
+                  "Defines processes for clear communication for the entire company",
+                  "Shares the right amount of information with the right people, at the right time",
+                  "Develops and delivers plans to leadership team"
+              ],
+              "examples": [
+                  "Shared vision for where the company is heading to create buy-in with everyone.",
+                  "Created the communication plan for a large organizational change",
+                  "Presented to the company about key company metrics and projects"
+              ]
+          }
+      ]
   },
   "CRAFT QUALITY": {
-    "displayName": "Craft Quality",
-    "category": "B",
-    "description": "Embodies and promotes practices to ensure excellent quality products and services",
-    "milestones": [
-      {
-        "summary": "Delivers consistently good quality work",
-        "signals": [
-          "Seeks feedback on deliverables to help ensure high quality for everything a client sees",
-          "Minimizes rework on items delivered to teammates",
-          "Writes clear comments and documentation of the work we do"
-        ],
-        "examples": [
-          "Caught a bug on a project before it went live",
-          "Ran hallway user testing of prototype to get quick feedback on ideas",
-          "Wrote unit tests for new feature"
-        ]
-      },
-      {
-        "summary": "Increases the robustness and reliability of our deliverables, and devotes time to polishing products and systems",
-        "signals": [
-          "Leaves things better than you found it",
-          "Schedules time to get consistent feedback on progress of deliverables",
-          "Reviews our process and removes items that become irrelevant on a project"
-        ],
-        "examples": [
-          "Hepled teammate work through tough issue",
-          "Documented a found bug with clear reproduction steps",
-          "Proactively resolved a known issue before being tasked with it"
-        ]
-      },
-      {
-        "summary": "Improves others' ability to deliver great quality work",
-        "signals": [
-          "Implements systems that enable better testing",
-          "Gives thoughtful reviews and critiques as a domain expert",
-          "Adds tooling to improve quality of deliverables"
-        ],
-        "examples": [
-          "Setup new plugin on Jenkins to run snapshot UI tests",
-          "Wrote project setup script to simplify project onboarding to help migitate missing steps",
-          "Organized teams to get more people involved in code reviews or ad hoc testing"
-        ]
-      },
-      {
-        "summary": "Advocates for and models great quality with proactive actions, and tackles difficult and subtle system issues",
-        "signals": [
-          "Builds systems so as to eliminate entire classes of programmer error",
-          "Focuses the team on quality with regular reminders",
-          "Pragmatically identifies areas where more effort should be put to ensure quality"
-        ],
-        "examples": [
-          "Added code coverage reporting to communicate risk to client",
-          "Worked with Sales team to improve messaging around the value of quality to clients",
-          "Defined and oversaw plan for closing Heartbleed vulnerability on all client projects"
-        ]
-      },
-      {
-        "summary": "Enables and encourages the entire organization to make quality a central part of our processes",
-        "signals": [
-          "Defines policies for the Services Org that encourage quality work",
-          "Identifies and eliminates single points of failure throughout the organization",
-          "Secures time and resources from execs to support great quality"
-        ],
-        "examples": [
-          "Negotiated resources for Fix-It week with client",
-          "Instituted and ensured success of a 20% time policy",
-          "Created cross project quality reporting tool to expose entire org to project quality"
-        ]
-      }
-    ]
+      "displayName": "Craft Quality",
+      "description": "Embodies and promotes practices to ensure excellent quality products and services",
+      "milestones": [
+          {
+              "summary": "Delivers consistently good quality work",
+              "signals": [
+                  "Seeks feedback on deliverables to help ensure high quality for everything a client sees",
+                  "Minimizes rework on items delivered to teammates",
+                  "Writes clear comments and documentation of the work we do"
+              ],
+              "examples": [
+                  "Caught a bug on a project before it went live",
+                  "Ran hallway user testing of prototype to get quick feedback on ideas",
+                  "Wrote unit tests for new feature"
+              ]
+          },
+          {
+              "summary": "Increases the robustness and reliability of our deliverables, and devotes time to polishing products and systems",
+              "signals": [
+                  "Leaves things better than you found it",
+                  "Schedules time to get consistent feedback on progress of deliverables",
+                  "Reviews our process and removes items that become irrelevant on a project"
+              ],
+              "examples": [
+                  "Helped teammate work through tough issue",
+                  "Documented a found bug with clear reproduction steps",
+                  "Proactively resolved a known issue before being tasked with it"
+              ]
+          },
+          {
+              "summary": "Improves others' ability to deliver great quality work",
+              "signals": [
+                  "Implements systems that enable better testing",
+                  "Gives thoughtful reviews and critiques as a domain expert",
+                  "Adds tooling to improve quality of deliverables"
+              ],
+              "examples": [
+                  "Setup new plugin on Jenkins to run snapshot UI tests",
+                  "Wrote project setup script to simplify project onboarding to help migitate missing steps",
+                  "Organized teams to get more people involved in code reviews or ad hoc testing"
+              ]
+          },
+          {
+              "summary": "Advocates for and models great quality with proactive actions, and tackles difficult and subtle system issues",
+              "signals": [
+                  "Builds systems so as to eliminate entire classes of programmer error",
+                  "Focuses the team on quality with regular reminders",
+                  "Pragmatically identifies areas where more effort should be put to ensure quality"
+              ],
+              "examples": [
+                  "Added code coverage reporting to communicate risk to client",
+                  "Worked with Sales team to improve messaging around the value of quality to clients",
+                  "Defined and oversaw plan for closing Heartbleed vulnerability on all client projects"
+              ]
+          },
+          {
+              "summary": "Enables and encourages the entire organization to make quality a central part of our processes",
+              "signals": [
+                  "Defines policies for the Services Org that encourage quality work",
+                  "Identifies and eliminates single points of failure throughout the organization",
+                  "Secures time and resources from execs to support great quality"
+              ],
+              "examples": [
+                  "Negotiated resources for Fix-It week with client",
+                  "Instituted and ensured success of a 20% time policy",
+                  "Created cross project quality reporting tool to expose entire org to project quality"
+              ]
+          }
+      ]
   },
   "INSTITUTIONAL KNOWLEDGE": {
-    "displayName": "Institutional Knowledge",
-    "category": "B",
-    "description": "Seeks to improve Skookum through making local learnings have a larger impact across Skookum.",
-    "milestones": [
-      {
-        "summary": "Understands processes to gain efficiency and learn from others' knowledge",
-        "signals": [
-          "Checks to see if there are already processes to learn from",
-          "Seeks help and critique",
-          "Embraces change as a necessity for growth"
-        ],
-        "examples": [
-          "Asked a question about a documented process in Confluence",
-          "Asked a question at company lunch",
-          "Followed project kick-off checklist"
-        ]
-      },
-      {
-        "summary": "Informally shares new knowledge with others",
-        "signals": [
-          "Makes connections between projects and experience to identify trends",
-          "Experiments early and often",
-          "Instigates major new features, services, or architectures"
-        ],
-        "examples": [
-          "Presented the results of a project retrospective at a company lunch",
-          "Wrote article in Confluence about a new tool to use on projects",
-          "Provided feedback on how to improve review process"
-        ]
-      },
-      {
-        "summary": "Creates processes to formalize knowledge, documenting why the process was created or changed",
-        "signals": [
-          "Demonstrates concepts proactively with prototypes",
-          "Runs experiments on process improvements",
-          "Knows how to connect changes to creating value for Skookum"
-        ],
-        "examples": [
-          "Updated process documentation to match actuals and wrote up explanation of why the previous process changed",
-          "Created process to integrate project restrospectives to find commonalities",
-          "Organized lunch video series to engage team in learning"
-        ]
-      },
-      {
-        "summary": "Creates new ways to share knowledge across the organization",
-        "signals": [
-          "Champions and pioneers new technologies to solve new classes of problem",
-          "Follows through with ensuring buy-in on new processes",
-          "Identifies holes in institutional knowledge and seeks to remedy"
-        ],
-        "examples": [
-          "Setup and drive the migration to Confluence as the knowledgebase for Skookum",
-          "Defined process for experimentation on projects and report findings to the entire company",
-          "Created an interviewing rubric and booklet"
-        ]
-      },
-      {
-        "summary": "Defines processes that change the way that Skookum does business",
-        "signals": [
-          "Drives cross-departmental knowledge sharing",
-          "Galvanizes the entire company and garners buy in for a new strategy",
-          "Changes complex organizational processes"
-        ],
-        "examples": [
-          "Created a new model to follow instead of agile/scrum that produces better measurable results",
-          "Defined a new process to re-organize the company around specialtizations",
-          "Drove process to map all department processes on to company values to clarify processes"
-        ]
-      }
-    ]
+      "displayName": "Institutional Knowledge",
+      "description": "Seeks to improve Skookum through making local learnings have a larger impact across Skookum.",
+      "milestones": [
+          {
+              "summary": "Understands processes to gain efficiency and learn from others' knowledge",
+              "signals": [
+                  "Checks to see if there are already processes to learn from",
+                  "Seeks help and critique",
+                  "Embraces change as a necessity for growth"
+              ],
+              "examples": [
+                  "Asked a question about a documented process in Confluence",
+                  "Asked a question at company lunch",
+                  "Followed project kick-off checklist"
+              ]
+          },
+          {
+              "summary": "Informally shares new knowledge with others",
+              "signals": [
+                  "Makes connections between projects and experience to identify trends",
+                  "Experiments early and often",
+                  "Instigates major new features, services, or architectures"
+              ],
+              "examples": [
+                  "Presented the results of a project retrospective at a company lunch",
+                  "Wrote article in Confluence about a new tool to use on projects",
+                  "Provided feedback on how to improve review process"
+              ]
+          },
+          {
+              "summary": "Creates processes to formalize knowledge, documenting why the process was created or changed",
+              "signals": [
+                  "Demonstrates concepts proactively with prototypes",
+                  "Runs experiments on process improvements",
+                  "Knows how to connect changes to creating value for Skookum"
+              ],
+              "examples": [
+                  "Updated process documentation to match actuals and wrote up explanation of why the previous process changed",
+                  "Created process to integrate project restrospectives to find commonalities",
+                  "Organized lunch video series to engage team in learning"
+              ]
+          },
+          {
+              "summary": "Creates new ways to share knowledge across the organization",
+              "signals": [
+                  "Champions and pioneers new technologies to solve new classes of problem",
+                  "Follows through with ensuring buy-in on new processes",
+                  "Identifies holes in institutional knowledge and seeks to remedy"
+              ],
+              "examples": [
+                  "Setup and drive the migration to Confluence as the knowledgebase for Skookum",
+                  "Defined process for experimentation on projects and report findings to the entire company",
+                  "Created an interviewing rubric and booklet"
+              ]
+          },
+          {
+              "summary": "Defines processes that change the way that Skookum does business",
+              "signals": [
+                  "Drives cross-departmental knowledge sharing",
+                  "Galvanizes the entire company and garners buy in for a new strategy",
+                  "Changes complex organizational processes"
+              ],
+              "examples": [
+                  "Created a new model to follow instead of agile/scrum that produces better measurable results",
+                  "Defined a new process to re-organize the company around specialtizations",
+                  "Drove process to map all department processes on to company values to clarify processes"
+              ]
+          }
+      ]
   },
   "CAREER DEVELOPMENT": {
     "displayName": "Career Development",
