@@ -13,7 +13,8 @@
               "examples": [
                   "Conducts basic competitive analysis and research",
                   "Can ask intelligent follow up questions during discovery conversations",
-                  "Takes notes in workshops/ meetings/ user interviews"
+                  "Takes notes in workshops/ meetings/ user interviews",
+                  "Conducts SWOT Analysis"
               ]
           },
           {
@@ -26,7 +27,8 @@
               "examples": [
                   "Leads/conducts user interviews and ensures they are comprehensive",
                   "Creates a conversation guide and approach to the conversation process",
-                  "Puts together and executes a Discovery Plan"
+                  "Puts together and executes a Discovery Plan",
+                  "Synthesizes learnings into a comprehensive summary"
               ]
           },
           {
@@ -34,7 +36,8 @@
               "signals": [
                   "Consistently turns data and information into actionable insights and recommendations",
                   "Can be an ambassador for different approaches and can apply them",
-                  "Shows a passion for analysis and fact-finding that drives a search for truth"
+                  "Shows a passion for analysis and fact-finding that drives a search for truth",
+                  "Consistenly connects dots across different discovery efforts to further the project, mission, and goal"
               ],
               "examples": [
                   "Can improvise through user interviews",
@@ -105,7 +108,8 @@
               "signals": [
                   "Offers key perspectives and insights that guide a client's strategic direction",
                   "Utilizes knowledge and experience for offering and capability development ",
-                  "Leads other strategists or team members in pursuit of a client's strategy"
+                  "Leads other strategists or team members in pursuit of a client's strategy",
+                  "Adapts approach, tools, and frameworks used to the changing needs of a client and project"
               ],
               "examples": [
                   "Built a robust product roadmap",
@@ -168,7 +172,8 @@
               "examples": [
                   "Client demonstrates trust over time",
                   "Identifies/raises concerns of risks",
-                  "Suggests Other Problems to Solve"
+                  "Suggests Other Problems to Solve",
+                  "Comfortably leads client meetings regularly"
               ]
           },
           {
@@ -181,7 +186,8 @@
               "examples": [
                   "Develops Executive Materials for Large Projects ",
                   "Anticipates and mitigates risk",
-                  "Delivers Large Executive Presentations"
+                  "Delivers Large Executive Presentations",
+                  "Able to control a challenging conversation and react to curve balls"
               ]
           },
           {
@@ -234,12 +240,14 @@
               "signals": [
                   "Writes epics and user stories for a small application",
                   "Leads team through development of a website, iOS or Android app, or small product",
-                  "Is a practicioner of Agile methodologies and contributing member of the team"
+                  "Is a practicioner of Agile methodologies and contributing member of the team",
+                  "Is aware of cloud platforms and services that contribute to the modern web"
               ],
               "examples": [
                   "Runs story grooming sessions",
                   "Understands the purpose of APIs and how they contribute to technical design and modern web applications",
-                  "Conducts End of Sprint demos for business unit"
+                  "Conducts End of Sprint demos for business unit",
+                  "Understands frontend, backend and responsive web methodologies"
               ]
           },
           {
