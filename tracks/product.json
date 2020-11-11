@@ -293,6 +293,7 @@
   },
   "PROJECT MANAGEMENT": {
       "displayName": "Project Management",
+      "category": "B",
       "description": "Delivers well-scoped programs of work that meet their goals, on time, to budget, harmoniously",
       "milestones": [
           {
@@ -364,6 +365,7 @@
   },
   "COMMUNICATION": {
       "displayName": "Communication",
+      "category": "B",
       "description": "Shares the right amount of information with the right people, at the right time, and listens effectively",
       "milestones": [
           {
@@ -435,6 +437,7 @@
   },
   "CRAFT QUALITY": {
       "displayName": "Craft Quality",
+      "category": "B",
       "description": "Embodies and promotes practices to ensure excellent quality products and services",
       "milestones": [
           {
@@ -506,6 +509,7 @@
   },
   "INSTITUTIONAL KNOWLEDGE": {
       "displayName": "Institutional Knowledge",
+      "category": "B",
       "description": "Seeks to improve Skookum through making local learnings have a larger impact across Skookum.",
       "milestones": [
           {
